@@ -12,7 +12,7 @@ args.dataset = ["IMDB-MULTI"]
 args.num_clients = 10
 
 
-args.fl_algorithm = "gcfl_plus"
+args.fl_algorithm = "fedala"
 args.model = ["gin"]
 
 args.metrics = ["accuracy"]
