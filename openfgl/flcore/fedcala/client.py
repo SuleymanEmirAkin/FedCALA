@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 from openfgl.flcore.base import BaseClient
-from openfgl.flcore.fedala.config import config
+from openfgl.flcore.fedcala.config import config
 
 class FedCALAClient(BaseClient):
     def __init__(self, args, client_id, data, data_dir, message_pool, device):
