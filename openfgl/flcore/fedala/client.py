@@ -28,7 +28,8 @@ class FedALAClient(BaseClient):
         self.rand_percent = config["ala_rand_percent"]
         self.layer_idx = config["ala_layer_idx"]
         self.ala_epochs = config["ala_epochs"]
-        
+        self.cluster_alpha = config.get("cluster_alpha", 0.9)
+
         # Store the learned aggregation weights (W) for persistence across rounds
         self.weights = None 
         
@@ -56,92 +57,98 @@ class FedALAClient(BaseClient):
         Main execution flow for FedALA.
         """
         # Ensure we have the global model from the server
-        if "weight" not in self.message_pool["server"]:
+        if "server" not in self.message_pool or "weight" not in self.message_pool["server"]:
             return 
 
-        global_params = self.message_pool["server"]["weight"]
+        # --- FIX 1: Define server_msg ---
+        server_msg = self.message_pool["server"]
+
+        # 1. Get the Standard Global Model (The Anchor)
+        global_anchor = server_msg["weight"]
+        
+        # 2. Get the Cluster Model (The Specialist)
+        target_model = global_anchor # Default to global
+        
+        # --- FIX 2: Check 'server_msg' for flags, NOT 'target_model' ---
+        if server_msg.get("is_clustered", False):
+            client_map = server_msg.get("client_map", {})
+            cid = int(self.client_id)
+            
+            if cid in client_map:
+                cluster_id = client_map[cid]
+                # Ensure the cluster ID exists in the model list
+                if cluster_id in server_msg["cluster_models"]:
+                    cluster_model = server_msg["cluster_models"][cluster_id]
+                    
+                    # --- NEW: SOFT CLUSTERING (INTERPOLATION) ---
+                    alpha = 0.8
+                    
+                    interpolated_model = []
+                    for p_clust, p_glob in zip(cluster_model, global_anchor):
+                        # Mix them
+                        mixed = alpha * p_clust + (1 - alpha) * p_glob
+                        interpolated_model.append(mixed)
+                    
+                    target_model = interpolated_model
+                    print(f"[Client {cid}] Using Soft Cluster Model (Alpha {alpha})")
+
+                    # --- FIX 3: RESET ALA WEIGHTS ON CLUSTERING EVENT ---
+                    # If this is the first time we switch to clustering, reset ALA to relearn
+                    # if not hasattr(self, 'has_reset_ala'):
+                    #     print(f"[Client {self.client_id}] Clustering Event Detected! Resetting ALA Weights...")
+                    #     self.weights = None 
+                    #     self.has_reset_ala = True
+        
+        # --- SELECTION LOGIC END --
+        global_params = target_model
         local_params = list(self.task.model.parameters())
 
-        # Initialize ALA weights if first run
+        # Initialize ALA weights if first run (or if reset)
         self.init_ala_weights(local_params)
 
         # --- Phase 1: Adaptive Local Aggregation (ALA) ---
-        # We only run ALA if it's not the very first round (need history)
-        # However, OpenFGL initializes clients; assuming t > 0 logic here.
-        
-        # Clone local params to keep 'Theta_i^{t-1}' safe while we train weights
-        # We need detached clones to avoid graph issues during manual update
         local_params_detached = [p.clone().detach() for p in local_params]
-        
-        # Temporarily switch model to training mode for ALA weight learning
         self.task.model.train()
         
         # ALA Optimization Loop
         for _ in range(self.ala_epochs):
             for batch_data in self.task.train_dataloader:
-                # Approximate 'sample s% of local data' by probabilistically skipping batches
                 if self.rand_percent < 100 and np.random.rand() > (self.rand_percent / 100.0):
                     continue
 
-                # Ensure data is on the correct device
                 if hasattr(batch_data, 'to'):
                     batch_data = batch_data.to(self.device)
 
-                # 1. Construct the "Merged Model" using current W
-                # Theta_temp = Local + (Global - Local) * W
-                # We apply this directly to the model parameters to perform forward pass
                 with torch.no_grad():
                     for i, (p_loc, p_glob, p_model) in enumerate(zip(local_params_detached, global_params, self.task.model.parameters())):
                         diff = p_glob - p_loc
                         if self.weights[i] is not None:
-                            # Higher layers: Use learned weights
                             p_model.data.copy_(p_loc + diff * self.weights[i])
                         else:
-                            # Lower layers: Overwrite (Standard FedAvg behavior)
                             p_model.data.copy_(p_glob)
                 
-                # 2. Compute Gradients w.r.t Model Parameters
                 output = self.task.model(batch_data)
-                
-                # Handle cases where model returns tuple (logits, embedding)
-                if isinstance(output, (list, tuple)):
-                    output = output[0]
+                if isinstance(output, (list, tuple)): output = output[0]
 
-                # FIXED: Directly use PyTorch criterion or F.cross_entropy
                 if hasattr(self.task, 'criterion') and self.task.criterion is not None:
                     loss = self.task.criterion(output, batch_data.y)
                 else:
-                    # Direct fallback for Graph Classification
-                    # Ensure targets are 1D for CrossEntropy
                     target = batch_data.y
-                    if target.dim() > 1:
-                        target = target.squeeze()
+                    if target.dim() > 1: target = target.squeeze()
                     loss = F.cross_entropy(output, target)
 
-                # FIXED: Use model.zero_grad() instead of task.optimizer.zero_grad()
-                # We just need to clear model gradients to calculate gradients for W
                 self.task.model.zero_grad()
                 loss.backward()
                 
-                # 3. Update Weights (W) manually
-                # Chain rule: dL/dW = dL/dTheta_model * dTheta_model/dW
-                # Theta_model = Local + (Global - Local) * W
-                # dTheta_model/dW = (Global - Local)
-                # Therefore: dL/dW = p_model.grad * (Global - Local)
                 with torch.no_grad():
                     for i, (p_loc, p_glob, p_model) in enumerate(zip(local_params_detached, global_params, self.task.model.parameters())):
                         if self.weights[i] is not None and p_model.grad is not None:
                             diff = p_glob - p_loc
                             grad_w = p_model.grad * diff
-                            
-                            # Update W: W = W - eta * grad
                             self.weights[i] -= self.eta * grad_w
-                            
-                            # Clip weights to [0, 1] as per paper
                             self.weights[i].clamp_(0, 1)
 
         # --- Phase 2: Final Model Initialization ---
-        # Apply the final trained weights to set the starting point for local training
         with torch.no_grad():
             for i, (p_loc, p_glob, p_model) in enumerate(zip(local_params_detached, global_params, self.task.model.parameters())):
                 diff = p_glob - p_loc
@@ -151,7 +158,6 @@ class FedALAClient(BaseClient):
                     p_model.data.copy_(p_glob)
 
         # --- Phase 3: Standard Local Training ---
-        # Now train the model parameters Theta using standard optimizer provided by the task
         self.task.train()
 
     def send_message(self):

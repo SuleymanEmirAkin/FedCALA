@@ -7,6 +7,8 @@ args = config.args
 
 args.root = "dataset"
 
+args.warmup_rounds = 20
+args.distance_threshold = 0.7
 
 args.dataset = ["IMDB-MULTI"]
 args.num_clients = 10

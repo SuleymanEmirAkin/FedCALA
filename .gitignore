@@ -1,1 +1,70 @@
+# Dataset files
 dataset/global/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+
+# Model outputs and checkpoints
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+models/
+saved_models/
+
+# Logs and outputs
+*.log
+logs/
+Outputs/*.txt
+wandb/
+tensorboard/
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Data files (if needed)
+*.csv
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
