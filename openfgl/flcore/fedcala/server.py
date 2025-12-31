@@ -1,7 +1,5 @@
 import torch
 import numpy as np
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import normalize
 from openfgl.flcore.base import BaseServer
 from openfgl.flcore.fedcala.config import config
 

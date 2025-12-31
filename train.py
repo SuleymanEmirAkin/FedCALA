@@ -12,7 +12,7 @@ args.dataset = ["BZR"]
 args.num_clients = 10
 
 
-args.fl_algorithm = "fedala"
+args.fl_algorithm = "fedcala"
 args.model = ["gin"]
 
 args.metrics = ["accuracy"]
