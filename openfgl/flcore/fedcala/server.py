@@ -8,58 +8,73 @@ from openfgl.flcore.fedcala.config import config
 class FedCALAServer(BaseServer):
     def __init__(self, args, global_data, data_dir, message_pool, device):
         super(FedCALAServer, self).__init__(args, global_data, data_dir, message_pool, device)
-        self.num_clusters = config.get("num_clusters", 3)
         self.layer_idx = config["ala_layer_idx"]
-        self.client_clusters = {}
-
+        self.epoch_count = 0
+        self.warm_up = 0
+        self.client_models = {}
+    
+    def fast_cosine_similarity(self, X):
+        # 1. Compute the L2 norm of each row (N, 1)
+        norms = np.linalg.norm(X, axis=1, keepdims=True)
+        
+        # 2. Normalize the matrix (avoid division by zero with a small epsilon)
+        X_normalized = X / (norms + 1e-8)
+        
+        # 3. Compute the full similarity matrix using matrix multiplication
+        # Shape: (N, D) @ (D, N) -> (N, N)
+        return np.dot(X_normalized, X_normalized.T)
+    
     def execute(self):
-        sampled_clients = self.message_pool["sampled_clients"]
-        if not sampled_clients: return
+        self.epoch_count += 1
+        all_clients = self.message_pool["sampled_clients"]
+        if not all_clients: return
 
-        # 1. Collect features and cluster clients
-        client_features = []
-        for cid in sampled_clients:
-            client_features.append(self.message_pool[f"client_{cid}"]["features"])
+        # 1. Collect features
+        client_features = np.array([self.message_pool[f"client_{cid}"]["features"] for cid in all_clients])
+        full_sim = self.fast_cosine_similarity(client_features)
         
-        # Normalize for Cosine Similarity during K-Means
-        norm_features = normalize(np.array(client_features))
-        kmeans = KMeans(n_clusters=min(self.num_clusters, len(sampled_clients)), random_state=42).fit(norm_features)
+        # 2. Initialize storage using actual client IDs
+        self.client_models = {cid: [torch.zeros_like(p) for p in self.task.model.parameters()] for cid in all_clients}
         
-        clusters = {i: [] for i in range(kmeans.n_clusters)}
-        for i, cid in enumerate(sampled_clients):
-            clusters[kmeans.labels_[i]].append(cid)
-            self.client_clusters[cid] = kmeans.labels_[i]
-
-        # 2. Perform Hybrid Aggregation
-        # Lower layers = Global; Top layers = Cluster-specific
         num_params = len(list(self.task.model.parameters()))
-        self.cluster_models = {k: [torch.zeros_like(p) for p in self.task.model.parameters()] for k in clusters.keys()}
+        total_samples = sum([self.message_pool[f"client_{cid}"]["num_samples"] for cid in all_clients])
 
         with torch.no_grad():
-            # Aggregate Shared Lower Layers (Global)
-            total_samples = sum([self.message_pool[f"client_{cid}"]["num_samples"] for cid in sampled_clients])
-            global_lower_params = [torch.zeros_like(p) for p in self.task.model.parameters()]
-            
-            for cid in sampled_clients:
-                weight = self.message_pool[f"client_{cid}"]["num_samples"] / total_samples
-                for i, p in enumerate(self.message_pool[f"client_{cid}"]["weight"]):
+            for idx_i, cid_i in enumerate(all_clients):
+                # --- Layer-wise Aggregation ---
+                for i in range(num_params):
                     if i < num_params - self.layer_idx:
-                        global_lower_params[i] += weight * p
-
-            # Aggregate Cluster-Specific Top Layers
-            for kid, cluster_cids in clusters.items():
-                cluster_samples = sum([self.message_pool[f"client_{cid}"]["num_samples"] for cid in cluster_cids])
-                for cid in cluster_cids:
-                    c_weight = self.message_pool[f"client_{cid}"]["num_samples"] / cluster_samples
-                    for i, p in enumerate(self.message_pool[f"client_{cid}"]["weight"]):
-                        if i >= num_params - self.layer_idx:
-                            self.cluster_models[kid][i] += c_weight * p
+                        # GLOBAL AGGREGATION for lower layers
+                        for cid_j in all_clients:
+                            w_j = self.message_pool[f"client_{cid_j}"]["num_samples"] / total_samples
+                            p_j = self.message_pool[f"client_{cid_j}"]["weight"][i]
+                            self.client_models[cid_i][i] += w_j * p_j
+                    else:
+                        # ADAPTIVE/CLUSTERED AGGREGATION for top layers
+                        if self.epoch_count <= self.warm_up:
+                            # Standard FedAvg during warm-up
+                            for cid_j in all_clients:
+                                w_j = self.message_pool[f"client_{cid_j}"]["num_samples"] / total_samples
+                                p_j = self.message_pool[f"client_{cid_j}"]["weight"][i]
+                                self.client_models[cid_i][i] += w_j * p_j
                         else:
-                            # Assign the global lower layers to the cluster model
-                            self.cluster_models[kid][i] = global_lower_params[i]
+                            # CALA weighted aggregation
+                            # Calculate denominator for normalization: sum(sim_ij * n_j)
+                            denom = 0
+                            for idx_j, cid_j in enumerate(all_clients):
+                                denom += full_sim[idx_i, idx_j] * self.message_pool[f"client_{cid_j}"]["num_samples"]
+                            
+                            for idx_j, cid_j in enumerate(all_clients):
+                                sim_ij = full_sim[idx_i, idx_j]
+                                n_j = self.message_pool[f"client_{cid_j}"]["num_samples"]
+                                p_j = self.message_pool[f"client_{cid_j}"]["weight"][i]
+                                
+                                # Weight = (similarity * sample_count) / normalization_factor
+                                weight = (sim_ij * n_j) / (denom + 1e-8)
+                                self.client_models[cid_i][i] += weight * p_j
 
     def send_message(self):
         """ Sends specific cluster-aggregated weights to each client. """
         self.message_pool["server"] = {}
-        for cid, kid in self.client_clusters.items():
-            self.message_pool["server"][f"weight_client_{cid}"] = self.cluster_models[kid]
+        for cid, model_params in self.client_models.items():
+            self.message_pool["server"][f"weight_client_{cid}"] = model_params

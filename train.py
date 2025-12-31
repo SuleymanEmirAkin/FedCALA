@@ -8,7 +8,7 @@ args = config.args
 args.root = "dataset"
 
 
-args.dataset = ["IMDB-MULTI"]
+args.dataset = ["BZR"]
 args.num_clients = 10
 
 
@@ -19,7 +19,6 @@ args.metrics = ["accuracy"]
 
 
 args.skew_alpha = 1
-
 
 
 trainer = FGLTrainer(args)
