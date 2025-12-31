@@ -1,49 +1,31 @@
 import torch
 from openfgl.flcore.base import BaseServer
+from openfgl.flcore.fedala.config import config
 
 class FedALAServer(BaseServer):
-    """
-    FedALAServer implements the server-side logic for FedALA.
-    
-    In the FedALA paper, the server-side aggregation remains a standard 
-    Weighted Average based on the number of samples. The 'Adaptive' part 
-    happens on the client side after downloading the global model.
-    """
-    
     def __init__(self, args, global_data, data_dir, message_pool, device):
         super(FedALAServer, self).__init__(args, global_data, data_dir, message_pool, device)
-
+        self.layer_idx = config["ala_layer_idx"]
+        self.client_model = []
+    
     def execute(self):
-        """
-        Executes the server-side aggregation.
-        Formula: Theta_global = Sum( (n_k / n_total) * Theta_k )
-        """
-        with torch.no_grad():
-            # 1. Calculate total samples from selected clients
-            num_tot_samples = sum([
-                self.message_pool[f"client_{client_id}"]["num_samples"] 
-                for client_id in self.message_pool["sampled_clients"]
-            ])
+        all_clients = self.message_pool["sampled_clients"]
+        if not all_clients: return
 
-            # 2. Iterate through sampled clients and aggregate parameters
-            for it, client_id in enumerate(self.message_pool["sampled_clients"]):
-                # Calculate weight coefficient for this client
-                weight = self.message_pool[f"client_{client_id}"]["num_samples"] / num_tot_samples
-                
-                # Fetch local model parameters uploaded by the client
-                local_params = self.message_pool[f"client_{client_id}"]["weight"]
-                
-                # Aggregate
-                for (local_param, global_param) in zip(local_params, self.task.model.parameters()):
-                    if it == 0:
-                        global_param.data.copy_(weight * local_param)
-                    else:
-                        global_param.data += weight * local_param
-        
+        self.client_model = [torch.zeros_like(p) for p in self.task.model.parameters()]
+
+        num_params = len(list(self.task.model.parameters()))
+        total_samples = sum([self.message_pool[f"client_{cid}"]["num_samples"] for cid in all_clients])
+
+        with torch.no_grad():
+            for i in range(num_params):
+                for cid_j in all_clients:
+                    w_j = self.message_pool[f"client_{cid_j}"]["num_samples"] / total_samples
+                    p_j = self.message_pool[f"client_{cid_j}"]["weight"][i]
+                    self.client_model[i] += w_j * p_j
+
+
     def send_message(self):
-        """
-        Broadcasts the aggregated global model to all clients.
-        """
-        self.message_pool["server"] = {
-            "weight": list(self.task.model.parameters())
-        }
+        """ Sends specific cluster-aggregated weights to each client. """
+        self.message_pool["server"] = {}
+        self.message_pool["server"]["weight"] = self.client_model
