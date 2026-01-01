@@ -19,7 +19,8 @@ class FedCALAServer(BaseServer):
         # New storage for visualization
         self.history = [] # List of dicts: {"round": r, "cid": id, "features": feat}
 
-    def save_evolution_graph(self, filename="client_evolution.png"):
+    def save_evolution_graph(self, filename="client_evolution"):
+        for f in ["features", "params"]:
             if len(self.history) < 10:
                 print("Not enough data to visualize yet.")
                 return
@@ -27,7 +28,7 @@ class FedCALAServer(BaseServer):
             # 1. Prepare Data
             rounds = np.array([h["round"] for h in self.history])
             cids = np.array([h["cid"] for h in self.history])
-            feats = np.stack([h["features"] for h in self.history])
+            feats = np.stack([h[f] for h in self.history])
             
             # Scale features for better projection
             feats_scaled = StandardScaler().fit_transform(feats)
@@ -72,9 +73,9 @@ class FedCALAServer(BaseServer):
 
             # 5. Save to File
             plt.tight_layout()
-            plt.savefig(filename, bbox_inches='tight')
+            plt.savefig(filename + f + ".png", bbox_inches='tight')
             plt.close() # Close to free up memory
-            print(f"Visualization saved to {filename}")
+            print(f"Visualization saved to {filename + f + ".png"}")
 
     def fast_cosine_similarity(self, X):
         # 1. Compute the L2 norm of each row (N, 1)
@@ -87,6 +88,14 @@ class FedCALAServer(BaseServer):
         # Shape: (N, D) @ (D, N) -> (N, N)
         return np.dot(X_normalized, X_normalized.T)
     
+    def extract_top_layers(self, weights):
+        """
+        weights: list of torch tensors (client model parameters)
+        returns: 1D numpy vector of top-layer parameters
+        """
+        top_params = weights[-self.layer_idx:]
+        return torch.cat([p.flatten() for p in top_params]).detach().cpu().numpy()
+
     def execute(self):
         self.epoch_count += 1
         all_clients = self.message_pool["sampled_clients"]
@@ -99,7 +108,8 @@ class FedCALAServer(BaseServer):
             self.history.append({
                 "round": self.epoch_count,
                 "cid": cid,
-                "features": feat.copy() if hasattr(feat, 'copy') else feat
+                "features": feat.copy() if hasattr(feat, 'copy') else feat,
+                "params": self.extract_top_layers(self.message_pool[f"client_{cid}"]["weight"])
             })
 
         
