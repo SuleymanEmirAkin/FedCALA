@@ -2,6 +2,11 @@ import torch
 import numpy as np
 from openfgl.flcore.base import BaseServer
 from openfgl.flcore.fedcala.config import config
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import umap  # pip install umap-learn
+from sklearn.preprocessing import StandardScaler
 
 class FedCALAServer(BaseServer):
     def __init__(self, args, global_data, data_dir, message_pool, device):
@@ -11,6 +16,66 @@ class FedCALAServer(BaseServer):
         self.warm_up = 0
         self.client_models = {}
     
+        # New storage for visualization
+        self.history = [] # List of dicts: {"round": r, "cid": id, "features": feat}
+
+    def save_evolution_graph(self, filename="client_evolution.png"):
+            if len(self.history) < 10:
+                print("Not enough data to visualize yet.")
+                return
+
+            # 1. Prepare Data
+            rounds = np.array([h["round"] for h in self.history])
+            cids = np.array([h["cid"] for h in self.history])
+            feats = np.stack([h["features"] for h in self.history])
+            
+            # Scale features for better projection
+            feats_scaled = StandardScaler().fit_transform(feats)
+
+            # 2. Dimensionality Reduction with UMAP for a "cleaner" look
+            reducer = umap.UMAP(n_neighbors=15, min_dist=0.1, random_state=42)
+            embedding = reducer.fit_transform(feats_scaled)
+
+            # 3. Create the Visualization
+            plt.figure(figsize=(12, 10), dpi=300)
+            sns.set_style("whitegrid", {'axes.grid': True, 'grid.color': '.95'})
+            
+            # Plot trajectories (the lines connecting a client's movement)
+            unique_clients = np.unique(cids)
+            for cid in unique_clients:
+                mask = cids == cid
+                plt.plot(embedding[mask, 0], embedding[mask, 1], color='gray', alpha=0.2, lw=1, zorder=1)
+
+            # Plot the points with a temporal color map (Cool to Warm)
+            scatter = plt.scatter(
+                embedding[:, 0], 
+                embedding[:, 1], 
+                c=rounds, 
+                cmap='coolwarm', 
+                s=40, 
+                alpha=0.8, 
+                edgecolors='none',
+                zorder=2
+            )
+
+            # 4. Aesthetics and Labels
+            cb = plt.colorbar(scatter, shrink=0.8)
+            cb.set_label('Training Round', fontsize=12)
+            cb.outline.set_visible(False)
+
+            plt.title(f"Temporal Evolution of Client Similarities (Round {self.epoch_count})", fontsize=15, pad=20)
+            plt.xlabel("Similarity Dimension 1", fontsize=10)
+            plt.ylabel("Similarity Dimension 2", fontsize=10)
+            
+            # Despine for a cleaner look
+            sns.despine(left=True, bottom=True)
+
+            # 5. Save to File
+            plt.tight_layout()
+            plt.savefig(filename, bbox_inches='tight')
+            plt.close() # Close to free up memory
+            print(f"Visualization saved to {filename}")
+
     def fast_cosine_similarity(self, X):
         # 1. Compute the L2 norm of each row (N, 1)
         norms = np.linalg.norm(X, axis=1, keepdims=True)
@@ -26,6 +91,19 @@ class FedCALAServer(BaseServer):
         self.epoch_count += 1
         all_clients = self.message_pool["sampled_clients"]
         if not all_clients: return
+
+# --- 1. Collect & Store Features for Viz ---
+        for cid in all_clients:
+            feat = self.message_pool[f"client_{cid}"]["features"]
+            # We store a copy to avoid reference issues
+            self.history.append({
+                "round": self.epoch_count,
+                "cid": cid,
+                "features": feat.copy() if hasattr(feat, 'copy') else feat
+            })
+
+        
+        self.save_evolution_graph()
 
         # 1. Collect features
         client_features = np.array([self.message_pool[f"client_{cid}"]["features"] for cid in all_clients])
