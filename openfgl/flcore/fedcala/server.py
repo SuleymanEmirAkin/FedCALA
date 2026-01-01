@@ -7,6 +7,7 @@ import seaborn as sns
 import numpy as np
 import umap  # pip install umap-learn
 from sklearn.preprocessing import StandardScaler
+import torch.nn.functional as F
 
 class FedCALAServer(BaseServer):
     def __init__(self, args, global_data, data_dir, message_pool, device):
@@ -18,6 +19,8 @@ class FedCALAServer(BaseServer):
     
         # New storage for visualization
         self.history = [] # List of dicts: {"round": r, "cid": id, "features": feat}
+        self.kl_history = []
+        self.prev_dist = None
 
     def save_evolution_graph(self, filename="client_evolution"):
         for f in ["features", "params"]:
@@ -96,6 +99,50 @@ class FedCALAServer(BaseServer):
         top_params = weights[-self.layer_idx:]
         return torch.cat([p.flatten() for p in top_params]).detach().cpu().numpy()
 
+    def track_similarity_drift(self, sim_matrix, temperature=0.1):
+        """
+        Tracks how much the client relationship structure changes.
+        temperature: Lower values (< 1.0) make the distribution "sharper" 
+                    and the KL Divergence more sensitive.
+        """
+        # 1. Extract upper triangle (unique pairs)
+        mask = np.triu_indices(sim_matrix.shape[0], k=1)
+        flat_sim = sim_matrix[mask]
+        
+        # 2. Convert to torch tensor for stable softmax
+        sim_tensor = torch.tensor(flat_sim, dtype=torch.float32)
+        
+        # 3. Apply Softmax with Temperature
+        # p_i = exp(sim_i / T) / sum(exp(sim_j / T))
+        p = F.softmax(sim_tensor / temperature, dim=0).numpy()
+        
+        if self.prev_dist is not None:
+            # Check if length matches (important if client sampling is dynamic)
+            if len(p) == len(self.prev_dist):
+                epsilon = 1e-10
+                kl_div = np.sum(p * np.log((p + epsilon) / (self.prev_dist + epsilon)))
+                self.kl_history.append(kl_div)
+                
+                # Diagnostic print
+                print(f"Round {self.epoch_count} | KL Drift: {kl_div:.6f}")
+                self.save_kl_plot()
+            else:
+                print("Warning: Client count changed. Skipping KL drift for this round.")
+                    
+        self.prev_dist = p
+
+    def save_kl_plot(self):
+        plt.figure(figsize=(8, 4))
+        plt.plot(range(1, len(self.kl_history) + 1), self.kl_history, 
+                marker='o', color='#2ca02c', label='KL Divergence')
+        plt.title("Similarity Distribution Drift (Stability)")
+        plt.xlabel("Communication Round")
+        plt.ylabel("KL Div (Round t || Round t-1)")
+        plt.grid(True, linestyle='--', alpha=0.6)
+        plt.tight_layout()
+        plt.savefig("similarity_drift_kl.png")
+        plt.close()
+
     def execute(self):
         self.epoch_count += 1
         all_clients = self.message_pool["sampled_clients"]
@@ -119,6 +166,8 @@ class FedCALAServer(BaseServer):
         client_features = np.array([self.message_pool[f"client_{cid}"]["features"] for cid in all_clients])
         full_sim = self.fast_cosine_similarity(client_features)
         
+        self.track_similarity_drift(full_sim)
+
         # 2. Initialize storage using actual client IDs
         self.client_models = {cid: [torch.zeros_like(p) for p in self.task.model.parameters()] for cid in all_clients}
         
