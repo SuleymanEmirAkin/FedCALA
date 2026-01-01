@@ -8,7 +8,7 @@ args = config.args
 args.root = "dataset"
 
 
-args.dataset = ["BZR"]
+args.dataset = ["IMDB-MULTI"]
 args.num_clients = 10
 
 
