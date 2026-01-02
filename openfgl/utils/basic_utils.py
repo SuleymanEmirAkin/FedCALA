@@ -109,7 +109,13 @@ def load_client(args, client_id, data, data_dir, message_pool, device):
     elif args.fl_algorithm == "fedgl":
         from openfgl.flcore.fedgl.client import FedGLClient
         return FedGLClient(args, client_id, data, data_dir, message_pool, device)
-    
+    elif args.fl_algorithm == "fedala":
+        from openfgl.flcore.fedala.client import FedALAClient
+        return FedALAClient(args, client_id, data, data_dir, message_pool, device)    
+    elif args.fl_algorithm == "fedcala":
+        from openfgl.flcore.fedcala.client import FedCALAClient
+        return FedCALAClient(args, client_id, data, data_dir, message_pool, device)  
+
 def load_server(args, global_data, data_dir, message_pool, device):
     """
     Loads and returns an instance of a server based on the federated learning algorithm specified in the arguments.
@@ -181,7 +187,13 @@ def load_server(args, global_data, data_dir, message_pool, device):
     elif args.fl_algorithm == "fedgl":
         from openfgl.flcore.fedgl.server import FedGLServer
         return FedGLServer(args, global_data, data_dir, message_pool, device)
-    
+    elif args.fl_algorithm == "fedala":
+        from openfgl.flcore.fedala.server import FedALAServer
+        return FedALAServer(args, global_data, data_dir, message_pool, device)    
+    elif args.fl_algorithm == "fedcala":
+        from openfgl.flcore.fedcala.server import FedCALAServer
+        return FedCALAServer(args, global_data, data_dir, message_pool, device)    
+
 def load_optim(args):
     """
     Loads and returns an optimizer class based on the specification in the arguments.

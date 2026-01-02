@@ -12,7 +12,7 @@ supported_graph_fl_simulations = ["graph_fl_cross_domain", "graph_fl_label_skew"
 supported_graph_fl_task = ["graph_cls", "graph_reg"]
 
 
-supported_fl_algorithm = ["isolate", "fedavg", "fedprox", "scaffold", "moon", "fedproto", "fedtgp", "fedstar"]
+supported_fl_algorithm = ["isolate", "fedavg", "fedprox", "scaffold", "moon", "fedproto", "fedtgp", "fedstar", "fedala"]
 
 
 supported_metrics = ["accuracy", "precision", "f1", "recall", "auc", "ap", "clustering_accuracy", "nmi", "ari"]
