@@ -5,9 +5,9 @@ source "$CONDA_PATH/etc/profile.d/conda.sh"
 conda activate openfgl
 
 # Define variables
-dataset_name="BZR"
-model_name="fedavg"
-num_clients=5
+dataset_name="COX2"
+model_name="scaffold"
+num_clients=20
 num_rounds=100
 results_dir="experiments/${model_name}_${dataset_name}_results"
 
@@ -20,7 +20,7 @@ do
    echo "Starting iteration $i..."
    
    # Define the output file path inside the new directory
-   output_file="${results_dir}/${model_name}_${dataset_name}_run_${i}.txt"
+   output_file="${results_dir}/${model_name}_${dataset_name}_nc_${num_clients}_run_${i}.txt"
    
    # Run python script:
    # 2>&1 merges Errors (stderr) into Output (stdout)
