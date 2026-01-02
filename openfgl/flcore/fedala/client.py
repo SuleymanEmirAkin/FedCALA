@@ -1,29 +1,12 @@
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
-import copy
 import numpy as np
 from openfgl.flcore.base import BaseClient
 from openfgl.flcore.fedala.config import config
 
-
 class FedALAClient(BaseClient):
-    """
-    FedALAClient implements the Adaptive Local Aggregation logic.
-    
-    Paper Ref: "FedALA: Adaptive Local Aggregation for Personalized Federated Learning" (AAAI-23)
-    
-    Key Steps:
-    1. Download Global Model.
-    2. ALA Phase: Learn weights (W) to merge Global and Local models.
-       Formula: Local_New = Local_Old + (Global - Local_Old) * W
-    3. Local Training Phase: Train the merged model normally.
-    """
-    
     def __init__(self, args, client_id, data, data_dir, message_pool, device):
         super(FedALAClient, self).__init__(args, client_id, data, data_dir, message_pool, device)
-        
-        # Hyperparameters from args
         self.eta = config["ala_eta"]
         self.rand_percent = config["ala_rand_percent"]
         self.layer_idx = config["ala_layer_idx"]
@@ -32,24 +15,15 @@ class FedALAClient(BaseClient):
 
         # Store the learned aggregation weights (W) for persistence across rounds
         self.weights = None 
-        
-        # Used to identify how many layers to apply ALA to
         self.params_length = len(list(self.task.model.parameters()))
 
     def init_ala_weights(self, parameters):
-        """
-        Initialize the ALA weights (W) to 1.0. 
-        Only initializes for the top 'p' layers (defined by layer_idx).
-        """
         if self.weights is None:
             self.weights = []
             for i, p in enumerate(parameters):
-                # We only learn weights for the last 'layer_idx' layers
                 if i >= self.params_length - self.layer_idx:
                     self.weights.append(torch.ones_like(p).to(self.device))
                 else:
-                    # For lower layers, weight is effectively 1 (Overwriting)
-                    # We store None to save memory and skip computation
                     self.weights.append(None)
 
     def execute(self):
@@ -110,12 +84,11 @@ class FedALAClient(BaseClient):
         local_params_detached = [p.clone().detach() for p in local_params]
         self.task.model.train()
         
-        # ALA Optimization Loop
+        # Phase 1: ALA weight learning
         for _ in range(self.ala_epochs):
             for batch_data in self.task.train_dataloader:
                 if self.rand_percent < 100 and np.random.rand() > (self.rand_percent / 100.0):
                     continue
-
                 if hasattr(batch_data, 'to'):
                     batch_data = batch_data.to(self.device)
 
@@ -151,9 +124,8 @@ class FedALAClient(BaseClient):
         # --- Phase 2: Final Model Initialization ---
         with torch.no_grad():
             for i, (p_loc, p_glob, p_model) in enumerate(zip(local_params_detached, global_params, self.task.model.parameters())):
-                diff = p_glob - p_loc
                 if self.weights[i] is not None:
-                    p_model.data.copy_(p_loc + diff * self.weights[i])
+                    p_model.data.copy_(p_loc + (p_glob - p_loc) * self.weights[i])
                 else:
                     p_model.data.copy_(p_glob)
 
@@ -161,10 +133,7 @@ class FedALAClient(BaseClient):
         self.task.train()
 
     def send_message(self):
-        """
-        Sends updated model and sample count to server.
-        """
         self.message_pool[f"client_{self.client_id}"] = {
             "num_samples": self.task.num_samples,
-            "weight": list(self.task.model.parameters())
+            "weight": list(self.task.model.parameters()),
         }
