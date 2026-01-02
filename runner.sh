@@ -5,8 +5,10 @@ source "$CONDA_PATH/etc/profile.d/conda.sh"
 conda activate openfgl
 
 # Define variables
-dataset_name="IMDB-MULTI"
-model_name="fedcala"
+dataset_name="BZR"
+model_name="fedavg"
+num_clients=5
+num_rounds=100
 results_dir="experiments/${dataset_name}_${model_name}_results"
 
 # Create the directory if it doesn't exist
@@ -23,7 +25,7 @@ do
    # Run python script:
    # 2>&1 merges Errors (stderr) into Output (stdout)
    # | tee "$output_file" saves everything to the file AND prints it to your screen
-   python ./train.py "$dataset_name" "$model_name" 2>&1 | tee "$output_file"
+   python ./train.py "$dataset_name" "$model_name" "$num_clients" "$num_rounds" 2>&1 | tee "$output_file"
    
    echo "Iteration $i complete. Saved to $output_file"
 done
