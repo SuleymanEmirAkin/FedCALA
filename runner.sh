@@ -9,7 +9,7 @@ dataset_name="BZR"
 model_name="fedavg"
 num_clients=5
 num_rounds=100
-results_dir="experiments/${dataset_name}_${model_name}_results"
+results_dir="experiments/${model_name}_${dataset_name}_results"
 
 # Create the directory if it doesn't exist
 mkdir -p "$results_dir"
