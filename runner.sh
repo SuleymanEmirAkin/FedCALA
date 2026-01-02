@@ -5,11 +5,11 @@ source "$CONDA_PATH/etc/profile.d/conda.sh"
 conda activate openfgl
 
 # Define variables
-dataset_name="COX2"
-model_name="scaffold"
-num_clients=20
+dataset_name="MUTAG"
+model_name="fedavg"
+num_clients=5
 num_rounds=100
-results_dir="experiments/${model_name}_${dataset_name}_results"
+results_dir="experiments/${model_name}_${dataset_name}_nc_${num_clients}_results"
 
 # Create the directory if it doesn't exist
 mkdir -p "$results_dir"
