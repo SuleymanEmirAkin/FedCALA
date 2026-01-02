@@ -14,8 +14,8 @@ args.root = "dataset"
 
 
 args.dataset = [dataset_name]
-args.num_clients = 10
-args.num_rounds = 5
+args.num_clients = 20
+args.num_rounds = 100
 
 
 args.fl_algorithm = fl_algorithm
