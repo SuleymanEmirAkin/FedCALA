@@ -55,6 +55,7 @@ model2dataset2std = defaultdict(lambda: defaultdict(float))
 
 for model in model2dataset2scores:
     for dataset in model2dataset2scores[model]:
+        print(model, dataset)
         scores = model2dataset2scores[model][dataset]
         mean_score = np.mean(scores)
         std_score = np.std(scores)

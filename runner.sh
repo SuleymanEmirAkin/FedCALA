@@ -1,13 +1,13 @@
 #!/bin/bash
-
+echo "Starting"
 CONDA_PATH=$(conda info --base)
 source "$CONDA_PATH/etc/profile.d/conda.sh"
 conda activate openfgl
 
 # Define variables
-dataset_name="MUTAG"
-model_name="fedavg"
-num_clients=5
+dataset_name="COLLAB"
+model_name="scaffold"
+num_clients=10
 num_rounds=100
 results_dir="experiments/${model_name}_${dataset_name}_nc_${num_clients}_results"
 
