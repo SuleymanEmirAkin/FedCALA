@@ -8,13 +8,18 @@ import numpy as np
 import umap  # pip install umap-learn
 from sklearn.preprocessing import StandardScaler
 import torch.nn.functional as F
-
+import json
+import os
 
 class FedCALAServer(BaseServer):
     def __init__(self, args, global_data, data_dir, message_pool, device):
         super(FedCALAServer, self).__init__(
             args, global_data, data_dir, message_pool, device
         )
+        self.dataset_name = args.dataset
+        self.num_clients = args.num_clients
+        self.all_rounds_similarity = []  # Persistent list for the whole training
+
         self.layer_idx = config["ala_layer_idx"]
         self.epoch_count = 0
         self.warm_up = 0
@@ -25,7 +30,9 @@ class FedCALAServer(BaseServer):
         self.kl_history = []
         self.prev_dist = None
 
-    def save_evolution_graph(self, filename="client_evolution"):
+    def save_evolution_graph(self):
+        base_name = f"{self.dataset_name}_clients{self.num_clients}"
+
         for f in ["features", "params"]:
             if len(self.history) < 10:
                 print("Not enough data to visualize yet.")
@@ -88,11 +95,12 @@ class FedCALAServer(BaseServer):
             # Despine for a cleaner look
             sns.despine(left=True, bottom=True)
 
-            # 5. Save to File
+        # 5. Save to File with the new naming convention
+            filename = f"evolution_{f}_{base_name}.png"
             plt.tight_layout()
-            plt.savefig(filename + f + ".png", bbox_inches="tight")
-            plt.close()  # Close to free up memory
-            print(f"Visualization saved to {filename + f + ".png"}")
+            plt.savefig(filename, bbox_inches="tight")
+            plt.close()
+            print(f"Visualization saved to {filename}")
 
     def fast_cosine_similarity(self, X):
         # 1. Compute the L2 norm of each row (N, 1)
@@ -160,9 +168,26 @@ class FedCALAServer(BaseServer):
         plt.xlabel("Communication Round")
         plt.ylabel("KL Div (Round t || Round t-1)")
         plt.grid(True, linestyle="--", alpha=0.6)
+        filename = f"kl_drift_{self.dataset_name}_c{self.num_clients}.png"
         plt.tight_layout()
-        plt.savefig("similarity_drift_kl.png")
+        plt.savefig(filename)
         plt.close()
+
+    def save_full_session_json(self):
+        """Saves all rounds recorded so far into one file."""
+        filename = f"full_session_similarity_{self.dataset_name}_c{self.num_clients}.json"
+        
+        output = {
+            "dataset": self.dataset_name,
+            "num_clients": self.num_clients,
+            "total_rounds_recorded": len(self.all_rounds_similarity),
+            "history": self.all_rounds_similarity
+        }
+
+        with open(filename, 'w') as f:
+            json.dump(output, f) # Removed indent=4 to keep file size smaller for long sessions
+        
+        # print(f"Session data updated in {filename}")
 
     def execute(self):
         self.epoch_count += 1
@@ -192,6 +217,16 @@ class FedCALAServer(BaseServer):
             [self.message_pool[f"client_{cid}"]["features"] for cid in all_clients]
         )
         full_sim = self.fast_cosine_similarity(client_features)
+
+        # 2. Append to persistent list
+        self.all_rounds_similarity.append({
+            "round": self.epoch_count,
+            "client_ids": [int(cid) for cid in all_clients],
+            "matrix": full_sim.tolist()
+        })
+
+        # 3. Save/Overwrite the single training file
+        self.save_full_session_json()
 
         self.track_similarity_drift(full_sim)
 
