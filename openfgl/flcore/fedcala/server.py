@@ -11,6 +11,7 @@ import torch.nn.functional as F
 import json
 import os
 
+
 class FedCALAServer(BaseServer):
     def __init__(self, args, global_data, data_dir, message_pool, device):
         super(FedCALAServer, self).__init__(
@@ -95,7 +96,7 @@ class FedCALAServer(BaseServer):
             # Despine for a cleaner look
             sns.despine(left=True, bottom=True)
 
-        # 5. Save to File with the new naming convention
+            # 5. Save to File with the new naming convention
             filename = f"evolution_{f}_{base_name}.png"
             plt.tight_layout()
             plt.savefig(filename, bbox_inches="tight")
@@ -175,18 +176,22 @@ class FedCALAServer(BaseServer):
 
     def save_full_session_json(self):
         """Saves all rounds recorded so far into one file."""
-        filename = f"full_session_similarity_{self.dataset_name}_c{self.num_clients}.json"
-        
+        filename = (
+            f"full_session_similarity_{self.dataset_name}_c{self.num_clients}.json"
+        )
+
         output = {
             "dataset": self.dataset_name,
             "num_clients": self.num_clients,
             "total_rounds_recorded": len(self.all_rounds_similarity),
-            "history": self.all_rounds_similarity
+            "history": self.all_rounds_similarity,
         }
 
-        with open(filename, 'w') as f:
-            json.dump(output, f) # Removed indent=4 to keep file size smaller for long sessions
-        
+        with open(filename, "w") as f:
+            json.dump(
+                output, f
+            )  # Removed indent=4 to keep file size smaller for long sessions
+
         # print(f"Session data updated in {filename}")
 
     def execute(self):
@@ -219,11 +224,13 @@ class FedCALAServer(BaseServer):
         full_sim = self.fast_cosine_similarity(client_features)
 
         # 2. Append to persistent list
-        self.all_rounds_similarity.append({
-            "round": self.epoch_count,
-            "client_ids": [int(cid) for cid in all_clients],
-            "matrix": full_sim.tolist()
-        })
+        self.all_rounds_similarity.append(
+            {
+                "round": self.epoch_count,
+                "client_ids": [int(cid) for cid in all_clients],
+                "matrix": full_sim.tolist(),
+            }
+        )
 
         # 3. Save/Overwrite the single training file
         self.save_full_session_json()
