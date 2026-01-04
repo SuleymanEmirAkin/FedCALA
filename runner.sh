@@ -5,21 +5,12 @@ source "$CONDA_PATH/etc/profile.d/conda.sh"
 conda activate openfgl
 
 # Define variables
-<<<<<<< HEAD
-dataset_name="BZR"
-model_name="fedcala"
-num_clients=10
-num_rounds=100
-results_dir="experiments1/${model_name}_${dataset_name}_nc_${num_clients}_results"
-
-=======
-dataset_name="DD"
+dataset_name="COLLAB"
 model_name="fedcala"
 num_clients=10
 num_rounds=100
 use_cuda=1
 results_dir="experiments/${model_name}_${dataset_name}_nc_${num_clients}_results"
->>>>>>> fdc8f65be28a6461a20ddc67df3d05a19b6211c7
 # Create the directory if it doesn't exist
 mkdir -p "$results_dir"
 
