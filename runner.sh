@@ -5,7 +5,7 @@ source "$CONDA_PATH/etc/profile.d/conda.sh"
 conda activate openfgl
 
 # Define variables
-dataset_name="COLLAB"
+dataset_name="DD"
 model_name="fedcala"
 num_clients=10
 num_rounds=100
@@ -15,7 +15,7 @@ results_dir="experiments/${model_name}_${dataset_name}_nc_${num_clients}_results
 mkdir -p "$results_dir"
 
 # Run the loop 5 times
-for i in {1..5}
+for i in {1..1}
 do
    echo "Starting iteration $i..."
    
