@@ -50,7 +50,7 @@ for model in model2dataset2nc2scores:
         model2dataset2nc2std[model][dataset][nc] = std_score
 
 
-dataset_names = ["MUTAG", "BZR", "COX2", "ENZYMES", "DD", "PROTEINS", "COLLAB", "BINARY", "MULTI"]
+dataset_names = ["MUTAG", "BZR", "COX2", "ENZYMES", "DD", "PROTEINS", "COLLAB", "IMDB-BINARY", "IMDB-MULTI"]
 model_names = ["FedAvg", "FedProx", "Scaffold", "Scaffold", "FedProto", "FedALA", "FedCALA"]
 
 # print like a table to copy to latex
@@ -65,11 +65,13 @@ print("\\hline")
 for model in model_names:
     row_str = [model]
     for dataset in dataset_names:
-        print(model.lower(), dataset.lower())
-        print(model2dataset2nc2scores[model.lower()][dataset].keys())
+        # print(model.lower(), dataset.lower())
+        # print(model2dataset2nc2scores[model.lower()][dataset].keys())
+        # if len(model2dataset2nc2scores[model.lower()][dataset.lower()]) == 0:
+        #     print(model.lower(), dataset.lower())
+        # continue
         biggest_nc = max(model2dataset2nc2scores[model.lower()][dataset].keys(), key=lambda x: int(x))
-        scores = model2dataset2nc2scores[model.lower()][dataset.lower()][str(biggest_nc)]
-        
+        scores = model2dataset2nc2scores[model.lower()][dataset][biggest_nc]
         if len(scores) > 1:
             # We have multiple runs: Show Mean ± Std
             m = np.mean(scores)
