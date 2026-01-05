@@ -1,0 +1,1032 @@
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+round # 0		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1.9160	loss_val: 2.1184	loss_test: 1.7622	accuracy_train: 0.0992	accuracy_val: 0.0625	accuracy_test: 0.1053
+[client 1]	loss_train: 9.0685	loss_val: 6.2900	loss_test: 7.4796	accuracy_train: 0.0580	accuracy_val: 0.1250	accuracy_test: 0.0833
+[client 2]	loss_train: 2.7796	loss_val: 3.2387	loss_test: 2.6449	accuracy_train: 0.2073	accuracy_val: 0.1818	accuracy_test: 0.0769
+[client 3]	loss_train: 3.7976	loss_val: 3.1683	loss_test: 3.8530	accuracy_train: 0.3382	accuracy_val: 0.4286	accuracy_test: 0.1667
+[client 4]	loss_train: 3.5079	loss_val: 2.6490	loss_test: 4.1320	accuracy_train: 0.0083	accuracy_val: 0.0000	accuracy_test: 0.0000
+curr_round: 0	curr_val_accuracy: 0.1301	curr_test_accuracy: 0.0792
+best_round: 0	best_val_accuracy: 0.1301	best_test_accuracy: 0.0792
+--------------------------------------------------
+round # 1		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1200.3519	loss_val: 1200.4729	loss_test: 1200.3671	accuracy_train: 0.1069	accuracy_val: 0.0625	accuracy_test: 0.3158
+[client 1]	loss_train: 4736.9956	loss_val: 4735.9390	loss_test: 4736.3657	accuracy_train: 0.0580	accuracy_val: 0.1250	accuracy_test: 0.0833
+[client 2]	loss_train: 2312.8513	loss_val: 2313.0972	loss_test: 2312.8184	accuracy_train: 0.0854	accuracy_val: 0.0909	accuracy_test: 0.1538
+[client 3]	loss_train: 5574.9019	loss_val: 5574.4727	loss_test: 5575.0444	accuracy_train: 0.3088	accuracy_val: 0.4286	accuracy_test: 0.0833
+[client 4]	loss_train: 2946.9180	loss_val: 2946.7471	loss_test: 2947.0115	accuracy_train: 0.0833	accuracy_val: 0.1333	accuracy_test: 0.0000
+curr_round: 1	curr_val_accuracy: 0.1478	curr_test_accuracy: 0.1390
+best_round: 1	best_val_accuracy: 0.1478	best_test_accuracy: 0.1390
+--------------------------------------------------
+round # 2		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 758.5500	loss_val: 758.6180	loss_test: 758.6082	accuracy_train: 0.1221	accuracy_val: 0.0625	accuracy_test: 0.1579
+[client 1]	loss_train: 2961.9316	loss_val: 2961.5396	loss_test: 2961.6672	accuracy_train: 0.0725	accuracy_val: 0.1250	accuracy_test: 0.0833
+[client 2]	loss_train: 1375.8820	loss_val: 1376.0637	loss_test: 1375.8984	accuracy_train: 0.1341	accuracy_val: 0.0909	accuracy_test: 0.1538
+[client 3]	loss_train: 3288.2874	loss_val: 3287.8113	loss_test: 3288.5066	accuracy_train: 0.4265	accuracy_val: 0.5714	accuracy_test: 0.3333
+[client 4]	loss_train: 1919.5909	loss_val: 1919.4891	loss_test: 1919.5729	accuracy_train: 0.2917	accuracy_val: 0.2000	accuracy_test: 0.2941
+curr_round: 2	curr_val_accuracy: 0.1854	curr_test_accuracy: 0.2061
+best_round: 2	best_val_accuracy: 0.1854	best_test_accuracy: 0.2061
+--------------------------------------------------
+round # 3		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 575.1568	loss_val: 575.2027	loss_test: 575.2177	accuracy_train: 0.1832	accuracy_val: 0.1875	accuracy_test: 0.2632
+[client 1]	loss_train: 2087.7539	loss_val: 2087.6030	loss_test: 2087.6658	accuracy_train: 0.1304	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 975.1770	loss_val: 975.3450	loss_test: 975.2094	accuracy_train: 0.1829	accuracy_val: 0.0909	accuracy_test: 0.1538
+[client 3]	loss_train: 2189.3105	loss_val: 2188.8323	loss_test: 2189.5264	accuracy_train: 0.5000	accuracy_val: 0.5714	accuracy_test: 0.4167
+[client 4]	loss_train: 1350.2252	loss_val: 1350.1058	loss_test: 1350.2029	accuracy_train: 0.3667	accuracy_val: 0.2667	accuracy_test: 0.3529
+curr_round: 3	curr_val_accuracy: 0.2554	curr_test_accuracy: 0.2869
+best_round: 3	best_val_accuracy: 0.2554	best_test_accuracy: 0.2869
+--------------------------------------------------
+round # 4		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 483.7523	loss_val: 483.7890	loss_test: 483.8007	accuracy_train: 0.2366	accuracy_val: 0.2500	accuracy_test: 0.2632
+[client 1]	loss_train: 1617.6793	loss_val: 1617.6395	loss_test: 1617.6616	accuracy_train: 0.3188	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 730.0148	loss_val: 730.1681	loss_test: 730.0350	accuracy_train: 0.2561	accuracy_val: 0.1818	accuracy_test: 0.1538
+[client 3]	loss_train: 1546.4019	loss_val: 1545.9275	loss_test: 1546.6248	accuracy_train: 0.5147	accuracy_val: 0.5714	accuracy_test: 0.3333
+[client 4]	loss_train: 999.3892	loss_val: 999.2743	loss_test: 999.3866	accuracy_train: 0.3750	accuracy_val: 0.4000	accuracy_test: 0.3529
+curr_round: 4	curr_val_accuracy: 0.3411	curr_test_accuracy: 0.2872
+best_round: 4	best_val_accuracy: 0.3411	best_test_accuracy: 0.2872
+--------------------------------------------------
+round # 5		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 440.4911	loss_val: 440.5184	loss_test: 440.5110	accuracy_train: 0.2290	accuracy_val: 0.2500	accuracy_test: 0.3684
+[client 1]	loss_train: 1287.7189	loss_val: 1287.7432	loss_test: 1287.7349	accuracy_train: 0.3768	accuracy_val: 0.5000	accuracy_test: 0.4167
+[client 2]	loss_train: 595.7236	loss_val: 595.8753	loss_test: 595.7330	accuracy_train: 0.2195	accuracy_val: 0.1818	accuracy_test: 0.1538
+[client 3]	loss_train: 1150.4543	loss_val: 1149.9801	loss_test: 1150.6935	accuracy_train: 0.5000	accuracy_val: 0.5714	accuracy_test: 0.3333
+[client 4]	loss_train: 789.2408	loss_val: 789.1389	loss_test: 789.2803	accuracy_train: 0.3917	accuracy_val: 0.4000	accuracy_test: 0.3529
+curr_round: 5	curr_val_accuracy: 0.3596	curr_test_accuracy: 0.3287
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 6		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 438.7792	loss_val: 438.7975	loss_test: 438.7844	accuracy_train: 0.2214	accuracy_val: 0.2500	accuracy_test: 0.3684
+[client 1]	loss_train: 1052.0632	loss_val: 1052.1241	loss_test: 1052.0892	accuracy_train: 0.4058	accuracy_val: 0.5000	accuracy_test: 0.4167
+[client 2]	loss_train: 500.1408	loss_val: 500.2836	loss_test: 500.1537	accuracy_train: 0.2317	accuracy_val: 0.1818	accuracy_test: 0.1538
+[client 3]	loss_train: 895.3672	loss_val: 894.8941	loss_test: 895.6138	accuracy_train: 0.4853	accuracy_val: 0.5714	accuracy_test: 0.4167
+[client 4]	loss_train: 658.5406	loss_val: 658.4669	loss_test: 658.6020	accuracy_train: 0.3917	accuracy_val: 0.4000	accuracy_test: 0.3529
+curr_round: 6	curr_val_accuracy: 0.3596	curr_test_accuracy: 0.3407
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 7		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 464.8290	loss_val: 464.8466	loss_test: 464.8300	accuracy_train: 0.2061	accuracy_val: 0.1875	accuracy_test: 0.3684
+[client 1]	loss_train: 874.1523	loss_val: 874.2363	loss_test: 874.2003	accuracy_train: 0.4493	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 430.4519	loss_val: 430.5905	loss_test: 430.4756	accuracy_train: 0.2561	accuracy_val: 0.0909	accuracy_test: 0.1538
+[client 3]	loss_train: 734.7350	loss_val: 734.2746	loss_test: 735.0010	accuracy_train: 0.4706	accuracy_val: 0.7143	accuracy_test: 0.2500
+[client 4]	loss_train: 577.4805	loss_val: 577.4388	loss_test: 577.5488	accuracy_train: 0.4083	accuracy_val: 0.4000	accuracy_test: 0.3529
+curr_round: 7	curr_val_accuracy: 0.3285	curr_test_accuracy: 0.3166
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 8		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 502.8455	loss_val: 502.8653	loss_test: 502.8348	accuracy_train: 0.2137	accuracy_val: 0.1875	accuracy_test: 0.3684
+[client 1]	loss_train: 789.8155	loss_val: 789.9179	loss_test: 789.8704	accuracy_train: 0.4058	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 378.1436	loss_val: 378.2728	loss_test: 378.1659	accuracy_train: 0.2927	accuracy_val: 0.0909	accuracy_test: 0.0769
+[client 3]	loss_train: 622.7524	loss_val: 622.3405	loss_test: 623.0178	accuracy_train: 0.4706	accuracy_val: 0.7143	accuracy_test: 0.1667
+[client 4]	loss_train: 510.9793	loss_val: 510.9676	loss_test: 511.0486	accuracy_train: 0.4083	accuracy_val: 0.4000	accuracy_test: 0.3529
+curr_round: 8	curr_val_accuracy: 0.3285	curr_test_accuracy: 0.2909
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 9		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 545.3392	loss_val: 545.3571	loss_test: 545.3218	accuracy_train: 0.1908	accuracy_val: 0.1250	accuracy_test: 0.3158
+[client 1]	loss_train: 746.4206	loss_val: 746.5352	loss_test: 746.4802	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 337.7478	loss_val: 337.8704	loss_test: 337.7600	accuracy_train: 0.2439	accuracy_val: 0.2727	accuracy_test: 0.2308
+[client 3]	loss_train: 550.4935	loss_val: 550.1321	loss_test: 550.7507	accuracy_train: 0.4118	accuracy_val: 0.7143	accuracy_test: 0.1667
+[client 4]	loss_train: 474.3559	loss_val: 474.3643	loss_test: 474.4251	accuracy_train: 0.4083	accuracy_val: 0.3333	accuracy_test: 0.3529
+curr_round: 9	curr_val_accuracy: 0.3264	curr_test_accuracy: 0.2912
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 10		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 601.1241	loss_val: 601.1387	loss_test: 601.0962	accuracy_train: 0.1908	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 707.8197	loss_val: 707.9460	loss_test: 707.8860	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 310.4743	loss_val: 310.5914	loss_test: 310.4866	accuracy_train: 0.2683	accuracy_val: 0.1818	accuracy_test: 0.2308
+[client 3]	loss_train: 506.4248	loss_val: 506.1053	loss_test: 506.6764	accuracy_train: 0.3529	accuracy_val: 0.7143	accuracy_test: 0.2500
+[client 4]	loss_train: 452.4481	loss_val: 452.4754	loss_test: 452.5186	accuracy_train: 0.4167	accuracy_val: 0.2667	accuracy_test: 0.3529
+curr_round: 10	curr_val_accuracy: 0.2935	curr_test_accuracy: 0.2887
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 11		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 672.7085	loss_val: 672.7241	loss_test: 672.6747	accuracy_train: 0.2214	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 678.1012	loss_val: 678.2380	loss_test: 678.1753	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 298.6706	loss_val: 298.7896	loss_test: 298.6917	accuracy_train: 0.3049	accuracy_val: 0.1818	accuracy_test: 0.2308
+[client 3]	loss_train: 485.4267	loss_val: 485.1618	loss_test: 485.6721	accuracy_train: 0.3382	accuracy_val: 0.5714	accuracy_test: 0.2500
+[client 4]	loss_train: 443.4014	loss_val: 443.4416	loss_test: 443.4749	accuracy_train: 0.4083	accuracy_val: 0.2667	accuracy_test: 0.2941
+curr_round: 11	curr_val_accuracy: 0.2727	curr_test_accuracy: 0.2738
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 12		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 743.0925	loss_val: 743.1182	loss_test: 743.0641	accuracy_train: 0.2519	accuracy_val: 0.1250	accuracy_test: 0.2105
+[client 1]	loss_train: 653.4879	loss_val: 653.6337	loss_test: 653.5710	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 293.0973	loss_val: 293.2154	loss_test: 293.1307	accuracy_train: 0.3293	accuracy_val: 0.0909	accuracy_test: 0.2308
+[client 3]	loss_train: 479.1402	loss_val: 478.9332	loss_test: 479.3792	accuracy_train: 0.3824	accuracy_val: 0.4286	accuracy_test: 0.2500
+[client 4]	loss_train: 436.0618	loss_val: 436.1173	loss_test: 436.1371	accuracy_train: 0.4083	accuracy_val: 0.2667	accuracy_test: 0.2941
+curr_round: 12	curr_val_accuracy: 0.2360	curr_test_accuracy: 0.2592
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 13		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 805.2134	loss_val: 805.2463	loss_test: 805.1869	accuracy_train: 0.2595	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 620.9644	loss_val: 621.1196	loss_test: 621.0599	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 294.7227	loss_val: 294.8444	loss_test: 294.7681	accuracy_train: 0.3293	accuracy_val: 0.0909	accuracy_test: 0.3077
+[client 3]	loss_train: 484.1382	loss_val: 483.9621	loss_test: 484.3710	accuracy_train: 0.3676	accuracy_val: 0.2857	accuracy_test: 0.2500
+[client 4]	loss_train: 430.5150	loss_val: 430.5898	loss_test: 430.5835	accuracy_train: 0.4167	accuracy_val: 0.2667	accuracy_test: 0.3529
+curr_round: 13	curr_val_accuracy: 0.2153	curr_test_accuracy: 0.3023
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 14		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 865.3812	loss_val: 865.4212	loss_test: 865.3577	accuracy_train: 0.2443	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 599.6611	loss_val: 599.8292	loss_test: 599.7733	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 299.8649	loss_val: 299.9966	loss_test: 299.9251	accuracy_train: 0.3780	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 504.6751	loss_val: 504.5142	loss_test: 504.9076	accuracy_train: 0.3676	accuracy_val: 0.2857	accuracy_test: 0.2500
+[client 4]	loss_train: 425.7549	loss_val: 425.8492	loss_test: 425.8192	accuracy_train: 0.4167	accuracy_val: 0.2667	accuracy_test: 0.3529
+curr_round: 14	curr_val_accuracy: 0.2474	curr_test_accuracy: 0.3023
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 15		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 926.6736	loss_val: 926.7165	loss_test: 926.6557	accuracy_train: 0.2290	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 588.3102	loss_val: 588.4897	loss_test: 588.4373	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 306.2709	loss_val: 306.4085	loss_test: 306.3500	accuracy_train: 0.4024	accuracy_val: 0.3636	accuracy_test: 0.3077
+[client 3]	loss_train: 526.8112	loss_val: 526.6673	loss_test: 527.0475	accuracy_train: 0.3529	accuracy_val: 0.2857	accuracy_test: 0.2500
+[client 4]	loss_train: 417.6475	loss_val: 417.7652	loss_test: 417.7045	accuracy_train: 0.4417	accuracy_val: 0.2667	accuracy_test: 0.4118
+curr_round: 15	curr_val_accuracy: 0.2634	curr_test_accuracy: 0.3172
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 16		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 972.4198	loss_val: 972.4745	loss_test: 972.4129	accuracy_train: 0.2443	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 585.7345	loss_val: 585.9305	loss_test: 585.8812	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 317.8293	loss_val: 317.9743	loss_test: 317.9294	accuracy_train: 0.4390	accuracy_val: 0.3636	accuracy_test: 0.3077
+[client 3]	loss_train: 559.1248	loss_val: 558.9951	loss_test: 559.3669	accuracy_train: 0.3824	accuracy_val: 0.2857	accuracy_test: 0.2500
+[client 4]	loss_train: 416.5196	loss_val: 416.6615	loss_test: 416.5716	accuracy_train: 0.4333	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 16	curr_val_accuracy: 0.2634	curr_test_accuracy: 0.3321
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 17		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1013.6139	loss_val: 1013.6820	loss_test: 1013.6179	accuracy_train: 0.2366	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 585.5755	loss_val: 585.7852	loss_test: 585.7416	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 328.9524	loss_val: 329.1053	loss_test: 329.0766	accuracy_train: 0.4390	accuracy_val: 0.3636	accuracy_test: 0.3846
+[client 3]	loss_train: 590.2131	loss_val: 590.1010	loss_test: 590.4648	accuracy_train: 0.4118	accuracy_val: 0.2857	accuracy_test: 0.2500
+[client 4]	loss_train: 418.3018	loss_val: 418.4687	loss_test: 418.3475	accuracy_train: 0.4583	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 17	curr_val_accuracy: 0.2634	curr_test_accuracy: 0.3457
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 18		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1062.6655	loss_val: 1062.7363	loss_test: 1062.6819	accuracy_train: 0.2290	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 592.9507	loss_val: 593.1693	loss_test: 593.1335	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 345.0048	loss_val: 345.1688	loss_test: 345.1504	accuracy_train: 0.4634	accuracy_val: 0.3636	accuracy_test: 0.3846
+[client 3]	loss_train: 621.6935	loss_val: 621.5981	loss_test: 621.9550	accuracy_train: 0.4559	accuracy_val: 0.4286	accuracy_test: 0.2500
+[client 4]	loss_train: 422.0749	loss_val: 422.2667	loss_test: 422.1174	accuracy_train: 0.5000	accuracy_val: 0.2667	accuracy_test: 0.5294
+curr_round: 18	curr_val_accuracy: 0.2841	curr_test_accuracy: 0.3606
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 19		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1105.9012	loss_val: 1105.9778	loss_test: 1105.9161	accuracy_train: 0.2137	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 604.7119	loss_val: 604.9359	loss_test: 604.9113	accuracy_train: 0.3913	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 364.4924	loss_val: 364.6742	loss_test: 364.6609	accuracy_train: 0.4756	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 654.4755	loss_val: 654.3984	loss_test: 654.7446	accuracy_train: 0.5000	accuracy_val: 0.4286	accuracy_test: 0.3333
+[client 4]	loss_train: 426.6728	loss_val: 426.8882	loss_test: 426.7113	accuracy_train: 0.5083	accuracy_val: 0.2667	accuracy_test: 0.5294
+curr_round: 19	curr_val_accuracy: 0.2681	curr_test_accuracy: 0.3727
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 20		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1167.6344	loss_val: 1167.7181	loss_test: 1167.6445	accuracy_train: 0.2214	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 620.3522	loss_val: 620.5808	loss_test: 620.5818	accuracy_train: 0.3768	accuracy_val: 0.2500	accuracy_test: 0.3333
+[client 2]	loss_train: 386.0148	loss_val: 386.2148	loss_test: 386.2054	accuracy_train: 0.4878	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 685.8666	loss_val: 685.8015	loss_test: 686.1431	accuracy_train: 0.5147	accuracy_val: 0.5714	accuracy_test: 0.3333
+[client 4]	loss_train: 433.8613	loss_val: 434.1035	loss_test: 433.9000	accuracy_train: 0.5000	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 20	curr_val_accuracy: 0.2703	curr_test_accuracy: 0.3577
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 21		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1247.2557	loss_val: 1247.3369	loss_test: 1247.2549	accuracy_train: 0.2061	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 631.6607	loss_val: 631.8901	loss_test: 631.9108	accuracy_train: 0.4203	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 409.8319	loss_val: 410.0502	loss_test: 410.0455	accuracy_train: 0.5000	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 718.1399	loss_val: 718.0746	loss_test: 718.4299	accuracy_train: 0.5588	accuracy_val: 0.5714	accuracy_test: 0.3333
+[client 4]	loss_train: 441.1903	loss_val: 441.4566	loss_test: 441.2334	accuracy_train: 0.5417	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 21	curr_val_accuracy: 0.2703	curr_test_accuracy: 0.3454
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 22		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1306.9949	loss_val: 1307.0751	loss_test: 1306.9882	accuracy_train: 0.2061	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 645.7443	loss_val: 645.9737	loss_test: 646.0140	accuracy_train: 0.4348	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 433.8586	loss_val: 434.0975	loss_test: 434.0948	accuracy_train: 0.5122	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 753.8956	loss_val: 753.8162	loss_test: 754.2053	accuracy_train: 0.6176	accuracy_val: 0.5714	accuracy_test: 0.3333
+[client 4]	loss_train: 448.8238	loss_val: 449.1116	loss_test: 448.8734	accuracy_train: 0.5833	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 22	curr_val_accuracy: 0.2703	curr_test_accuracy: 0.3454
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 23		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1371.1124	loss_val: 1371.1915	loss_test: 1371.1027	accuracy_train: 0.2061	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 671.3561	loss_val: 671.5900	loss_test: 671.6439	accuracy_train: 0.4348	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 461.4036	loss_val: 461.6656	loss_test: 461.6634	accuracy_train: 0.5366	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 784.6788	loss_val: 784.5728	loss_test: 785.0069	accuracy_train: 0.6912	accuracy_val: 0.7143	accuracy_test: 0.3333
+[client 4]	loss_train: 458.8817	loss_val: 459.1906	loss_test: 458.9392	accuracy_train: 0.6083	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 23	curr_val_accuracy: 0.2910	curr_test_accuracy: 0.3454
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 24		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1376.5007	loss_val: 1376.5715	loss_test: 1376.4958	accuracy_train: 0.1908	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 695.1743	loss_val: 695.4160	loss_test: 695.4733	accuracy_train: 0.4783	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 485.4871	loss_val: 485.7722	loss_test: 485.7705	accuracy_train: 0.5610	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 821.7275	loss_val: 821.5964	loss_test: 822.0728	accuracy_train: 0.7059	accuracy_val: 0.8571	accuracy_test: 0.3333
+[client 4]	loss_train: 468.0889	loss_val: 468.4151	loss_test: 468.1579	accuracy_train: 0.6417	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 24	curr_val_accuracy: 0.2944	curr_test_accuracy: 0.3454
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 25		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1393.8618	loss_val: 1393.9293	loss_test: 1393.8589	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 719.0419	loss_val: 719.2953	loss_test: 719.3514	accuracy_train: 0.5217	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 504.6278	loss_val: 504.9363	loss_test: 504.9399	accuracy_train: 0.5732	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 854.9545	loss_val: 854.7946	loss_test: 855.3162	accuracy_train: 0.6912	accuracy_val: 0.8571	accuracy_test: 0.3333
+[client 4]	loss_train: 479.5387	loss_val: 479.8788	loss_test: 479.6191	accuracy_train: 0.6417	accuracy_val: 0.2667	accuracy_test: 0.4706
+curr_round: 25	curr_val_accuracy: 0.2944	curr_test_accuracy: 0.3454
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 26		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1422.1276	loss_val: 1422.1923	loss_test: 1422.1340	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 743.5236	loss_val: 743.7839	loss_test: 743.8392	accuracy_train: 0.5217	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 521.5917	loss_val: 521.9232	loss_test: 521.9348	accuracy_train: 0.6098	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 883.7007	loss_val: 883.5148	loss_test: 884.0778	accuracy_train: 0.6912	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 489.4360	loss_val: 489.7883	loss_test: 489.5302	accuracy_train: 0.6500	accuracy_val: 0.3333	accuracy_test: 0.4706
+curr_round: 26	curr_val_accuracy: 0.3113	curr_test_accuracy: 0.3575
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 27		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1473.3789	loss_val: 1473.4432	loss_test: 1473.3887	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 770.4178	loss_val: 770.6852	loss_test: 770.7453	accuracy_train: 0.5652	accuracy_val: 0.3750	accuracy_test: 0.1667
+[client 2]	loss_train: 537.6614	loss_val: 538.0163	loss_test: 538.0356	accuracy_train: 0.6463	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 924.6116	loss_val: 924.4063	loss_test: 925.0001	accuracy_train: 0.6912	accuracy_val: 1.0000	accuracy_test: 0.5000
+[client 4]	loss_train: 501.0735	loss_val: 501.4347	loss_test: 501.1843	accuracy_train: 0.6500	accuracy_val: 0.3333	accuracy_test: 0.4706
+curr_round: 27	curr_val_accuracy: 0.3505	curr_test_accuracy: 0.3572
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 28		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1512.4419	loss_val: 1512.5062	loss_test: 1512.4572	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 797.4011	loss_val: 797.6750	loss_test: 797.7365	accuracy_train: 0.5942	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 552.6550	loss_val: 553.0504	loss_test: 553.0685	accuracy_train: 0.6707	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 970.8076	loss_val: 970.5873	loss_test: 971.2015	accuracy_train: 0.7059	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 512.8385	loss_val: 513.2073	loss_test: 512.9619	accuracy_train: 0.6500	accuracy_val: 0.3333	accuracy_test: 0.4118
+curr_round: 28	curr_val_accuracy: 0.3113	curr_test_accuracy: 0.3423
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 29		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1520.3042	loss_val: 1520.3662	loss_test: 1520.3302	accuracy_train: 0.1908	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 810.2399	loss_val: 810.5287	loss_test: 810.5883	accuracy_train: 0.5942	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 564.9542	loss_val: 565.3902	loss_test: 565.4091	accuracy_train: 0.6951	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1004.9863	loss_val: 1004.7734	loss_test: 1005.3795	accuracy_train: 0.7206	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 523.7826	loss_val: 524.1613	loss_test: 523.9176	accuracy_train: 0.6500	accuracy_val: 0.4000	accuracy_test: 0.4118
+curr_round: 29	curr_val_accuracy: 0.3282	curr_test_accuracy: 0.3423
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 30		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1540.7229	loss_val: 1540.7837	loss_test: 1540.7655	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 817.3869	loss_val: 817.6995	loss_test: 817.7586	accuracy_train: 0.5362	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 583.3823	loss_val: 583.8573	loss_test: 583.8713	accuracy_train: 0.6951	accuracy_val: 0.1818	accuracy_test: 0.3077
+[client 3]	loss_train: 1041.8693	loss_val: 1041.6823	loss_test: 1042.2533	accuracy_train: 0.7059	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 538.2622	loss_val: 538.6523	loss_test: 538.4146	accuracy_train: 0.6583	accuracy_val: 0.4000	accuracy_test: 0.5294
+curr_round: 30	curr_val_accuracy: 0.3121	curr_test_accuracy: 0.3709
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 31		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1560.8047	loss_val: 1560.8730	loss_test: 1560.8601	accuracy_train: 0.1908	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 827.2492	loss_val: 827.5867	loss_test: 827.6462	accuracy_train: 0.5652	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 598.0555	loss_val: 598.5588	loss_test: 598.5607	accuracy_train: 0.6707	accuracy_val: 0.1818	accuracy_test: 0.3077
+[client 3]	loss_train: 1081.8604	loss_val: 1081.7003	loss_test: 1082.2375	accuracy_train: 0.7059	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 548.8099	loss_val: 549.2147	loss_test: 548.9727	accuracy_train: 0.6583	accuracy_val: 0.4000	accuracy_test: 0.5294
+curr_round: 31	curr_val_accuracy: 0.2914	curr_test_accuracy: 0.3709
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 32		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1574.9448	loss_val: 1575.0166	loss_test: 1575.0101	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 839.7229	loss_val: 840.0797	loss_test: 840.1484	accuracy_train: 0.5652	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 613.0490	loss_val: 613.5699	loss_test: 613.5722	accuracy_train: 0.6707	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1123.5149	loss_val: 1123.3846	loss_test: 1123.8823	accuracy_train: 0.7059	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 555.8344	loss_val: 556.2501	loss_test: 556.0045	accuracy_train: 0.6667	accuracy_val: 0.4000	accuracy_test: 0.5294
+curr_round: 32	curr_val_accuracy: 0.3075	curr_test_accuracy: 0.3709
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 33		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1554.4850	loss_val: 1554.5594	loss_test: 1554.5651	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 850.0667	loss_val: 850.4367	loss_test: 850.5145	accuracy_train: 0.5507	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 620.6058	loss_val: 621.1389	loss_test: 621.1425	accuracy_train: 0.6707	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1156.9806	loss_val: 1156.8667	loss_test: 1157.3456	accuracy_train: 0.7206	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 559.3066	loss_val: 559.7408	loss_test: 559.4815	accuracy_train: 0.6750	accuracy_val: 0.4000	accuracy_test: 0.5294
+curr_round: 33	curr_val_accuracy: 0.3075	curr_test_accuracy: 0.3830
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 34		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1563.4353	loss_val: 1563.5078	loss_test: 1563.5212	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 865.8771	loss_val: 866.2563	loss_test: 866.3504	accuracy_train: 0.5942	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 627.7680	loss_val: 628.3154	loss_test: 628.3146	accuracy_train: 0.6707	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1196.1473	loss_val: 1196.0537	loss_test: 1196.5127	accuracy_train: 0.7059	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 566.5199	loss_val: 566.9746	loss_test: 566.7018	accuracy_train: 0.6917	accuracy_val: 0.4000	accuracy_test: 0.5294
+curr_round: 34	curr_val_accuracy: 0.3075	curr_test_accuracy: 0.3709
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 35		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1574.4557	loss_val: 1574.5347	loss_test: 1574.5657	accuracy_train: 0.1908	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 882.6487	loss_val: 883.0332	loss_test: 883.1491	accuracy_train: 0.6087	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 632.5291	loss_val: 633.0788	loss_test: 633.0746	accuracy_train: 0.6585	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1218.3062	loss_val: 1218.2255	loss_test: 1218.6798	accuracy_train: 0.7206	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 583.0185	loss_val: 583.4915	loss_test: 583.1934	accuracy_train: 0.6667	accuracy_val: 0.4667	accuracy_test: 0.5882
+curr_round: 35	curr_val_accuracy: 0.3244	curr_test_accuracy: 0.3994
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 36		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1606.8182	loss_val: 1606.9000	loss_test: 1606.9409	accuracy_train: 0.2061	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 900.8389	loss_val: 901.2266	loss_test: 901.3569	accuracy_train: 0.5942	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 638.9360	loss_val: 639.4802	loss_test: 639.4862	accuracy_train: 0.6951	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1228.3448	loss_val: 1228.2654	loss_test: 1228.7344	accuracy_train: 0.7206	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 605.7676	loss_val: 606.2538	loss_test: 605.9423	accuracy_train: 0.6583	accuracy_val: 0.4667	accuracy_test: 0.5882
+curr_round: 36	curr_val_accuracy: 0.3244	curr_test_accuracy: 0.4114
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 37		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1656.3519	loss_val: 1656.4479	loss_test: 1656.4854	accuracy_train: 0.2061	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 915.0368	loss_val: 915.4259	loss_test: 915.5752	accuracy_train: 0.5942	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 640.6318	loss_val: 641.1693	loss_test: 641.1979	accuracy_train: 0.7073	accuracy_val: 0.3636	accuracy_test: 0.4615
+[client 3]	loss_train: 1227.5067	loss_val: 1227.4185	loss_test: 1227.9214	accuracy_train: 0.7353	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 627.9036	loss_val: 628.4031	loss_test: 628.0970	accuracy_train: 0.6500	accuracy_val: 0.4667	accuracy_test: 0.5882
+curr_round: 37	curr_val_accuracy: 0.3404	curr_test_accuracy: 0.4250
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 38		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1683.1118	loss_val: 1683.2256	loss_test: 1683.2596	accuracy_train: 0.2137	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 923.4322	loss_val: 923.8215	loss_test: 923.9852	accuracy_train: 0.5942	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 646.0571	loss_val: 646.5998	loss_test: 646.6303	accuracy_train: 0.7317	accuracy_val: 0.3636	accuracy_test: 0.4615
+[client 3]	loss_train: 1213.6740	loss_val: 1213.5811	loss_test: 1214.1145	accuracy_train: 0.7647	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 637.8704	loss_val: 638.3840	loss_test: 638.1072	accuracy_train: 0.6583	accuracy_val: 0.4667	accuracy_test: 0.5882
+curr_round: 38	curr_val_accuracy: 0.3577	curr_test_accuracy: 0.4250
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 39		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1731.1274	loss_val: 1731.2468	loss_test: 1731.2749	accuracy_train: 0.2214	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 929.1183	loss_val: 929.5132	loss_test: 929.6970	accuracy_train: 0.6667	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 652.2156	loss_val: 652.7576	loss_test: 652.7924	accuracy_train: 0.7561	accuracy_val: 0.3636	accuracy_test: 0.4615
+[client 3]	loss_train: 1210.6371	loss_val: 1210.5544	loss_test: 1211.0988	accuracy_train: 0.7647	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 635.4066	loss_val: 635.9316	loss_test: 635.6890	accuracy_train: 0.6750	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 39	curr_val_accuracy: 0.3577	curr_test_accuracy: 0.3978
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 40		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1750.8585	loss_val: 1750.9717	loss_test: 1751.0050	accuracy_train: 0.2290	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 925.9636	loss_val: 926.3712	loss_test: 926.5778	accuracy_train: 0.6667	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 654.8222	loss_val: 655.3790	loss_test: 655.4169	accuracy_train: 0.7439	accuracy_val: 0.3636	accuracy_test: 0.3846
+[client 3]	loss_train: 1207.9343	loss_val: 1207.8672	loss_test: 1208.4028	accuracy_train: 0.7500	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 621.8188	loss_val: 622.3503	loss_test: 622.1232	accuracy_train: 0.6833	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 40	curr_val_accuracy: 0.3577	curr_test_accuracy: 0.3842
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 41		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1829.5992	loss_val: 1829.7089	loss_test: 1829.7285	accuracy_train: 0.2366	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 935.0050	loss_val: 935.4270	loss_test: 935.6619	accuracy_train: 0.6957	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 657.4926	loss_val: 658.0845	loss_test: 658.1017	accuracy_train: 0.7561	accuracy_val: 0.3636	accuracy_test: 0.3846
+[client 3]	loss_train: 1219.6074	loss_val: 1219.5651	loss_test: 1220.0703	accuracy_train: 0.7353	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 610.1821	loss_val: 610.7166	loss_test: 610.4904	accuracy_train: 0.6917	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 41	curr_val_accuracy: 0.3577	curr_test_accuracy: 0.3842
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 42		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1882.3191	loss_val: 1882.4286	loss_test: 1882.4387	accuracy_train: 0.2366	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 941.7906	loss_val: 942.2388	loss_test: 942.4896	accuracy_train: 0.7101	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 656.1555	loss_val: 656.7958	loss_test: 656.7832	accuracy_train: 0.7683	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1227.8413	loss_val: 1227.8167	loss_test: 1228.3097	accuracy_train: 0.7206	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 605.5366	loss_val: 606.0746	loss_test: 605.8433	accuracy_train: 0.7000	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 42	curr_val_accuracy: 0.3416	curr_test_accuracy: 0.3842
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 43		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1940.1678	loss_val: 1940.2734	loss_test: 1940.2698	accuracy_train: 0.2290	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 950.2314	loss_val: 950.7095	loss_test: 950.9665	accuracy_train: 0.6957	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 663.1063	loss_val: 663.8123	loss_test: 663.7780	accuracy_train: 0.8049	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1243.9176	loss_val: 1243.9071	loss_test: 1244.3944	accuracy_train: 0.7206	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 607.5339	loss_val: 608.0756	loss_test: 607.8316	accuracy_train: 0.6750	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 43	curr_val_accuracy: 0.3416	curr_test_accuracy: 0.3842
+best_round: 5	best_val_accuracy: 0.3596	best_test_accuracy: 0.3287
+--------------------------------------------------
+round # 44		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1953.3613	loss_val: 1953.4572	loss_test: 1953.4473	accuracy_train: 0.2366	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 951.1780	loss_val: 951.6765	loss_test: 951.9426	accuracy_train: 0.7246	accuracy_val: 0.3750	accuracy_test: 0.1667
+[client 2]	loss_train: 674.9160	loss_val: 675.6951	loss_test: 675.6387	accuracy_train: 0.8171	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1252.8976	loss_val: 1252.9067	loss_test: 1253.3971	accuracy_train: 0.7206	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 607.6079	loss_val: 608.1584	loss_test: 607.8872	accuracy_train: 0.6750	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 44	curr_val_accuracy: 0.3602	curr_test_accuracy: 0.3842
+best_round: 44	best_val_accuracy: 0.3602	best_test_accuracy: 0.3842
+--------------------------------------------------
+round # 45		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1972.8917	loss_val: 1972.9825	loss_test: 1972.9557	accuracy_train: 0.2290	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 948.5515	loss_val: 949.0622	loss_test: 949.3320	accuracy_train: 0.7536	accuracy_val: 0.3750	accuracy_test: 0.1667
+[client 2]	loss_train: 687.3232	loss_val: 688.1437	loss_test: 688.1021	accuracy_train: 0.7683	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1253.5702	loss_val: 1253.5906	loss_test: 1254.1083	accuracy_train: 0.7500	accuracy_val: 0.7143	accuracy_test: 0.5833
+[client 4]	loss_train: 599.6402	loss_val: 600.2112	loss_test: 599.9152	accuracy_train: 0.6750	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 45	curr_val_accuracy: 0.3602	curr_test_accuracy: 0.3842
+best_round: 44	best_val_accuracy: 0.3602	best_test_accuracy: 0.3842
+--------------------------------------------------
+round # 46		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1946.2355	loss_val: 1946.3258	loss_test: 1946.2916	accuracy_train: 0.2214	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 933.1423	loss_val: 933.6650	loss_test: 933.9336	accuracy_train: 0.7391	accuracy_val: 0.3750	accuracy_test: 0.1667
+[client 2]	loss_train: 699.6005	loss_val: 700.4377	loss_test: 700.4393	accuracy_train: 0.7439	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1253.8977	loss_val: 1253.9235	loss_test: 1254.4921	accuracy_train: 0.7794	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 593.2920	loss_val: 593.8859	loss_test: 593.5524	accuracy_train: 0.6833	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 46	curr_val_accuracy: 0.3602	curr_test_accuracy: 0.3721
+best_round: 44	best_val_accuracy: 0.3602	best_test_accuracy: 0.3842
+--------------------------------------------------
+round # 47		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1931.4462	loss_val: 1931.5259	loss_test: 1931.4968	accuracy_train: 0.2137	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 930.4731	loss_val: 931.0084	loss_test: 931.2807	accuracy_train: 0.7391	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 706.9911	loss_val: 707.8454	loss_test: 707.8749	accuracy_train: 0.7439	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1261.1560	loss_val: 1261.1718	loss_test: 1261.7972	accuracy_train: 0.7941	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 606.5196	loss_val: 607.1311	loss_test: 606.7829	accuracy_train: 0.7000	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 47	curr_val_accuracy: 0.3624	curr_test_accuracy: 0.3721
+best_round: 47	best_val_accuracy: 0.3624	best_test_accuracy: 0.3721
+--------------------------------------------------
+round # 48		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1898.0009	loss_val: 1898.0771	loss_test: 1898.0554	accuracy_train: 0.2137	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 928.5273	loss_val: 929.0745	loss_test: 929.3633	accuracy_train: 0.7246	accuracy_val: 0.2500	accuracy_test: 0.1667
+[client 2]	loss_train: 705.0319	loss_val: 705.8884	loss_test: 705.9524	accuracy_train: 0.7927	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1258.3126	loss_val: 1258.3286	loss_test: 1258.9955	accuracy_train: 0.7647	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 613.2574	loss_val: 613.9008	loss_test: 613.5573	accuracy_train: 0.7250	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 48	curr_val_accuracy: 0.3624	curr_test_accuracy: 0.3600
+best_round: 47	best_val_accuracy: 0.3624	best_test_accuracy: 0.3721
+--------------------------------------------------
+round # 49		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1908.6445	loss_val: 1908.6992	loss_test: 1908.6938	accuracy_train: 0.2061	accuracy_val: 0.1250	accuracy_test: 0.2105
+[client 1]	loss_train: 944.8372	loss_val: 945.3903	loss_test: 945.7036	accuracy_train: 0.7681	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 694.8410	loss_val: 695.6687	loss_test: 695.7612	accuracy_train: 0.8049	accuracy_val: 0.3636	accuracy_test: 0.3846
+[client 3]	loss_train: 1255.2665	loss_val: 1255.2817	loss_test: 1255.9592	accuracy_train: 0.7647	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 623.0853	loss_val: 623.7698	loss_test: 623.4025	accuracy_train: 0.7167	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 49	curr_val_accuracy: 0.3784	curr_test_accuracy: 0.3699
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 50		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1942.2390	loss_val: 1942.2864	loss_test: 1942.2833	accuracy_train: 0.1832	accuracy_val: 0.1250	accuracy_test: 0.2105
+[client 1]	loss_train: 956.5553	loss_val: 957.1169	loss_test: 957.4518	accuracy_train: 0.7536	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 682.6955	loss_val: 683.4955	loss_test: 683.6175	accuracy_train: 0.7927	accuracy_val: 0.3636	accuracy_test: 0.3846
+[client 3]	loss_train: 1242.1088	loss_val: 1242.1288	loss_test: 1242.7913	accuracy_train: 0.7794	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 639.6418	loss_val: 640.3512	loss_test: 639.9957	accuracy_train: 0.7417	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 50	curr_val_accuracy: 0.3784	curr_test_accuracy: 0.3699
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 51		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1945.2568	loss_val: 1945.2958	loss_test: 1945.3058	accuracy_train: 0.1832	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 968.9880	loss_val: 969.5756	loss_test: 969.9042	accuracy_train: 0.6957	accuracy_val: 0.2500	accuracy_test: 0.2500
+[client 2]	loss_train: 668.2816	loss_val: 669.0867	loss_test: 669.2298	accuracy_train: 0.8171	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1241.1078	loss_val: 1241.1348	loss_test: 1241.7566	accuracy_train: 0.7941	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 650.9969	loss_val: 651.7338	loss_test: 651.3672	accuracy_train: 0.7333	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 51	curr_val_accuracy: 0.3451	curr_test_accuracy: 0.3699
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 52		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1930.6284	loss_val: 1930.6571	loss_test: 1930.6849	accuracy_train: 0.1756	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 986.2385	loss_val: 986.8536	loss_test: 987.1616	accuracy_train: 0.7101	accuracy_val: 0.3750	accuracy_test: 0.2500
+[client 2]	loss_train: 664.0479	loss_val: 664.8645	loss_test: 665.0261	accuracy_train: 0.8293	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1233.8234	loss_val: 1233.8601	loss_test: 1234.4298	accuracy_train: 0.8088	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 654.2397	loss_val: 655.0058	loss_test: 654.6420	accuracy_train: 0.7333	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 52	curr_val_accuracy: 0.3636	curr_test_accuracy: 0.3563
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 53		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 1980.2145	loss_val: 1980.2360	loss_test: 1980.2598	accuracy_train: 0.1756	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1036.0396	loss_val: 1036.6652	loss_test: 1036.9757	accuracy_train: 0.7246	accuracy_val: 0.3750	accuracy_test: 0.2500
+[client 2]	loss_train: 675.0211	loss_val: 675.8372	loss_test: 676.0090	accuracy_train: 0.7927	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1212.8934	loss_val: 1212.9412	loss_test: 1213.4766	accuracy_train: 0.8382	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 656.3969	loss_val: 657.1939	loss_test: 656.8336	accuracy_train: 0.7333	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 53	curr_val_accuracy: 0.3636	curr_test_accuracy: 0.3563
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 54		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2034.5061	loss_val: 2034.5331	loss_test: 2034.5569	accuracy_train: 0.1679	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1076.1504	loss_val: 1076.7849	loss_test: 1077.0988	accuracy_train: 0.7391	accuracy_val: 0.3750	accuracy_test: 0.2500
+[client 2]	loss_train: 682.6663	loss_val: 683.4720	loss_test: 683.6385	accuracy_train: 0.7683	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1205.0365	loss_val: 1205.0894	loss_test: 1205.5997	accuracy_train: 0.8529	accuracy_val: 0.7143	accuracy_test: 0.4167
+[client 4]	loss_train: 652.6311	loss_val: 653.4491	loss_test: 653.1015	accuracy_train: 0.6917	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 54	curr_val_accuracy: 0.3429	curr_test_accuracy: 0.3442
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 55		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2079.2346	loss_val: 2079.2742	loss_test: 2079.2803	accuracy_train: 0.1527	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1110.4554	loss_val: 1111.1077	loss_test: 1111.4082	accuracy_train: 0.7391	accuracy_val: 0.3750	accuracy_test: 0.2500
+[client 2]	loss_train: 689.7476	loss_val: 690.5583	loss_test: 690.7178	accuracy_train: 0.7805	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1197.7064	loss_val: 1197.7639	loss_test: 1198.2567	accuracy_train: 0.8382	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 649.5666	loss_val: 650.3953	loss_test: 650.0240	accuracy_train: 0.7000	accuracy_val: 0.4667	accuracy_test: 0.4706
+curr_round: 55	curr_val_accuracy: 0.3429	curr_test_accuracy: 0.3414
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 56		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2136.1482	loss_val: 2136.1970	loss_test: 2136.1865	accuracy_train: 0.1450	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1116.3625	loss_val: 1117.0389	loss_test: 1117.3419	accuracy_train: 0.7681	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 688.3649	loss_val: 689.2096	loss_test: 689.3461	accuracy_train: 0.7805	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1191.1063	loss_val: 1191.1627	loss_test: 1191.6498	accuracy_train: 0.8088	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 654.0515	loss_val: 654.9033	loss_test: 654.5130	accuracy_train: 0.6833	accuracy_val: 0.3333	accuracy_test: 0.5294
+curr_round: 56	curr_val_accuracy: 0.3091	curr_test_accuracy: 0.3687
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 57		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2207.0637	loss_val: 2207.1260	loss_test: 2207.1094	accuracy_train: 0.1527	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1107.9841	loss_val: 1108.6963	loss_test: 1109.0029	accuracy_train: 0.7536	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 690.5276	loss_val: 691.4169	loss_test: 691.5118	accuracy_train: 0.8171	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1184.5873	loss_val: 1184.6534	loss_test: 1185.1299	accuracy_train: 0.7941	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 660.6660	loss_val: 661.5340	loss_test: 661.1135	accuracy_train: 0.6833	accuracy_val: 0.3333	accuracy_test: 0.5294
+curr_round: 57	curr_val_accuracy: 0.3091	curr_test_accuracy: 0.3956
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 58		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2265.2949	loss_val: 2265.3684	loss_test: 2265.3503	accuracy_train: 0.1603	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1097.8368	loss_val: 1098.5964	loss_test: 1098.8857	accuracy_train: 0.7826	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 710.3021	loss_val: 711.2528	loss_test: 711.2897	accuracy_train: 0.7683	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1190.8531	loss_val: 1190.9285	loss_test: 1191.4135	accuracy_train: 0.7794	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 661.9363	loss_val: 662.8098	loss_test: 662.3383	accuracy_train: 0.6750	accuracy_val: 0.3333	accuracy_test: 0.5882
+curr_round: 58	curr_val_accuracy: 0.3091	curr_test_accuracy: 0.4241
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 59		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2371.9705	loss_val: 2372.0491	loss_test: 2372.0273	accuracy_train: 0.1603	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1100.1844	loss_val: 1100.9818	loss_test: 1101.2687	accuracy_train: 0.8116	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 749.3511	loss_val: 750.3753	loss_test: 750.3416	accuracy_train: 0.7561	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1196.8209	loss_val: 1196.9221	loss_test: 1197.4287	accuracy_train: 0.8088	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 671.4183	loss_val: 672.3016	loss_test: 671.7890	accuracy_train: 0.6667	accuracy_val: 0.3333	accuracy_test: 0.5882
+curr_round: 59	curr_val_accuracy: 0.3091	curr_test_accuracy: 0.4253
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 60		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2499.5220	loss_val: 2499.6023	loss_test: 2499.5771	accuracy_train: 0.1603	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1075.3424	loss_val: 1076.1819	loss_test: 1076.4355	accuracy_train: 0.7971	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 798.3019	loss_val: 799.4090	loss_test: 799.2973	accuracy_train: 0.6707	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1195.1989	loss_val: 1195.3492	loss_test: 1195.8765	accuracy_train: 0.7794	accuracy_val: 0.5714	accuracy_test: 0.5000
+[client 4]	loss_train: 667.4852	loss_val: 668.3719	loss_test: 667.8346	accuracy_train: 0.6750	accuracy_val: 0.4000	accuracy_test: 0.5294
+curr_round: 60	curr_val_accuracy: 0.3053	curr_test_accuracy: 0.4228
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 61		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2600.1501	loss_val: 2600.2302	loss_test: 2600.1997	accuracy_train: 0.1756	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1056.4518	loss_val: 1057.3087	loss_test: 1057.5027	accuracy_train: 0.7246	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 866.6187	loss_val: 867.7709	loss_test: 867.6072	accuracy_train: 0.6341	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1199.6543	loss_val: 1199.8228	loss_test: 1200.3475	accuracy_train: 0.7794	accuracy_val: 0.5714	accuracy_test: 0.5000
+[client 4]	loss_train: 661.0494	loss_val: 661.9503	loss_test: 661.4157	accuracy_train: 0.7167	accuracy_val: 0.5333	accuracy_test: 0.5294
+curr_round: 61	curr_val_accuracy: 0.3391	curr_test_accuracy: 0.4104
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 62		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2644.8169	loss_val: 2644.9038	loss_test: 2644.8674	accuracy_train: 0.1756	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1056.1234	loss_val: 1056.9917	loss_test: 1057.1487	accuracy_train: 0.7101	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 913.0951	loss_val: 914.3187	loss_test: 914.1151	accuracy_train: 0.6220	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1200.0819	loss_val: 1200.2919	loss_test: 1200.8258	accuracy_train: 0.8088	accuracy_val: 0.5714	accuracy_test: 0.3333
+[client 4]	loss_train: 658.9097	loss_val: 659.8300	loss_test: 659.3575	accuracy_train: 0.7750	accuracy_val: 0.5333	accuracy_test: 0.4706
+curr_round: 62	curr_val_accuracy: 0.3391	curr_test_accuracy: 0.3577
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 63		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2687.5481	loss_val: 2687.6316	loss_test: 2687.5881	accuracy_train: 0.1832	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1070.2458	loss_val: 1071.1270	loss_test: 1071.2502	accuracy_train: 0.6957	accuracy_val: 0.5000	accuracy_test: 0.3333
+[client 2]	loss_train: 930.3467	loss_val: 931.6479	loss_test: 931.3991	accuracy_train: 0.6341	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1202.6101	loss_val: 1202.8271	loss_test: 1203.3824	accuracy_train: 0.7941	accuracy_val: 0.5714	accuracy_test: 0.5000
+[client 4]	loss_train: 667.2834	loss_val: 668.2085	loss_test: 667.8138	accuracy_train: 0.7917	accuracy_val: 0.5333	accuracy_test: 0.4118
+curr_round: 63	curr_val_accuracy: 0.3576	curr_test_accuracy: 0.3806
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 64		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2678.4819	loss_val: 2678.5640	loss_test: 2678.5229	accuracy_train: 0.1832	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1084.4127	loss_val: 1085.3033	loss_test: 1085.4155	accuracy_train: 0.7536	accuracy_val: 0.5000	accuracy_test: 0.3333
+[client 2]	loss_train: 868.9203	loss_val: 870.3595	loss_test: 870.0524	accuracy_train: 0.7317	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1221.7048	loss_val: 1221.8777	loss_test: 1222.4435	accuracy_train: 0.8088	accuracy_val: 0.5714	accuracy_test: 0.5000
+[client 4]	loss_train: 665.5318	loss_val: 666.4564	loss_test: 666.1327	accuracy_train: 0.8167	accuracy_val: 0.5333	accuracy_test: 0.4706
+curr_round: 64	curr_val_accuracy: 0.3576	curr_test_accuracy: 0.3955
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 65		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2670.9763	loss_val: 2671.0488	loss_test: 2671.0139	accuracy_train: 0.1832	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1111.5790	loss_val: 1112.4727	loss_test: 1112.5856	accuracy_train: 0.8116	accuracy_val: 0.5000	accuracy_test: 0.4167
+[client 2]	loss_train: 843.9230	loss_val: 845.4345	loss_test: 845.0933	accuracy_train: 0.7805	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1256.2980	loss_val: 1256.4545	loss_test: 1256.9739	accuracy_train: 0.7500	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 666.5786	loss_val: 667.5076	loss_test: 667.2064	accuracy_train: 0.8417	accuracy_val: 0.5333	accuracy_test: 0.4706
+curr_round: 65	curr_val_accuracy: 0.3783	curr_test_accuracy: 0.4079
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 66		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2644.6594	loss_val: 2644.7246	loss_test: 2644.6948	accuracy_train: 0.1679	accuracy_val: 0.0625	accuracy_test: 0.3158
+[client 1]	loss_train: 1173.6763	loss_val: 1174.5455	loss_test: 1174.7100	accuracy_train: 0.8551	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 824.6667	loss_val: 826.1760	loss_test: 825.8150	accuracy_train: 0.8659	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1277.6123	loss_val: 1277.7408	loss_test: 1278.2579	accuracy_train: 0.7647	accuracy_val: 0.7143	accuracy_test: 0.4167
+[client 4]	loss_train: 650.4466	loss_val: 651.4117	loss_test: 650.9842	accuracy_train: 0.8083	accuracy_val: 0.5333	accuracy_test: 0.4706
+curr_round: 66	curr_val_accuracy: 0.3598	curr_test_accuracy: 0.3832
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 67		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2661.5813	loss_val: 2661.6377	loss_test: 2661.6077	accuracy_train: 0.1679	accuracy_val: 0.1250	accuracy_test: 0.3158
+[client 1]	loss_train: 1218.9928	loss_val: 1219.8457	loss_test: 1220.0261	accuracy_train: 0.8841	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 818.0827	loss_val: 819.5561	loss_test: 819.1754	accuracy_train: 0.8659	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1262.5929	loss_val: 1262.6914	loss_test: 1263.2911	accuracy_train: 0.8088	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 634.2601	loss_val: 635.2758	loss_test: 634.7387	accuracy_train: 0.7750	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 67	curr_val_accuracy: 0.3602	curr_test_accuracy: 0.4102
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 68		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2691.5647	loss_val: 2691.6089	loss_test: 2691.5959	accuracy_train: 0.1679	accuracy_val: 0.1250	accuracy_test: 0.3158
+[client 1]	loss_train: 1221.6543	loss_val: 1222.4927	loss_test: 1222.6666	accuracy_train: 0.8841	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 808.7336	loss_val: 810.1450	loss_test: 809.7535	accuracy_train: 0.8415	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1244.6425	loss_val: 1244.7438	loss_test: 1245.4431	accuracy_train: 0.8676	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 620.3058	loss_val: 621.3444	loss_test: 620.7283	accuracy_train: 0.7500	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 68	curr_val_accuracy: 0.3602	curr_test_accuracy: 0.4237
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 69		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2734.0520	loss_val: 2734.0823	loss_test: 2734.0823	accuracy_train: 0.1679	accuracy_val: 0.1250	accuracy_test: 0.3158
+[client 1]	loss_train: 1152.9003	loss_val: 1153.7701	loss_test: 1153.8994	accuracy_train: 0.8986	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 797.0153	loss_val: 798.4182	loss_test: 798.0514	accuracy_train: 0.8415	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1229.0431	loss_val: 1229.2107	loss_test: 1229.9541	accuracy_train: 0.8971	accuracy_val: 0.7143	accuracy_test: 0.3333
+[client 4]	loss_train: 612.5905	loss_val: 613.6493	loss_test: 613.0276	accuracy_train: 0.7833	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 69	curr_val_accuracy: 0.3771	curr_test_accuracy: 0.4145
+best_round: 49	best_val_accuracy: 0.3784	best_test_accuracy: 0.3699
+--------------------------------------------------
+round # 70		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2755.1431	loss_val: 2755.1716	loss_test: 2755.1804	accuracy_train: 0.1756	accuracy_val: 0.1250	accuracy_test: 0.3158
+[client 1]	loss_train: 1094.9178	loss_val: 1095.8198	loss_test: 1095.9017	accuracy_train: 0.8696	accuracy_val: 0.5000	accuracy_test: 0.3333
+[client 2]	loss_train: 776.9757	loss_val: 778.3399	loss_test: 778.0281	accuracy_train: 0.8415	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1218.1678	loss_val: 1218.3837	loss_test: 1219.1158	accuracy_train: 0.8824	accuracy_val: 0.7143	accuracy_test: 0.4167
+[client 4]	loss_train: 611.0730	loss_val: 612.1436	loss_test: 611.5637	accuracy_train: 0.8167	accuracy_val: 0.5333	accuracy_test: 0.5294
+curr_round: 70	curr_val_accuracy: 0.3956	curr_test_accuracy: 0.3993
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 71		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2722.2551	loss_val: 2722.2754	loss_test: 2722.2954	accuracy_train: 0.1603	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1066.7313	loss_val: 1067.6309	loss_test: 1067.6926	accuracy_train: 0.7536	accuracy_val: 0.5000	accuracy_test: 0.3333
+[client 2]	loss_train: 750.4780	loss_val: 751.7871	loss_test: 751.5477	accuracy_train: 0.8537	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1210.1984	loss_val: 1210.4491	loss_test: 1211.1691	accuracy_train: 0.8529	accuracy_val: 0.7143	accuracy_test: 0.4167
+[client 4]	loss_train: 616.5499	loss_val: 617.6101	loss_test: 617.0973	accuracy_train: 0.8500	accuracy_val: 0.5333	accuracy_test: 0.5294
+curr_round: 71	curr_val_accuracy: 0.3956	curr_test_accuracy: 0.3847
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 72		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2736.4258	loss_val: 2736.4490	loss_test: 2736.4683	accuracy_train: 0.1450	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1045.5173	loss_val: 1046.4055	loss_test: 1046.4789	accuracy_train: 0.7246	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 729.2769	loss_val: 730.5818	loss_test: 730.3802	accuracy_train: 0.8902	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1200.3132	loss_val: 1200.5431	loss_test: 1201.2236	accuracy_train: 0.8824	accuracy_val: 0.7143	accuracy_test: 0.3333
+[client 4]	loss_train: 618.2172	loss_val: 619.2819	loss_test: 618.7975	accuracy_train: 0.8333	accuracy_val: 0.5333	accuracy_test: 0.4118
+curr_round: 72	curr_val_accuracy: 0.3771	curr_test_accuracy: 0.3552
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 73		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2704.6941	loss_val: 2704.7246	loss_test: 2704.7300	accuracy_train: 0.1450	accuracy_val: 0.1250	accuracy_test: 0.2105
+[client 1]	loss_train: 1023.4156	loss_val: 1024.3165	loss_test: 1024.4061	accuracy_train: 0.7246	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 705.6049	loss_val: 706.9192	loss_test: 706.7211	accuracy_train: 0.9146	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1189.3922	loss_val: 1189.5658	loss_test: 1190.2129	accuracy_train: 0.8971	accuracy_val: 0.7143	accuracy_test: 0.4167
+[client 4]	loss_train: 622.7686	loss_val: 623.8030	loss_test: 623.3763	accuracy_train: 0.8167	accuracy_val: 0.5333	accuracy_test: 0.4118
+curr_round: 73	curr_val_accuracy: 0.3771	curr_test_accuracy: 0.3404
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 74		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2767.6074	loss_val: 2767.6340	loss_test: 2767.6204	accuracy_train: 0.1603	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1018.8304	loss_val: 1019.7439	loss_test: 1019.8576	accuracy_train: 0.7391	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 689.9325	loss_val: 691.2740	loss_test: 691.0262	accuracy_train: 0.9268	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1183.8994	loss_val: 1184.0734	loss_test: 1184.6877	accuracy_train: 0.8676	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 642.1318	loss_val: 643.1482	loss_test: 642.7539	accuracy_train: 0.7500	accuracy_val: 0.5333	accuracy_test: 0.4118
+curr_round: 74	curr_val_accuracy: 0.3805	curr_test_accuracy: 0.3268
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 75		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2784.6995	loss_val: 2784.7314	loss_test: 2784.7017	accuracy_train: 0.1603	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1023.9292	loss_val: 1024.8236	loss_test: 1024.9907	accuracy_train: 0.7971	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 684.7831	loss_val: 686.1704	loss_test: 685.8564	accuracy_train: 0.9146	accuracy_val: 0.2727	accuracy_test: 0.3077
+[client 3]	loss_train: 1182.5613	loss_val: 1182.7633	loss_test: 1183.3019	accuracy_train: 0.7941	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 663.9897	loss_val: 664.9920	loss_test: 664.6239	accuracy_train: 0.7250	accuracy_val: 0.4667	accuracy_test: 0.4118
+curr_round: 75	curr_val_accuracy: 0.3636	curr_test_accuracy: 0.3268
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 76		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2771.8853	loss_val: 2771.9297	loss_test: 2771.8794	accuracy_train: 0.1450	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1041.0972	loss_val: 1041.9917	loss_test: 1042.1908	accuracy_train: 0.8116	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 684.8597	loss_val: 686.2842	loss_test: 685.9078	accuracy_train: 0.9024	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1169.0739	loss_val: 1169.3030	loss_test: 1169.8362	accuracy_train: 0.7941	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 687.6766	loss_val: 688.6857	loss_test: 688.3672	accuracy_train: 0.7250	accuracy_val: 0.4000	accuracy_test: 0.4118
+curr_round: 76	curr_val_accuracy: 0.3467	curr_test_accuracy: 0.3404
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 77		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2808.1699	loss_val: 2808.2146	loss_test: 2808.1472	accuracy_train: 0.1527	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1057.4343	loss_val: 1058.3473	loss_test: 1058.5812	accuracy_train: 0.9275	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 682.9788	loss_val: 684.3852	loss_test: 684.0244	accuracy_train: 0.8902	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1161.4996	loss_val: 1161.6636	loss_test: 1162.2942	accuracy_train: 0.8235	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 688.5487	loss_val: 689.5852	loss_test: 689.2612	accuracy_train: 0.6583	accuracy_val: 0.4000	accuracy_test: 0.4118
+curr_round: 77	curr_val_accuracy: 0.3467	curr_test_accuracy: 0.3404
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 78		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2843.0696	loss_val: 2843.1184	loss_test: 2843.0581	accuracy_train: 0.1603	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1088.1907	loss_val: 1089.1202	loss_test: 1089.3572	accuracy_train: 0.9130	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 672.9611	loss_val: 674.3559	loss_test: 673.9803	accuracy_train: 0.9268	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1143.0635	loss_val: 1143.1692	loss_test: 1143.8926	accuracy_train: 0.9118	accuracy_val: 1.0000	accuracy_test: 0.4167
+[client 4]	loss_train: 682.3257	loss_val: 683.3535	loss_test: 683.0754	accuracy_train: 0.6167	accuracy_val: 0.3333	accuracy_test: 0.4118
+curr_round: 78	curr_val_accuracy: 0.3505	curr_test_accuracy: 0.3404
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 79		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2836.1628	loss_val: 2836.2166	loss_test: 2836.1729	accuracy_train: 0.1756	accuracy_val: 0.0625	accuracy_test: 0.2105
+[client 1]	loss_train: 1103.4194	loss_val: 1104.3495	loss_test: 1104.5817	accuracy_train: 0.9275	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 668.0505	loss_val: 669.4047	loss_test: 669.0663	accuracy_train: 0.9268	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1115.1421	loss_val: 1115.2338	loss_test: 1116.0200	accuracy_train: 0.9118	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 674.4756	loss_val: 675.5499	loss_test: 675.2501	accuracy_train: 0.6417	accuracy_val: 0.4000	accuracy_test: 0.4118
+curr_round: 79	curr_val_accuracy: 0.3467	curr_test_accuracy: 0.3404
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 80		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2782.8376	loss_val: 2782.8977	loss_test: 2782.8938	accuracy_train: 0.1985	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1100.3641	loss_val: 1101.3180	loss_test: 1101.5515	accuracy_train: 0.9130	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 669.8358	loss_val: 671.1016	loss_test: 670.8182	accuracy_train: 0.9268	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1082.1138	loss_val: 1082.1924	loss_test: 1083.0280	accuracy_train: 0.8824	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 645.7853	loss_val: 646.9652	loss_test: 646.5400	accuracy_train: 0.7000	accuracy_val: 0.4667	accuracy_test: 0.4706
+curr_round: 80	curr_val_accuracy: 0.3636	curr_test_accuracy: 0.3698
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 81		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2797.4209	loss_val: 2797.5051	loss_test: 2797.5195	accuracy_train: 0.1908	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1096.0155	loss_val: 1097.0145	loss_test: 1097.2542	accuracy_train: 0.8986	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 677.5071	loss_val: 678.6981	loss_test: 678.4188	accuracy_train: 0.8537	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1063.0922	loss_val: 1063.1466	loss_test: 1064.0480	accuracy_train: 0.8676	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 618.7170	loss_val: 619.9086	loss_test: 619.4528	accuracy_train: 0.7917	accuracy_val: 0.4667	accuracy_test: 0.4706
+curr_round: 81	curr_val_accuracy: 0.3636	curr_test_accuracy: 0.3698
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 82		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2849.5076	loss_val: 2849.6167	loss_test: 2849.6367	accuracy_train: 0.1756	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1111.2461	loss_val: 1112.2891	loss_test: 1112.5061	accuracy_train: 0.8406	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 697.3522	loss_val: 698.4557	loss_test: 698.1866	accuracy_train: 0.7927	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1043.4377	loss_val: 1043.4380	loss_test: 1044.4359	accuracy_train: 0.8824	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 604.8705	loss_val: 606.0591	loss_test: 605.5570	accuracy_train: 0.7500	accuracy_val: 0.4667	accuracy_test: 0.4706
+curr_round: 82	curr_val_accuracy: 0.3636	curr_test_accuracy: 0.3958
+best_round: 70	best_val_accuracy: 0.3956	best_test_accuracy: 0.3993
+--------------------------------------------------
+round # 83		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2870.3313	loss_val: 2870.4836	loss_test: 2870.5083	accuracy_train: 0.1908	accuracy_val: 0.0625	accuracy_test: 0.2632
+[client 1]	loss_train: 1125.8357	loss_val: 1126.9058	loss_test: 1127.0833	accuracy_train: 0.7536	accuracy_val: 0.3750	accuracy_test: 0.5000
+[client 2]	loss_train: 713.5216	loss_val: 714.5886	loss_test: 714.3715	accuracy_train: 0.7683	accuracy_val: 0.3636	accuracy_test: 0.4615
+[client 3]	loss_train: 1025.8209	loss_val: 1025.7903	loss_test: 1026.8905	accuracy_train: 0.8971	accuracy_val: 1.0000	accuracy_test: 0.4167
+[client 4]	loss_train: 602.1691	loss_val: 603.3610	loss_test: 602.8339	accuracy_train: 0.7583	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 83	curr_val_accuracy: 0.4004	curr_test_accuracy: 0.4230
+best_round: 83	best_val_accuracy: 0.4004	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 84		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2933.1753	loss_val: 2933.3433	loss_test: 2933.3879	accuracy_train: 0.1908	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1135.5319	loss_val: 1136.6354	loss_test: 1136.7913	accuracy_train: 0.7536	accuracy_val: 0.5000	accuracy_test: 0.5000
+[client 2]	loss_train: 727.8429	loss_val: 728.9373	loss_test: 728.7026	accuracy_train: 0.7683	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1023.0381	loss_val: 1023.0399	loss_test: 1024.1732	accuracy_train: 0.8676	accuracy_val: 1.0000	accuracy_test: 0.4167
+[client 4]	loss_train: 603.5984	loss_val: 604.7554	loss_test: 604.2916	accuracy_train: 0.7750	accuracy_val: 0.4667	accuracy_test: 0.5294
+curr_round: 84	curr_val_accuracy: 0.4202	curr_test_accuracy: 0.4230
+best_round: 84	best_val_accuracy: 0.4202	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 85		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2999.5874	loss_val: 2999.7397	loss_test: 2999.8074	accuracy_train: 0.1908	accuracy_val: 0.1875	accuracy_test: 0.2632
+[client 1]	loss_train: 1112.7708	loss_val: 1113.8717	loss_test: 1114.0480	accuracy_train: 0.7681	accuracy_val: 0.5000	accuracy_test: 0.5000
+[client 2]	loss_train: 698.1180	loss_val: 699.2853	loss_test: 699.0513	accuracy_train: 0.7927	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1021.0326	loss_val: 1021.0749	loss_test: 1022.1894	accuracy_train: 0.8824	accuracy_val: 1.0000	accuracy_test: 0.4167
+[client 4]	loss_train: 606.7798	loss_val: 607.9439	loss_test: 607.4918	accuracy_train: 0.8667	accuracy_val: 0.5333	accuracy_test: 0.5294
+curr_round: 85	curr_val_accuracy: 0.4543	curr_test_accuracy: 0.4230
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 86		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3102.9001	loss_val: 3103.0120	loss_test: 3103.1067	accuracy_train: 0.1985	accuracy_val: 0.1875	accuracy_test: 0.2632
+[client 1]	loss_train: 1110.7003	loss_val: 1111.7808	loss_test: 1111.9828	accuracy_train: 0.8261	accuracy_val: 0.3750	accuracy_test: 0.5000
+[client 2]	loss_train: 671.3991	loss_val: 672.6658	loss_test: 672.4172	accuracy_train: 0.8049	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1048.4532	loss_val: 1048.5001	loss_test: 1049.5695	accuracy_train: 0.8824	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 647.0408	loss_val: 648.1714	loss_test: 647.7668	accuracy_train: 0.8667	accuracy_val: 0.5333	accuracy_test: 0.4706
+curr_round: 86	curr_val_accuracy: 0.4151	curr_test_accuracy: 0.4202
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 87		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3134.0337	loss_val: 3134.1023	loss_test: 3134.2395	accuracy_train: 0.2061	accuracy_val: 0.1875	accuracy_test: 0.2632
+[client 1]	loss_train: 1119.9929	loss_val: 1121.0427	loss_test: 1121.2540	accuracy_train: 0.8841	accuracy_val: 0.3750	accuracy_test: 0.5000
+[client 2]	loss_train: 659.8485	loss_val: 661.2313	loss_test: 660.9565	accuracy_train: 0.8537	accuracy_val: 0.1818	accuracy_test: 0.4615
+[client 3]	loss_train: 1085.5570	loss_val: 1085.6006	loss_test: 1086.6508	accuracy_train: 0.8971	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 642.8176	loss_val: 644.0817	loss_test: 643.5588	accuracy_train: 0.8917	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 87	curr_val_accuracy: 0.3990	curr_test_accuracy: 0.4500
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 88		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3217.5637	loss_val: 3217.6091	loss_test: 3217.7629	accuracy_train: 0.1908	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1160.7891	loss_val: 1161.8054	loss_test: 1162.0106	accuracy_train: 0.9420	accuracy_val: 0.3750	accuracy_test: 0.4167
+[client 2]	loss_train: 662.9979	loss_val: 664.5359	loss_test: 664.1624	accuracy_train: 0.8902	accuracy_val: 0.1818	accuracy_test: 0.3846
+[client 3]	loss_train: 1124.0259	loss_val: 1124.0830	loss_test: 1125.0643	accuracy_train: 0.8824	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 643.6550	loss_val: 645.0475	loss_test: 644.3984	accuracy_train: 0.8833	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 88	curr_val_accuracy: 0.3817	curr_test_accuracy: 0.4241
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 89		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3228.0508	loss_val: 3228.0750	loss_test: 3228.2493	accuracy_train: 0.1985	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1208.2404	loss_val: 1209.2350	loss_test: 1209.4252	accuracy_train: 0.9420	accuracy_val: 0.3750	accuracy_test: 0.3333
+[client 2]	loss_train: 672.7549	loss_val: 674.3942	loss_test: 673.9599	accuracy_train: 0.9146	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1186.0038	loss_val: 1186.0214	loss_test: 1186.9558	accuracy_train: 0.8235	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 658.5779	loss_val: 660.0386	loss_test: 659.3376	accuracy_train: 0.8333	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 89	curr_val_accuracy: 0.3978	curr_test_accuracy: 0.4117
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 90		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3218.9395	loss_val: 3218.9680	loss_test: 3219.1516	accuracy_train: 0.1985	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1234.7284	loss_val: 1235.7153	loss_test: 1235.9143	accuracy_train: 0.9275	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 690.5729	loss_val: 692.2855	loss_test: 691.7607	accuracy_train: 0.9390	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1235.2506	loss_val: 1235.2251	loss_test: 1236.1714	accuracy_train: 0.8235	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 674.7238	loss_val: 676.2275	loss_test: 675.5496	accuracy_train: 0.8000	accuracy_val: 0.5333	accuracy_test: 0.5294
+curr_round: 90	curr_val_accuracy: 0.4163	curr_test_accuracy: 0.3845
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 91		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3222.9839	loss_val: 3223.0273	loss_test: 3223.2034	accuracy_train: 0.2137	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1227.9735	loss_val: 1228.9886	loss_test: 1229.1837	accuracy_train: 0.9275	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 705.5969	loss_val: 707.3185	loss_test: 706.7458	accuracy_train: 0.9390	accuracy_val: 0.1818	accuracy_test: 0.3846
+[client 3]	loss_train: 1276.8904	loss_val: 1276.8348	loss_test: 1277.8105	accuracy_train: 0.8088	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 667.2757	loss_val: 668.8267	loss_test: 668.1173	accuracy_train: 0.8083	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 91	curr_val_accuracy: 0.4003	curr_test_accuracy: 0.3873
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 92		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3268.0488	loss_val: 3268.0823	loss_test: 3268.2573	accuracy_train: 0.1985	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1194.7578	loss_val: 1195.8057	loss_test: 1196.0171	accuracy_train: 0.9565	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 717.3079	loss_val: 719.0063	loss_test: 718.4349	accuracy_train: 0.9512	accuracy_val: 0.1818	accuracy_test: 0.4615
+[client 3]	loss_train: 1321.8795	loss_val: 1321.8176	loss_test: 1322.7698	accuracy_train: 0.7941	accuracy_val: 1.0000	accuracy_test: 0.4167
+[client 4]	loss_train: 643.4280	loss_val: 644.9545	loss_test: 644.2753	accuracy_train: 0.8500	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 92	curr_val_accuracy: 0.4210	curr_test_accuracy: 0.4009
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 93		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3247.7673	loss_val: 3247.8040	loss_test: 3247.9895	accuracy_train: 0.1985	accuracy_val: 0.1875	accuracy_test: 0.2632
+[client 1]	loss_train: 1180.4935	loss_val: 1181.5667	loss_test: 1181.7941	accuracy_train: 0.9710	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 721.3931	loss_val: 723.0106	loss_test: 722.5267	accuracy_train: 0.9512	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1341.8157	loss_val: 1341.7654	loss_test: 1342.6710	accuracy_train: 0.8088	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 621.7487	loss_val: 623.2173	loss_test: 622.6161	accuracy_train: 0.8667	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 93	curr_val_accuracy: 0.4336	curr_test_accuracy: 0.4129
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 94		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3255.2061	loss_val: 3255.2341	loss_test: 3255.4290	accuracy_train: 0.1985	accuracy_val: 0.1875	accuracy_test: 0.2632
+[client 1]	loss_train: 1166.0084	loss_val: 1167.1003	loss_test: 1167.3549	accuracy_train: 0.9565	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 729.7868	loss_val: 731.3310	loss_test: 730.9484	accuracy_train: 0.9512	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1345.0614	loss_val: 1344.9739	loss_test: 1345.8928	accuracy_train: 0.8235	accuracy_val: 0.8571	accuracy_test: 0.5000
+[client 4]	loss_train: 605.2421	loss_val: 606.6555	loss_test: 606.1381	accuracy_train: 0.8500	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 94	curr_val_accuracy: 0.4336	curr_test_accuracy: 0.4129
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 95		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3244.2183	loss_val: 3244.2458	loss_test: 3244.4412	accuracy_train: 0.1985	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1172.6902	loss_val: 1173.7872	loss_test: 1174.0417	accuracy_train: 0.9565	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 737.6500	loss_val: 739.1274	loss_test: 738.8153	accuracy_train: 0.9390	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1335.3239	loss_val: 1335.2164	loss_test: 1336.1558	accuracy_train: 0.8235	accuracy_val: 1.0000	accuracy_test: 0.5000
+[client 4]	loss_train: 594.3946	loss_val: 595.8098	loss_test: 595.2845	accuracy_train: 0.8917	accuracy_val: 0.5333	accuracy_test: 0.5882
+curr_round: 95	curr_val_accuracy: 0.4370	curr_test_accuracy: 0.4129
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 96		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3133.6179	loss_val: 3133.6455	loss_test: 3133.8469	accuracy_train: 0.1908	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1194.7107	loss_val: 1195.8062	loss_test: 1196.0848	accuracy_train: 0.9275	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 747.5662	loss_val: 749.0228	loss_test: 748.7640	accuracy_train: 0.9390	accuracy_val: 0.2727	accuracy_test: 0.4615
+[client 3]	loss_train: 1316.2239	loss_val: 1316.1549	loss_test: 1317.0914	accuracy_train: 0.8235	accuracy_val: 0.8571	accuracy_test: 0.4167
+[client 4]	loss_train: 602.3633	loss_val: 603.7114	loss_test: 603.2313	accuracy_train: 0.9000	accuracy_val: 0.5333	accuracy_test: 0.5294
+curr_round: 96	curr_val_accuracy: 0.4163	curr_test_accuracy: 0.3860
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 97		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 3024.6646	loss_val: 3024.6882	loss_test: 3024.8987	accuracy_train: 0.1908	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1204.4364	loss_val: 1205.5223	loss_test: 1205.8149	accuracy_train: 0.9420	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 763.1119	loss_val: 764.6326	loss_test: 764.3828	accuracy_train: 0.9390	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1272.4354	loss_val: 1272.4991	loss_test: 1273.4462	accuracy_train: 0.8382	accuracy_val: 0.8571	accuracy_test: 0.5833
+[client 4]	loss_train: 620.0875	loss_val: 621.3679	loss_test: 621.0255	accuracy_train: 0.9000	accuracy_val: 0.5333	accuracy_test: 0.5294
+curr_round: 97	curr_val_accuracy: 0.4163	curr_test_accuracy: 0.3965
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 98		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2899.4084	loss_val: 2899.4360	loss_test: 2899.6418	accuracy_train: 0.2061	accuracy_val: 0.1250	accuracy_test: 0.2632
+[client 1]	loss_train: 1246.9720	loss_val: 1248.0509	loss_test: 1248.3683	accuracy_train: 0.9420	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 769.5697	loss_val: 771.1203	loss_test: 770.8850	accuracy_train: 0.9268	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1199.3042	loss_val: 1199.4382	loss_test: 1200.4663	accuracy_train: 0.8824	accuracy_val: 0.7143	accuracy_test: 0.5000
+[client 4]	loss_train: 630.2779	loss_val: 631.6199	loss_test: 631.3074	accuracy_train: 0.8917	accuracy_val: 0.5333	accuracy_test: 0.4706
+curr_round: 98	curr_val_accuracy: 0.3956	curr_test_accuracy: 0.3696
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
+round # 99		sampled_clients: [0, 1, 2, 3, 4]
+[client 0]	loss_train: 2830.2202	loss_val: 2830.2441	loss_test: 2830.4365	accuracy_train: 0.2061	accuracy_val: 0.1250	accuracy_test: 0.3158
+[client 1]	loss_train: 1296.0182	loss_val: 1297.0787	loss_test: 1297.4176	accuracy_train: 0.9275	accuracy_val: 0.5000	accuracy_test: 0.2500
+[client 2]	loss_train: 780.7516	loss_val: 782.3229	loss_test: 782.1125	accuracy_train: 0.9390	accuracy_val: 0.2727	accuracy_test: 0.3846
+[client 3]	loss_train: 1153.0483	loss_val: 1153.4370	loss_test: 1154.3376	accuracy_train: 0.9412	accuracy_val: 0.7143	accuracy_test: 0.6667
+[client 4]	loss_train: 637.3930	loss_val: 638.8192	loss_test: 638.5101	accuracy_train: 0.9000	accuracy_val: 0.5333	accuracy_test: 0.4706
+curr_round: 99	curr_val_accuracy: 0.3956	curr_test_accuracy: 0.4083
+best_round: 85	best_val_accuracy: 0.4543	best_test_accuracy: 0.4230
+--------------------------------------------------
