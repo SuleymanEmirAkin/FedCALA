@@ -1,0 +1,1734 @@
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:2462: UserWarning: n_neighbors is larger than the dataset size; truncating to X.shape[0] - 1
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:2462: UserWarning: n_neighbors is larger than the dataset size; truncating to X.shape[0] - 1
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:2462: UserWarning: n_neighbors is larger than the dataset size; truncating to X.shape[0] - 1
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:2462: UserWarning: n_neighbors is larger than the dataset size; truncating to X.shape[0] - 1
+  warn(
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=89, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=2, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=89, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=2, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=89, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=2, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=89, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=2, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=89, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=2, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=89, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=2, bias=True)
+)
+round # 0		sampled_clients: [0, 1, 2, 3, 4]
+Not enough data to visualize yet.
+[client 0]	loss_train: 4.1779	loss_val: 3.6317	loss_test: 3.1211	accuracy_train: 0.0307	accuracy_val: 0.0303	accuracy_test: 0.0588
+[client 1]	loss_train: 0.0445	loss_val: 0.0415	loss_test: 0.0567	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 3.2078	loss_val: 3.4676	loss_test: 2.5876	accuracy_train: 0.4211	accuracy_val: 0.4000	accuracy_test: 0.4545
+[client 3]	loss_train: 0.7237	loss_val: 0.7636	loss_test: 0.7583	accuracy_train: 0.5532	accuracy_val: 0.4783	accuracy_test: 0.4400
+[client 4]	loss_train: 1.8172	loss_val: 1.3896	loss_test: 1.3142	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 0	curr_val_accuracy: 0.5591	curr_test_accuracy: 0.5681
+best_round: 0	best_val_accuracy: 0.5591	best_test_accuracy: 0.5681
+--------------------------------------------------
+round # 1		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 2 | KL Drift: 0.149743
+[client 0]	loss_train: 1.0014	loss_val: 1.0054	loss_test: 0.9891	accuracy_train: 0.0307	accuracy_val: 0.0303	accuracy_test: 0.0588
+[client 1]	loss_train: 0.2799	loss_val: 0.2732	loss_test: 0.2892	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7115	loss_val: 0.7240	loss_test: 0.7161	accuracy_train: 0.5132	accuracy_val: 0.5000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7205	loss_val: 0.7839	loss_test: 0.7110	accuracy_train: 0.4894	accuracy_val: 0.4348	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7289	loss_val: 0.8328	loss_test: 0.7260	accuracy_train: 0.3913	accuracy_val: 0.0000	accuracy_test: 0.5000
+curr_round: 1	curr_val_accuracy: 0.5501	curr_test_accuracy: 0.5916
+best_round: 0	best_val_accuracy: 0.5591	best_test_accuracy: 0.5681
+--------------------------------------------------
+round # 2		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 3 | KL Drift: 0.328470
+[client 0]	loss_train: 1.0833	loss_val: 1.0777	loss_test: 1.0009	accuracy_train: 0.0383	accuracy_val: 0.0303	accuracy_test: 0.0588
+[client 1]	loss_train: 0.4762	loss_val: 0.4787	loss_test: 0.4903	accuracy_train: 0.9974	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6452	loss_val: 0.6073	loss_test: 0.6524	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 3]	loss_train: 0.6997	loss_val: 0.6814	loss_test: 0.7053	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6817	loss_val: 0.6761	loss_test: 0.6740	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 2	curr_val_accuracy: 0.5843	curr_test_accuracy: 0.5916
+best_round: 2	best_val_accuracy: 0.5843	best_test_accuracy: 0.5916
+--------------------------------------------------
+round # 3		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 4 | KL Drift: 0.576525
+[client 0]	loss_train: 0.9890	loss_val: 1.0271	loss_test: 0.9232	accuracy_train: 0.0728	accuracy_val: 0.0606	accuracy_test: 0.0588
+[client 1]	loss_train: 0.4499	loss_val: 0.4439	loss_test: 0.4627	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6334	loss_val: 0.5693	loss_test: 0.6255	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6725	loss_val: 0.7054	loss_test: 0.6768	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5600
+[client 4]	loss_train: 0.6698	loss_val: 0.6048	loss_test: 0.6451	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 3	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5996
+best_round: 3	best_val_accuracy: 0.5927	best_test_accuracy: 0.5996
+--------------------------------------------------
+round # 4		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 5 | KL Drift: 0.145973
+[client 0]	loss_train: 0.8903	loss_val: 0.9208	loss_test: 0.8409	accuracy_train: 0.1686	accuracy_val: 0.0909	accuracy_test: 0.1765
+[client 1]	loss_train: 0.4708	loss_val: 0.4659	loss_test: 0.4786	accuracy_train: 0.9974	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6426	loss_val: 0.5728	loss_test: 0.6243	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6527	loss_val: 0.7551	loss_test: 0.6695	accuracy_train: 0.5319	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.6960	loss_val: 0.5988	loss_test: 0.6402	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 4	curr_val_accuracy: 0.6099	curr_test_accuracy: 0.6164
+best_round: 4	best_val_accuracy: 0.6099	best_test_accuracy: 0.6164
+--------------------------------------------------
+round # 5		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 6 | KL Drift: 0.075591
+[client 0]	loss_train: 0.7904	loss_val: 0.8195	loss_test: 0.7687	accuracy_train: 0.2567	accuracy_val: 0.2121	accuracy_test: 0.3529
+[client 1]	loss_train: 0.4570	loss_val: 0.4515	loss_test: 0.4646	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6290	loss_val: 0.5835	loss_test: 0.6187	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6512	loss_val: 0.7586	loss_test: 0.6731	accuracy_train: 0.5319	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.7052	loss_val: 0.5961	loss_test: 0.6257	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 5	curr_val_accuracy: 0.6436	curr_test_accuracy: 0.6655
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 6		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 7 | KL Drift: 0.248952
+[client 0]	loss_train: 0.8379	loss_val: 0.8573	loss_test: 0.8083	accuracy_train: 0.1724	accuracy_val: 0.1515	accuracy_test: 0.2059
+[client 1]	loss_train: 0.4339	loss_val: 0.4237	loss_test: 0.4418	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6035	loss_val: 0.5972	loss_test: 0.6122	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6552	loss_val: 0.8022	loss_test: 0.6787	accuracy_train: 0.5319	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.6799	loss_val: 0.5798	loss_test: 0.6247	accuracy_train: 0.5217	accuracy_val: 0.6667	accuracy_test: 0.5000
+curr_round: 6	curr_val_accuracy: 0.6352	curr_test_accuracy: 0.6245
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 7		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 8 | KL Drift: 0.043580
+[client 0]	loss_train: 0.8695	loss_val: 0.8790	loss_test: 0.8347	accuracy_train: 0.1379	accuracy_val: 0.1515	accuracy_test: 0.1471
+[client 1]	loss_train: 0.4129	loss_val: 0.4003	loss_test: 0.4184	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.5921	loss_val: 0.5964	loss_test: 0.6179	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6618	loss_val: 0.8196	loss_test: 0.6879	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6682	loss_val: 0.5781	loss_test: 0.6417	accuracy_train: 0.5217	accuracy_val: 0.6667	accuracy_test: 0.5000
+curr_round: 7	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6162
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 8		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 9 | KL Drift: 0.002425
+[client 0]	loss_train: 0.8911	loss_val: 0.8929	loss_test: 0.8418	accuracy_train: 0.0996	accuracy_val: 0.1515	accuracy_test: 0.1765
+[client 1]	loss_train: 0.4252	loss_val: 0.4144	loss_test: 0.4297	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.5923	loss_val: 0.5917	loss_test: 0.6200	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6688	loss_val: 0.8158	loss_test: 0.6965	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6584	loss_val: 0.5854	loss_test: 0.6630	accuracy_train: 0.5217	accuracy_val: 0.6667	accuracy_test: 0.5000
+curr_round: 8	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6244
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 9		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 10 | KL Drift: 0.000393
+[client 0]	loss_train: 0.9191	loss_val: 0.9166	loss_test: 0.8577	accuracy_train: 0.0805	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3893	loss_val: 0.3806	loss_test: 0.3962	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.5947	loss_val: 0.5966	loss_test: 0.6217	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6713	loss_val: 0.7993	loss_test: 0.6970	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6561	loss_val: 0.5871	loss_test: 0.6743	accuracy_train: 0.4783	accuracy_val: 0.6667	accuracy_test: 0.5000
+curr_round: 9	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 10		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 11 | KL Drift: 0.000054
+[client 0]	loss_train: 0.9071	loss_val: 0.9045	loss_test: 0.8534	accuracy_train: 0.0805	accuracy_val: 0.1515	accuracy_test: 0.1471
+[client 1]	loss_train: 0.4026	loss_val: 0.3950	loss_test: 0.4068	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 2]	loss_train: 0.5973	loss_val: 0.5971	loss_test: 0.6232	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6760	loss_val: 0.8217	loss_test: 0.7041	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6612	loss_val: 0.5919	loss_test: 0.6847	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 10	curr_val_accuracy: 0.6180	curr_test_accuracy: 0.6162
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 11		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 12 | KL Drift: 0.000078
+[client 0]	loss_train: 0.9011	loss_val: 0.8931	loss_test: 0.8564	accuracy_train: 0.0843	accuracy_val: 0.1515	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3780	loss_val: 0.3739	loss_test: 0.3841	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6014	loss_val: 0.6001	loss_test: 0.6259	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6797	loss_val: 0.8112	loss_test: 0.7088	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6622	loss_val: 0.5972	loss_test: 0.6840	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 11	curr_val_accuracy: 0.6180	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 12		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 13 | KL Drift: 0.000073
+[client 0]	loss_train: 0.9408	loss_val: 0.9236	loss_test: 0.8800	accuracy_train: 0.0651	accuracy_val: 0.1212	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3734	loss_val: 0.3699	loss_test: 0.3819	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6032	loss_val: 0.6015	loss_test: 0.6293	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6773	loss_val: 0.8019	loss_test: 0.7120	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6650	loss_val: 0.5997	loss_test: 0.6833	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 12	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 13		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 14 | KL Drift: 0.000122
+[client 0]	loss_train: 0.9908	loss_val: 0.9734	loss_test: 0.8965	accuracy_train: 0.0690	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3630	loss_val: 0.3620	loss_test: 0.3718	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6020	loss_val: 0.6008	loss_test: 0.6293	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6756	loss_val: 0.8171	loss_test: 0.7157	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6628	loss_val: 0.5987	loss_test: 0.6739	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 13	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 14		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 15 | KL Drift: 0.000439
+[client 0]	loss_train: 0.9280	loss_val: 0.9034	loss_test: 0.8556	accuracy_train: 0.0843	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3775	loss_val: 0.3761	loss_test: 0.3871	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.5971	loss_val: 0.5944	loss_test: 0.6256	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6757	loss_val: 0.8385	loss_test: 0.7223	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6594	loss_val: 0.5899	loss_test: 0.6657	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 14	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 15		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 16 | KL Drift: 0.001044
+[client 0]	loss_train: 0.9245	loss_val: 0.8870	loss_test: 0.8420	accuracy_train: 0.0881	accuracy_val: 0.1515	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3781	loss_val: 0.3707	loss_test: 0.3839	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.5973	loss_val: 0.5914	loss_test: 0.6279	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6751	loss_val: 0.8415	loss_test: 0.7321	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6551	loss_val: 0.5869	loss_test: 0.6548	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 15	curr_val_accuracy: 0.6180	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 16		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 17 | KL Drift: 0.001270
+[client 0]	loss_train: 0.9428	loss_val: 0.8942	loss_test: 0.8605	accuracy_train: 0.0651	accuracy_val: 0.1212	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3707	loss_val: 0.3598	loss_test: 0.3764	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.5991	loss_val: 0.5940	loss_test: 0.6317	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6791	loss_val: 0.8484	loss_test: 0.7518	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6554	loss_val: 0.5904	loss_test: 0.6449	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 16	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 17		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 18 | KL Drift: 0.000738
+[client 0]	loss_train: 0.9819	loss_val: 0.9217	loss_test: 0.8847	accuracy_train: 0.0613	accuracy_val: 0.0909	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3783	loss_val: 0.3693	loss_test: 0.3872	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6023	loss_val: 0.5981	loss_test: 0.6381	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6794	loss_val: 0.8626	loss_test: 0.7614	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6605	loss_val: 0.5901	loss_test: 0.6413	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 17	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 18		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 19 | KL Drift: 0.000134
+[client 0]	loss_train: 1.0164	loss_val: 0.9442	loss_test: 0.9032	accuracy_train: 0.0575	accuracy_val: 0.0606	accuracy_test: 0.1176
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 1]	loss_train: 0.3797	loss_val: 0.3720	loss_test: 0.3885	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6048	loss_val: 0.6062	loss_test: 0.6419	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6829	loss_val: 0.8750	loss_test: 0.7838	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6634	loss_val: 0.6020	loss_test: 0.6450	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 18	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 19		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 20 | KL Drift: 0.000129
+[client 0]	loss_train: 1.0062	loss_val: 0.9272	loss_test: 0.8933	accuracy_train: 0.0613	accuracy_val: 0.0606	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3720	loss_val: 0.3657	loss_test: 0.3749	accuracy_train: 0.9974	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6093	loss_val: 0.6174	loss_test: 0.6486	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6930	loss_val: 0.9073	loss_test: 0.8118	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6640	loss_val: 0.6107	loss_test: 0.6458	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 19	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 20		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 21 | KL Drift: 0.000325
+[client 0]	loss_train: 1.0004	loss_val: 0.9266	loss_test: 0.8988	accuracy_train: 0.0498	accuracy_val: 0.0606	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3629	loss_val: 0.3544	loss_test: 0.3626	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6187	loss_val: 0.6308	loss_test: 0.6568	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7001	loss_val: 0.8894	loss_test: 0.8181	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6644	loss_val: 0.6132	loss_test: 0.6502	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 20	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 21		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 22 | KL Drift: 0.000043
+[client 0]	loss_train: 1.0252	loss_val: 0.9560	loss_test: 0.9203	accuracy_train: 0.0498	accuracy_val: 0.0606	accuracy_test: 0.1471
+[client 1]	loss_train: 0.3283	loss_val: 0.3199	loss_test: 0.3304	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6215	loss_val: 0.6339	loss_test: 0.6583	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7044	loss_val: 0.8929	loss_test: 0.8301	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6698	loss_val: 0.6161	loss_test: 0.6584	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 21	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6162
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 22		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 23 | KL Drift: 0.000101
+[client 0]	loss_train: 1.0353	loss_val: 0.9661	loss_test: 0.9240	accuracy_train: 0.0536	accuracy_val: 0.0606	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3312	loss_val: 0.3220	loss_test: 0.3325	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6232	loss_val: 0.6350	loss_test: 0.6591	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7003	loss_val: 0.8907	loss_test: 0.8368	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6771	loss_val: 0.6075	loss_test: 0.6656	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 22	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 23		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 24 | KL Drift: 0.000250
+[client 0]	loss_train: 1.0572	loss_val: 0.9842	loss_test: 0.9423	accuracy_train: 0.0575	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3316	loss_val: 0.3198	loss_test: 0.3264	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6227	loss_val: 0.6326	loss_test: 0.6568	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7007	loss_val: 0.8688	loss_test: 0.8492	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6830	loss_val: 0.6024	loss_test: 0.6678	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 23	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 24		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 25 | KL Drift: 0.000237
+[client 0]	loss_train: 1.0230	loss_val: 0.9574	loss_test: 0.9240	accuracy_train: 0.0690	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3190	loss_val: 0.3106	loss_test: 0.3189	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6252	loss_val: 0.6369	loss_test: 0.6517	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7037	loss_val: 0.8584	loss_test: 0.8676	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6903	loss_val: 0.6118	loss_test: 0.6756	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 24	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 25		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 26 | KL Drift: 0.000326
+[client 0]	loss_train: 1.1192	loss_val: 1.0397	loss_test: 0.9972	accuracy_train: 0.0498	accuracy_val: 0.0303	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3172	loss_val: 0.3135	loss_test: 0.3233	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6273	loss_val: 0.6438	loss_test: 0.6444	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7070	loss_val: 0.8461	loss_test: 0.8743	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6904	loss_val: 0.6121	loss_test: 0.6785	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 25	curr_val_accuracy: 0.5843	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 26		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 27 | KL Drift: 0.000195
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 0]	loss_train: 1.1710	loss_val: 1.0850	loss_test: 1.0300	accuracy_train: 0.0613	accuracy_val: 0.0606	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3356	loss_val: 0.3291	loss_test: 0.3424	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6248	loss_val: 0.6457	loss_test: 0.6368	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7040	loss_val: 0.8324	loss_test: 0.8725	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6921	loss_val: 0.6009	loss_test: 0.6881	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 26	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 27		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 28 | KL Drift: 0.000340
+[client 0]	loss_train: 1.1351	loss_val: 1.0321	loss_test: 0.9766	accuracy_train: 0.0613	accuracy_val: 0.0909	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3446	loss_val: 0.3352	loss_test: 0.3533	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6270	loss_val: 0.6442	loss_test: 0.6321	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6959	loss_val: 0.8308	loss_test: 0.8680	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6929	loss_val: 0.5887	loss_test: 0.7024	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 27	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 28		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 29 | KL Drift: 0.000442
+[client 0]	loss_train: 1.1049	loss_val: 1.0026	loss_test: 0.9572	accuracy_train: 0.0575	accuracy_val: 0.0606	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3307	loss_val: 0.3256	loss_test: 0.3427	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6270	loss_val: 0.6447	loss_test: 0.6261	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6976	loss_val: 0.8440	loss_test: 0.8732	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.6903	loss_val: 0.5861	loss_test: 0.7115	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 28	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 29		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 30 | KL Drift: 0.000164
+[client 0]	loss_train: 1.1803	loss_val: 1.0617	loss_test: 1.0148	accuracy_train: 0.0421	accuracy_val: 0.0606	accuracy_test: 0.0882
+[client 1]	loss_train: 0.2836	loss_val: 0.2728	loss_test: 0.2820	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6319	loss_val: 0.6566	loss_test: 0.6298	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7008	loss_val: 0.8397	loss_test: 0.8866	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7007	loss_val: 0.6070	loss_test: 0.7233	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 29	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 30		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 31 | KL Drift: 0.000317
+[client 0]	loss_train: 1.2422	loss_val: 1.1242	loss_test: 1.0653	accuracy_train: 0.0383	accuracy_val: 0.0303	accuracy_test: 0.0588
+[client 1]	loss_train: 0.2560	loss_val: 0.2468	loss_test: 0.2514	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6456	loss_val: 0.6747	loss_test: 0.6397	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7018	loss_val: 0.8611	loss_test: 0.8983	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7195	loss_val: 0.6318	loss_test: 0.7362	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 30	curr_val_accuracy: 0.5843	curr_test_accuracy: 0.5916
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 31		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 32 | KL Drift: 0.000124
+[client 0]	loss_train: 1.2422	loss_val: 1.1286	loss_test: 1.0584	accuracy_train: 0.0383	accuracy_val: 0.0303	accuracy_test: 0.0588
+[client 1]	loss_train: 0.2665	loss_val: 0.2590	loss_test: 0.2635	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6566	loss_val: 0.6788	loss_test: 0.6450	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6967	loss_val: 0.8716	loss_test: 0.8961	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7418	loss_val: 0.6421	loss_test: 0.7592	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 31	curr_val_accuracy: 0.5843	curr_test_accuracy: 0.5916
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 32		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 33 | KL Drift: 0.000101
+[client 0]	loss_train: 1.2475	loss_val: 1.1284	loss_test: 1.0504	accuracy_train: 0.0383	accuracy_val: 0.0303	accuracy_test: 0.0588
+[client 1]	loss_train: 0.3013	loss_val: 0.2967	loss_test: 0.3013	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6564	loss_val: 0.6668	loss_test: 0.6418	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6870	loss_val: 0.8775	loss_test: 0.9030	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7544	loss_val: 0.6388	loss_test: 0.7629	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 32	curr_val_accuracy: 0.5843	curr_test_accuracy: 0.5916
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 33		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 34 | KL Drift: 0.000781
+[client 0]	loss_train: 1.0825	loss_val: 0.9702	loss_test: 0.9272	accuracy_train: 0.0613	accuracy_val: 0.0606	accuracy_test: 0.0882
+[client 1]	loss_train: 0.3101	loss_val: 0.3094	loss_test: 0.3122	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6513	loss_val: 0.6510	loss_test: 0.6405	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6790	loss_val: 0.8920	loss_test: 0.9115	accuracy_train: 0.5213	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7578	loss_val: 0.6334	loss_test: 0.7658	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 33	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 34		sampled_clients: [0, 1, 2, 3, 4]
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 35 | KL Drift: 0.000381
+[client 0]	loss_train: 1.0296	loss_val: 0.9199	loss_test: 0.8611	accuracy_train: 0.0766	accuracy_val: 0.0909	accuracy_test: 0.1471
+[client 1]	loss_train: 0.3193	loss_val: 0.3212	loss_test: 0.3201	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6430	loss_val: 0.6311	loss_test: 0.6406	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6754	loss_val: 0.8848	loss_test: 0.9158	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7465	loss_val: 0.6172	loss_test: 0.7593	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 34	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6162
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 35		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 36 | KL Drift: 0.000281
+[client 0]	loss_train: 1.0620	loss_val: 0.9259	loss_test: 0.8494	accuracy_train: 0.0766	accuracy_val: 0.1212	accuracy_test: 0.1471
+[client 1]	loss_train: 0.3235	loss_val: 0.3243	loss_test: 0.3262	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6357	loss_val: 0.6230	loss_test: 0.6390	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6753	loss_val: 0.8667	loss_test: 0.9220	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7352	loss_val: 0.6200	loss_test: 0.7555	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 35	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6162
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 36		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 37 | KL Drift: 0.000849
+[client 0]	loss_train: 1.1112	loss_val: 0.9677	loss_test: 0.8681	accuracy_train: 0.0575	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.3095	loss_val: 0.3042	loss_test: 0.3040	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6388	loss_val: 0.6327	loss_test: 0.6507	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6848	loss_val: 0.8901	loss_test: 0.9472	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7335	loss_val: 0.6236	loss_test: 0.7504	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 36	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 37		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 38 | KL Drift: 0.000356
+[client 0]	loss_train: 1.1403	loss_val: 0.9877	loss_test: 0.8840	accuracy_train: 0.0421	accuracy_val: 0.0606	accuracy_test: 0.1471
+[client 1]	loss_train: 0.3009	loss_val: 0.2948	loss_test: 0.2895	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6443	loss_val: 0.6473	loss_test: 0.6648	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6900	loss_val: 0.9064	loss_test: 0.9722	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7376	loss_val: 0.6435	loss_test: 0.7452	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 37	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6162
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 38		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 39 | KL Drift: 0.000285
+[client 0]	loss_train: 1.1071	loss_val: 0.9785	loss_test: 0.9177	accuracy_train: 0.0460	accuracy_val: 0.0303	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2606	loss_val: 0.2494	loss_test: 0.2424	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6517	loss_val: 0.6669	loss_test: 0.6810	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.6965	loss_val: 0.8956	loss_test: 0.9803	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7424	loss_val: 0.6636	loss_test: 0.7391	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 38	curr_val_accuracy: 0.5843	curr_test_accuracy: 0.6244
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 39		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 40 | KL Drift: 0.000271
+[client 0]	loss_train: 1.0863	loss_val: 0.9731	loss_test: 0.9265	accuracy_train: 0.0498	accuracy_val: 0.0606	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2536	loss_val: 0.2411	loss_test: 0.2444	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6604	loss_val: 0.6845	loss_test: 0.6903	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7105	loss_val: 0.8944	loss_test: 1.0140	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7676	loss_val: 0.6975	loss_test: 0.7545	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 39	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 40		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 41 | KL Drift: 0.000296
+[client 0]	loss_train: 1.1216	loss_val: 1.0093	loss_test: 0.9566	accuracy_train: 0.0575	accuracy_val: 0.0606	accuracy_test: 0.0882
+[client 1]	loss_train: 0.2476	loss_val: 0.2371	loss_test: 0.2385	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6612	loss_val: 0.6849	loss_test: 0.6914	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7114	loss_val: 0.8875	loss_test: 1.0434	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.7994	loss_val: 0.7153	loss_test: 0.7699	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 40	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 41		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 42 | KL Drift: 0.000340
+[client 0]	loss_train: 1.1203	loss_val: 1.0042	loss_test: 0.9695	accuracy_train: 0.0613	accuracy_val: 0.0909	accuracy_test: 0.0882
+[client 1]	loss_train: 0.2490	loss_val: 0.2390	loss_test: 0.2414	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6643	loss_val: 0.6890	loss_test: 0.6986	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7172	loss_val: 0.8887	loss_test: 1.0873	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8294	loss_val: 0.7365	loss_test: 0.7958	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 41	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.5998
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 42		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 43 | KL Drift: 0.000766
+[client 0]	loss_train: 1.1265	loss_val: 0.9986	loss_test: 0.9707	accuracy_train: 0.0613	accuracy_val: 0.0909	accuracy_test: 0.0882
+[client 1]	loss_train: 0.2785	loss_val: 0.2678	loss_test: 0.2722	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6799	loss_val: 0.6987	loss_test: 0.7101	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7275	loss_val: 0.8832	loss_test: 1.1141	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8446	loss_val: 0.7508	loss_test: 0.8204	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 42	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.5998
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 43		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 44 | KL Drift: 0.000387
+[client 0]	loss_train: 1.1298	loss_val: 0.9906	loss_test: 0.9412	accuracy_train: 0.0575	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2710	loss_val: 0.2581	loss_test: 0.2618	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6848	loss_val: 0.6965	loss_test: 0.7115	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7277	loss_val: 0.8794	loss_test: 1.1398	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8342	loss_val: 0.7268	loss_test: 0.8292	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 43	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 44		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 45 | KL Drift: 0.001609
+[client 0]	loss_train: 1.1402	loss_val: 0.9950	loss_test: 0.9357	accuracy_train: 0.0536	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2340	loss_val: 0.2218	loss_test: 0.2160	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6803	loss_val: 0.6862	loss_test: 0.7128	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7346	loss_val: 0.8977	loss_test: 1.1853	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8224	loss_val: 0.6999	loss_test: 0.8379	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 44	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 45		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 46 | KL Drift: 0.000598
+[client 0]	loss_train: 1.1408	loss_val: 1.0011	loss_test: 0.9572	accuracy_train: 0.0575	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2357	loss_val: 0.2269	loss_test: 0.2185	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6734	loss_val: 0.6696	loss_test: 0.7081	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7307	loss_val: 0.9015	loss_test: 1.1632	accuracy_train: 0.5266	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8116	loss_val: 0.6764	loss_test: 0.8439	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 45	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 46		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 47 | KL Drift: 0.000814
+[client 0]	loss_train: 1.1281	loss_val: 0.9947	loss_test: 0.9528	accuracy_train: 0.0690	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2354	loss_val: 0.2261	loss_test: 0.2181	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6758	loss_val: 0.6558	loss_test: 0.7053	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7239	loss_val: 0.9090	loss_test: 1.1557	accuracy_train: 0.5426	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8313	loss_val: 0.7009	loss_test: 0.8580	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 46	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 47		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 48 | KL Drift: 0.001321
+[client 0]	loss_train: 1.0693	loss_val: 0.9531	loss_test: 0.8945	accuracy_train: 0.1111	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2684	loss_val: 0.2589	loss_test: 0.2612	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6789	loss_val: 0.6503	loss_test: 0.7085	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7271	loss_val: 0.9251	loss_test: 1.1507	accuracy_train: 0.5479	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8516	loss_val: 0.7325	loss_test: 0.8701	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 47	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6000
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 48		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 49 | KL Drift: 0.002526
+[client 0]	loss_train: 1.0453	loss_val: 0.9372	loss_test: 0.8725	accuracy_train: 0.1379	accuracy_val: 0.2121	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2287	loss_val: 0.2144	loss_test: 0.2186	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6745	loss_val: 0.6491	loss_test: 0.7317	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7397	loss_val: 0.9485	loss_test: 1.1663	accuracy_train: 0.5426	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8741	loss_val: 0.7911	loss_test: 0.8919	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 48	curr_val_accuracy: 0.6349	curr_test_accuracy: 0.6244
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 49		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 50 | KL Drift: 0.000991
+[client 0]	loss_train: 1.1063	loss_val: 0.9862	loss_test: 0.9375	accuracy_train: 0.0920	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2078	loss_val: 0.1912	loss_test: 0.1972	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6895	loss_val: 0.6819	loss_test: 0.7631	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7537	loss_val: 0.9560	loss_test: 1.2177	accuracy_train: 0.5372	accuracy_val: 0.5217	accuracy_test: 0.5200
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 4]	loss_train: 0.8794	loss_val: 0.8094	loss_test: 0.9062	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 49	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 50		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 51 | KL Drift: 0.001977
+[client 0]	loss_train: 1.1388	loss_val: 0.9970	loss_test: 0.9771	accuracy_train: 0.0805	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2038	loss_val: 0.1871	loss_test: 0.1960	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7235	loss_val: 0.7480	loss_test: 0.7890	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7569	loss_val: 0.9785	loss_test: 1.2850	accuracy_train: 0.5426	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.9339	loss_val: 0.8101	loss_test: 0.9762	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 50	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 51		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 52 | KL Drift: 0.002029
+[client 0]	loss_train: 1.0704	loss_val: 0.9336	loss_test: 0.9253	accuracy_train: 0.1341	accuracy_val: 0.1818	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2497	loss_val: 0.2295	loss_test: 0.2417	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7290	loss_val: 0.7502	loss_test: 0.7702	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7322	loss_val: 0.9745	loss_test: 1.2953	accuracy_train: 0.5479	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.9180	loss_val: 0.7963	loss_test: 0.9906	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 51	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6080
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 52		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 53 | KL Drift: 0.002209
+[client 0]	loss_train: 1.0608	loss_val: 0.9166	loss_test: 0.8860	accuracy_train: 0.1686	accuracy_val: 0.2424	accuracy_test: 0.2059
+[client 1]	loss_train: 0.2893	loss_val: 0.2737	loss_test: 0.2854	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7108	loss_val: 0.7233	loss_test: 0.7416	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7190	loss_val: 0.9734	loss_test: 1.3099	accuracy_train: 0.5585	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8819	loss_val: 0.7690	loss_test: 0.9879	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 52	curr_val_accuracy: 0.6433	curr_test_accuracy: 0.6245
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 53		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 54 | KL Drift: 0.003752
+[client 0]	loss_train: 1.0780	loss_val: 0.9189	loss_test: 0.8676	accuracy_train: 0.1801	accuracy_val: 0.2424	accuracy_test: 0.2353
+[client 1]	loss_train: 0.3002	loss_val: 0.2856	loss_test: 0.2949	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6737	loss_val: 0.6721	loss_test: 0.7103	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7125	loss_val: 0.9573	loss_test: 1.2859	accuracy_train: 0.5638	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8370	loss_val: 0.6843	loss_test: 0.9730	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 53	curr_val_accuracy: 0.6433	curr_test_accuracy: 0.6327
+best_round: 5	best_val_accuracy: 0.6436	best_test_accuracy: 0.6655
+--------------------------------------------------
+round # 54		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 55 | KL Drift: 0.001440
+[client 0]	loss_train: 1.0338	loss_val: 0.8842	loss_test: 0.8438	accuracy_train: 0.2069	accuracy_val: 0.2727	accuracy_test: 0.2353
+[client 1]	loss_train: 0.2920	loss_val: 0.2789	loss_test: 0.2848	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6533	loss_val: 0.6330	loss_test: 0.6970	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7148	loss_val: 0.9457	loss_test: 1.2742	accuracy_train: 0.5532	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8105	loss_val: 0.6674	loss_test: 0.9530	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 54	curr_val_accuracy: 0.6518	curr_test_accuracy: 0.6327
+best_round: 54	best_val_accuracy: 0.6518	best_test_accuracy: 0.6327
+--------------------------------------------------
+round # 55		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 56 | KL Drift: 0.001818
+[client 0]	loss_train: 1.0395	loss_val: 0.8986	loss_test: 0.8425	accuracy_train: 0.2184	accuracy_val: 0.2727	accuracy_test: 0.2647
+[client 1]	loss_train: 0.2605	loss_val: 0.2503	loss_test: 0.2496	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6464	loss_val: 0.6233	loss_test: 0.7087	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7246	loss_val: 0.9549	loss_test: 1.3009	accuracy_train: 0.5585	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8052	loss_val: 0.6794	loss_test: 0.9540	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 55	curr_val_accuracy: 0.6518	curr_test_accuracy: 0.6409
+best_round: 54	best_val_accuracy: 0.6518	best_test_accuracy: 0.6327
+--------------------------------------------------
+round # 56		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 57 | KL Drift: 0.002096
+[client 0]	loss_train: 0.9930	loss_val: 0.8686	loss_test: 0.8532	accuracy_train: 0.2069	accuracy_val: 0.3030	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2179	loss_val: 0.2114	loss_test: 0.2094	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6724	loss_val: 0.6449	loss_test: 0.7447	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7254	loss_val: 0.9066	loss_test: 1.2660	accuracy_train: 0.5532	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8405	loss_val: 0.7295	loss_test: 0.9752	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 56	curr_val_accuracy: 0.6602	curr_test_accuracy: 0.6244
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 57		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 58 | KL Drift: 0.003936
+[client 0]	loss_train: 1.0750	loss_val: 0.9235	loss_test: 0.9225	accuracy_train: 0.1418	accuracy_val: 0.2424	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2437	loss_val: 0.2349	loss_test: 0.2439	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6949	loss_val: 0.6665	loss_test: 0.7646	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 3]	loss_train: 0.7320	loss_val: 0.8979	loss_test: 1.2398	accuracy_train: 0.5479	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8767	loss_val: 0.8134	loss_test: 1.0201	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 57	curr_val_accuracy: 0.6433	curr_test_accuracy: 0.6162
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 58		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 59 | KL Drift: 0.002240
+[client 0]	loss_train: 1.0628	loss_val: 0.8983	loss_test: 0.9096	accuracy_train: 0.1264	accuracy_val: 0.2424	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2296	loss_val: 0.2231	loss_test: 0.2215	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7230	loss_val: 0.6815	loss_test: 0.7936	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7477	loss_val: 0.9390	loss_test: 1.2413	accuracy_train: 0.5479	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8841	loss_val: 0.8646	loss_test: 1.0472	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 58	curr_val_accuracy: 0.6433	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 59		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 60 | KL Drift: 0.003652
+[client 0]	loss_train: 1.1175	loss_val: 0.9248	loss_test: 0.9231	accuracy_train: 0.1073	accuracy_val: 0.2121	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2618	loss_val: 0.2598	loss_test: 0.2645	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7256	loss_val: 0.6812	loss_test: 0.7922	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7483	loss_val: 0.9551	loss_test: 1.2965	accuracy_train: 0.5585	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8591	loss_val: 0.8617	loss_test: 1.0616	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 59	curr_val_accuracy: 0.6349	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 60		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 61 | KL Drift: 0.000733
+[client 0]	loss_train: 1.1176	loss_val: 0.9321	loss_test: 0.9145	accuracy_train: 0.1418	accuracy_val: 0.2121	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2788	loss_val: 0.2774	loss_test: 0.2648	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6973	loss_val: 0.6478	loss_test: 0.7595	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7192	loss_val: 0.9524	loss_test: 1.3060	accuracy_train: 0.5745	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8706	loss_val: 0.8164	loss_test: 1.0704	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 60	curr_val_accuracy: 0.6349	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 61		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 62 | KL Drift: 0.007230
+[client 0]	loss_train: 1.1573	loss_val: 0.9718	loss_test: 0.9588	accuracy_train: 0.1341	accuracy_val: 0.2424	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2486	loss_val: 0.2603	loss_test: 0.2356	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7091	loss_val: 0.6637	loss_test: 0.7715	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7074	loss_val: 0.9606	loss_test: 1.3373	accuracy_train: 0.5851	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8937	loss_val: 0.8009	loss_test: 1.0721	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 61	curr_val_accuracy: 0.6433	curr_test_accuracy: 0.6164
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 62		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 63 | KL Drift: 0.003446
+[client 0]	loss_train: 1.2147	loss_val: 1.0259	loss_test: 1.0308	accuracy_train: 0.0958	accuracy_val: 0.1818	accuracy_test: 0.1176
+[client 1]	loss_train: 0.1661	loss_val: 0.1665	loss_test: 0.1600	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7243	loss_val: 0.7010	loss_test: 0.8150	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7240	loss_val: 0.9180	loss_test: 1.3234	accuracy_train: 0.5745	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9573	loss_val: 0.9013	loss_test: 1.1162	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 62	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6000
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 63		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 64 | KL Drift: 0.015839
+[client 0]	loss_train: 1.1249	loss_val: 0.9516	loss_test: 0.9511	accuracy_train: 0.1226	accuracy_val: 0.1818	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2551	loss_val: 0.2617	loss_test: 0.2725	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7724	loss_val: 0.7347	loss_test: 0.8483	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7473	loss_val: 0.9438	loss_test: 1.3842	accuracy_train: 0.5745	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9957	loss_val: 0.9953	loss_test: 1.2032	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 63	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 64		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 65 | KL Drift: 0.002008
+[client 0]	loss_train: 1.0950	loss_val: 0.9265	loss_test: 0.9106	accuracy_train: 0.1341	accuracy_val: 0.2424	accuracy_test: 0.2059
+[client 1]	loss_train: 0.2311	loss_val: 0.2489	loss_test: 0.2612	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7222	loss_val: 0.6855	loss_test: 0.8104	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7651	loss_val: 1.0138	loss_test: 1.4432	accuracy_train: 0.5638	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9454	loss_val: 0.9498	loss_test: 1.1692	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 64	curr_val_accuracy: 0.6433	curr_test_accuracy: 0.6245
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 65		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 66 | KL Drift: 0.002480
+[client 0]	loss_train: 1.0714	loss_val: 0.9143	loss_test: 0.8882	accuracy_train: 0.1379	accuracy_val: 0.2727	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2653	loss_val: 0.2584	loss_test: 0.2830	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 2]	loss_train: 0.6917	loss_val: 0.6702	loss_test: 0.7905	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7669	loss_val: 1.0350	loss_test: 1.3547	accuracy_train: 0.5691	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9229	loss_val: 0.9078	loss_test: 1.1502	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 65	curr_val_accuracy: 0.6518	curr_test_accuracy: 0.6164
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 66		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 67 | KL Drift: 0.002479
+[client 0]	loss_train: 1.1296	loss_val: 0.9815	loss_test: 0.9512	accuracy_train: 0.1188	accuracy_val: 0.2121	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2434	loss_val: 0.2319	loss_test: 0.2475	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7009	loss_val: 0.6753	loss_test: 0.8217	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7580	loss_val: 1.0003	loss_test: 1.3173	accuracy_train: 0.5691	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9005	loss_val: 0.8798	loss_test: 1.1191	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 66	curr_val_accuracy: 0.6349	curr_test_accuracy: 0.6000
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 67		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 68 | KL Drift: 0.000256
+[client 0]	loss_train: 1.1593	loss_val: 1.0077	loss_test: 0.9585	accuracy_train: 0.1226	accuracy_val: 0.2424	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2244	loss_val: 0.2160	loss_test: 0.2136	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7373	loss_val: 0.7134	loss_test: 0.8707	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7539	loss_val: 1.0005	loss_test: 1.4157	accuracy_train: 0.5638	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9486	loss_val: 0.9233	loss_test: 1.1403	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 67	curr_val_accuracy: 0.6433	curr_test_accuracy: 0.6000
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 68		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 69 | KL Drift: 0.001035
+[client 0]	loss_train: 1.0808	loss_val: 0.9327	loss_test: 0.8830	accuracy_train: 0.2069	accuracy_val: 0.2727	accuracy_test: 0.2059
+[client 1]	loss_train: 0.2148	loss_val: 0.2112	loss_test: 0.1983	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7677	loss_val: 0.7485	loss_test: 0.8907	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7352	loss_val: 1.0067	loss_test: 1.4955	accuracy_train: 0.5638	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9595	loss_val: 0.9120	loss_test: 1.1629	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 68	curr_val_accuracy: 0.6518	curr_test_accuracy: 0.6245
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 69		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 70 | KL Drift: 0.001412
+[client 0]	loss_train: 1.0993	loss_val: 0.9640	loss_test: 0.9235	accuracy_train: 0.1648	accuracy_val: 0.2727	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2128	loss_val: 0.2131	loss_test: 0.2113	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7833	loss_val: 0.7654	loss_test: 0.8659	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7427	loss_val: 0.9717	loss_test: 1.5110	accuracy_train: 0.5532	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9561	loss_val: 0.9040	loss_test: 1.1756	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 69	curr_val_accuracy: 0.6518	curr_test_accuracy: 0.6164
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 70		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 71 | KL Drift: 0.009018
+[client 0]	loss_train: 1.3018	loss_val: 1.1565	loss_test: 1.0824	accuracy_train: 0.0920	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.1702	loss_val: 0.1710	loss_test: 0.1658	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7863	loss_val: 0.7558	loss_test: 0.8617	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7723	loss_val: 1.0154	loss_test: 1.4987	accuracy_train: 0.5426	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9568	loss_val: 0.9323	loss_test: 1.1993	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 70	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6000
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 71		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 72 | KL Drift: 0.008873
+[client 0]	loss_train: 1.4849	loss_val: 1.2929	loss_test: 1.1939	accuracy_train: 0.0613	accuracy_val: 0.0606	accuracy_test: 0.0882
+[client 1]	loss_train: 0.2255	loss_val: 0.2251	loss_test: 0.2334	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7949	loss_val: 0.7719	loss_test: 0.8717	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7767	loss_val: 1.0213	loss_test: 1.5240	accuracy_train: 0.5426	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9815	loss_val: 0.9313	loss_test: 1.2324	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 71	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.5918
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 72		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 73 | KL Drift: 0.003987
+[client 0]	loss_train: 1.3709	loss_val: 1.1475	loss_test: 1.0821	accuracy_train: 0.0843	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2219	loss_val: 0.2266	loss_test: 0.2403	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7742	loss_val: 0.7437	loss_test: 0.8506	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7684	loss_val: 1.0320	loss_test: 1.4912	accuracy_train: 0.5585	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9660	loss_val: 0.8683	loss_test: 1.2079	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 72	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6000
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 73		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 74 | KL Drift: 0.004925
+[client 0]	loss_train: 1.3696	loss_val: 1.1744	loss_test: 1.0590	accuracy_train: 0.1188	accuracy_val: 0.0909	accuracy_test: 0.1765
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 1]	loss_train: 0.2388	loss_val: 0.2310	loss_test: 0.2561	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7294	loss_val: 0.6878	loss_test: 0.8289	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7618	loss_val: 1.0373	loss_test: 1.4679	accuracy_train: 0.5532	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9182	loss_val: 0.8212	loss_test: 1.1540	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 73	curr_val_accuracy: 0.6099	curr_test_accuracy: 0.6164
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 74		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 75 | KL Drift: 0.007251
+[client 0]	loss_train: 1.5491	loss_val: 1.3547	loss_test: 1.1888	accuracy_train: 0.0728	accuracy_val: 0.0909	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2563	loss_val: 0.2633	loss_test: 0.2967	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7328	loss_val: 0.6935	loss_test: 0.8407	accuracy_train: 0.5921	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7451	loss_val: 1.0371	loss_test: 1.4160	accuracy_train: 0.5745	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.9021	loss_val: 0.8202	loss_test: 1.1751	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 74	curr_val_accuracy: 0.6099	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 75		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 76 | KL Drift: 0.017611
+[client 0]	loss_train: 1.2706	loss_val: 1.1038	loss_test: 0.9602	accuracy_train: 0.1226	accuracy_val: 0.1515	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2532	loss_val: 0.2767	loss_test: 0.3096	accuracy_train: 1.0000	accuracy_val: 0.9796	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7270	loss_val: 0.6681	loss_test: 0.8360	accuracy_train: 0.5921	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7361	loss_val: 1.0298	loss_test: 1.3590	accuracy_train: 0.5745	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8858	loss_val: 0.8923	loss_test: 1.2067	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 75	curr_val_accuracy: 0.6183	curr_test_accuracy: 0.6164
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 76		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 77 | KL Drift: 0.002778
+[client 0]	loss_train: 1.1367	loss_val: 0.9890	loss_test: 0.8855	accuracy_train: 0.1571	accuracy_val: 0.2121	accuracy_test: 0.2353
+[client 1]	loss_train: 0.2167	loss_val: 0.2470	loss_test: 0.2688	accuracy_train: 1.0000	accuracy_val: 0.9796	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6621	loss_val: 0.5954	loss_test: 0.7916	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7508	loss_val: 1.0690	loss_test: 1.4256	accuracy_train: 0.5904	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8710	loss_val: 0.9371	loss_test: 1.1902	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 76	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6327
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 77		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 78 | KL Drift: 0.008268
+[client 0]	loss_train: 1.1196	loss_val: 0.9693	loss_test: 0.9184	accuracy_train: 0.1073	accuracy_val: 0.1515	accuracy_test: 0.2353
+[client 1]	loss_train: 0.1955	loss_val: 0.1956	loss_test: 0.2203	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6694	loss_val: 0.6154	loss_test: 0.8426	accuracy_train: 0.5921	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7424	loss_val: 1.0793	loss_test: 1.3930	accuracy_train: 0.5904	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8128	loss_val: 0.8545	loss_test: 1.1220	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 77	curr_val_accuracy: 0.6180	curr_test_accuracy: 0.6408
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 78		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 79 | KL Drift: 0.003541
+[client 0]	loss_train: 1.1832	loss_val: 1.0257	loss_test: 0.9831	accuracy_train: 0.0766	accuracy_val: 0.0606	accuracy_test: 0.1176
+[client 1]	loss_train: 0.1958	loss_val: 0.2132	loss_test: 0.2219	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7240	loss_val: 0.7003	loss_test: 0.9114	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7328	loss_val: 1.0578	loss_test: 1.4406	accuracy_train: 0.5585	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8697	loss_val: 0.9556	loss_test: 1.1694	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 78	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6080
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 79		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 80 | KL Drift: 0.001613
+[client 0]	loss_train: 1.1913	loss_val: 1.0496	loss_test: 0.9938	accuracy_train: 0.0843	accuracy_val: 0.0606	accuracy_test: 0.1471
+[client 1]	loss_train: 0.1686	loss_val: 0.1790	loss_test: 0.1882	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7505	loss_val: 0.7235	loss_test: 0.8932	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7556	loss_val: 1.0158	loss_test: 1.5112	accuracy_train: 0.5479	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.9316	loss_val: 1.0385	loss_test: 1.2091	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 79	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6162
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 80		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 81 | KL Drift: 0.000484
+[client 0]	loss_train: 1.2410	loss_val: 1.0697	loss_test: 1.0142	accuracy_train: 0.0728	accuracy_val: 0.0606	accuracy_test: 0.1471
+[client 1]	loss_train: 0.1953	loss_val: 0.2008	loss_test: 0.1996	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7824	loss_val: 0.7595	loss_test: 0.8706	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7453	loss_val: 0.9275	loss_test: 1.5167	accuracy_train: 0.5638	accuracy_val: 0.5217	accuracy_test: 0.5200
+[client 4]	loss_train: 0.9353	loss_val: 0.9844	loss_test: 1.2053	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 80	curr_val_accuracy: 0.5927	curr_test_accuracy: 0.6162
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 81		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 82 | KL Drift: 0.003258
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[client 0]	loss_train: 1.2859	loss_val: 1.1151	loss_test: 1.0703	accuracy_train: 0.0881	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2072	loss_val: 0.2137	loss_test: 0.2200	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7704	loss_val: 0.7432	loss_test: 0.8606	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7322	loss_val: 0.9101	loss_test: 1.5919	accuracy_train: 0.5745	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8576	loss_val: 0.9231	loss_test: 1.1336	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 81	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6000
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 82		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 83 | KL Drift: 0.003165
+[client 0]	loss_train: 1.3070	loss_val: 1.1305	loss_test: 1.0825	accuracy_train: 0.1034	accuracy_val: 0.1212	accuracy_test: 0.1471
+[client 1]	loss_train: 0.1986	loss_val: 0.1830	loss_test: 0.2107	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7631	loss_val: 0.7358	loss_test: 0.8481	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7173	loss_val: 0.8823	loss_test: 1.6048	accuracy_train: 0.6011	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8488	loss_val: 0.9343	loss_test: 1.1378	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 82	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 83		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 84 | KL Drift: 0.002603
+[client 0]	loss_train: 1.2006	loss_val: 1.0208	loss_test: 0.9898	accuracy_train: 0.1418	accuracy_val: 0.1515	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2436	loss_val: 0.2294	loss_test: 0.2577	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7747	loss_val: 0.7861	loss_test: 0.8479	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7053	loss_val: 0.8351	loss_test: 1.5113	accuracy_train: 0.6223	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8647	loss_val: 0.9500	loss_test: 1.1884	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 83	curr_val_accuracy: 0.6180	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 84		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 85 | KL Drift: 0.001760
+[client 0]	loss_train: 1.3700	loss_val: 1.1710	loss_test: 1.1207	accuracy_train: 0.0881	accuracy_val: 0.0909	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2462	loss_val: 0.2263	loss_test: 0.2428	accuracy_train: 0.9974	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7654	loss_val: 0.8001	loss_test: 0.8564	accuracy_train: 0.5921	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7010	loss_val: 0.7948	loss_test: 1.4204	accuracy_train: 0.6330	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8885	loss_val: 0.9790	loss_test: 1.2351	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 84	curr_val_accuracy: 0.6011	curr_test_accuracy: 0.6082
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 85		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 86 | KL Drift: 0.002713
+[client 0]	loss_train: 1.3984	loss_val: 1.2058	loss_test: 1.1412	accuracy_train: 0.0920	accuracy_val: 0.1212	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2359	loss_val: 0.2352	loss_test: 0.2548	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.8023	loss_val: 0.8270	loss_test: 0.9231	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7310	loss_val: 0.7966	loss_test: 1.5174	accuracy_train: 0.6170	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8793	loss_val: 1.0075	loss_test: 1.2863	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 85	curr_val_accuracy: 0.6183	curr_test_accuracy: 0.6000
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 86		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 87 | KL Drift: 0.007332
+[client 0]	loss_train: 1.1993	loss_val: 0.9868	loss_test: 0.9671	accuracy_train: 0.1533	accuracy_val: 0.2424	accuracy_test: 0.1765
+[client 1]	loss_train: 0.2192	loss_val: 0.2706	loss_test: 0.2829	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7843	loss_val: 0.7911	loss_test: 0.9474	accuracy_train: 0.5789	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7428	loss_val: 0.8429	loss_test: 1.5385	accuracy_train: 0.6170	accuracy_val: 0.5652	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8555	loss_val: 0.9980	loss_test: 1.2834	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 86	curr_val_accuracy: 0.6520	curr_test_accuracy: 0.6244
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 87		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 88 | KL Drift: 0.014123
+[client 0]	loss_train: 1.1496	loss_val: 0.9264	loss_test: 0.8942	accuracy_train: 0.1992	accuracy_val: 0.2121	accuracy_test: 0.2647
+[client 1]	loss_train: 0.2046	loss_val: 0.1957	loss_test: 0.2375	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7241	loss_val: 0.7167	loss_test: 0.8985	accuracy_train: 0.5921	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7733	loss_val: 0.9330	loss_test: 1.6385	accuracy_train: 0.6170	accuracy_val: 0.5652	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8748	loss_val: 0.9046	loss_test: 1.2510	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 87	curr_val_accuracy: 0.6436	curr_test_accuracy: 0.6489
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 88		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 89 | KL Drift: 0.013674
+[client 0]	loss_train: 1.1536	loss_val: 0.9359	loss_test: 0.9043	accuracy_train: 0.1801	accuracy_val: 0.1515	accuracy_test: 0.2059
+[client 1]	loss_train: 0.1521	loss_val: 0.1286	loss_test: 0.1663	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6951	loss_val: 0.6383	loss_test: 0.8522	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7744	loss_val: 0.8900	loss_test: 1.6080	accuracy_train: 0.6223	accuracy_val: 0.5652	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8791	loss_val: 0.8598	loss_test: 1.2324	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 88	curr_val_accuracy: 0.6267	curr_test_accuracy: 0.6326
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 89		sampled_clients: [0, 1, 2, 3, 4]
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 90 | KL Drift: 0.002262
+[client 0]	loss_train: 1.1392	loss_val: 0.9071	loss_test: 0.9172	accuracy_train: 0.1724	accuracy_val: 0.2121	accuracy_test: 0.2059
+[client 1]	loss_train: 0.1503	loss_val: 0.1227	loss_test: 0.1575	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7155	loss_val: 0.6383	loss_test: 0.8395	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7641	loss_val: 0.9017	loss_test: 1.5982	accuracy_train: 0.6383	accuracy_val: 0.5652	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8486	loss_val: 0.9095	loss_test: 1.2703	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 89	curr_val_accuracy: 0.6436	curr_test_accuracy: 0.6326
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 90		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 91 | KL Drift: 0.004275
+[client 0]	loss_train: 1.1692	loss_val: 0.9369	loss_test: 0.9270	accuracy_train: 0.1686	accuracy_val: 0.1818	accuracy_test: 0.1765
+[client 1]	loss_train: 0.1978	loss_val: 0.1780	loss_test: 0.2018	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7216	loss_val: 0.6305	loss_test: 0.8159	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7420	loss_val: 0.9761	loss_test: 1.5749	accuracy_train: 0.6330	accuracy_val: 0.5652	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8522	loss_val: 0.8860	loss_test: 1.2925	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 90	curr_val_accuracy: 0.6352	curr_test_accuracy: 0.6244
+best_round: 56	best_val_accuracy: 0.6602	best_test_accuracy: 0.6244
+--------------------------------------------------
+round # 91		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 92 | KL Drift: 0.005549
+[client 0]	loss_train: 1.0939	loss_val: 0.8813	loss_test: 0.8687	accuracy_train: 0.2414	accuracy_val: 0.3030	accuracy_test: 0.2941
+[client 1]	loss_train: 0.1858	loss_val: 0.1711	loss_test: 0.1834	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6771	loss_val: 0.6112	loss_test: 0.8061	accuracy_train: 0.6184	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7356	loss_val: 1.1102	loss_test: 1.5948	accuracy_train: 0.6383	accuracy_val: 0.5652	accuracy_test: 0.5600
+[client 4]	loss_train: 0.8158	loss_val: 0.8235	loss_test: 1.2075	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 91	curr_val_accuracy: 0.6689	curr_test_accuracy: 0.6651
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 92		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 93 | KL Drift: 0.015870
+[client 0]	loss_train: 1.1680	loss_val: 0.9337	loss_test: 0.8959	accuracy_train: 0.2222	accuracy_val: 0.2727	accuracy_test: 0.2647
+[client 1]	loss_train: 0.1381	loss_val: 0.1303	loss_test: 0.1358	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6631	loss_val: 0.6167	loss_test: 0.8740	accuracy_train: 0.6184	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7195	loss_val: 1.0197	loss_test: 1.5771	accuracy_train: 0.6383	accuracy_val: 0.5652	accuracy_test: 0.5200
+[client 4]	loss_train: 0.8021	loss_val: 0.8937	loss_test: 1.2067	accuracy_train: 0.5652	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 92	curr_val_accuracy: 0.6605	curr_test_accuracy: 0.6489
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 93		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 94 | KL Drift: 0.007402
+[client 0]	loss_train: 1.1773	loss_val: 0.9652	loss_test: 0.9399	accuracy_train: 0.1533	accuracy_val: 0.1818	accuracy_test: 0.1765
+[client 1]	loss_train: 0.1401	loss_val: 0.1206	loss_test: 0.1330	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6522	loss_val: 0.6061	loss_test: 0.8988	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7321	loss_val: 0.9389	loss_test: 1.6389	accuracy_train: 0.6223	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.7619	loss_val: 0.9116	loss_test: 1.1759	accuracy_train: 0.5217	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 93	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6164
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 94		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 95 | KL Drift: 0.006555
+[client 0]	loss_train: 1.2453	loss_val: 1.0626	loss_test: 1.0336	accuracy_train: 0.1073	accuracy_val: 0.1212	accuracy_test: 0.1471
+[client 1]	loss_train: 0.1019	loss_val: 0.0900	loss_test: 0.1008	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6755	loss_val: 0.6560	loss_test: 0.9182	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7456	loss_val: 0.8806	loss_test: 1.6265	accuracy_train: 0.6064	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.7839	loss_val: 0.8490	loss_test: 1.1868	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 94	curr_val_accuracy: 0.6096	curr_test_accuracy: 0.6082
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 95		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 96 | KL Drift: 0.006527
+[client 0]	loss_train: 1.2898	loss_val: 1.0908	loss_test: 1.0524	accuracy_train: 0.1226	accuracy_val: 0.1515	accuracy_test: 0.1471
+[client 1]	loss_train: 0.0824	loss_val: 0.0808	loss_test: 0.0919	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7186	loss_val: 0.6868	loss_test: 0.9577	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7167	loss_val: 0.8527	loss_test: 1.5150	accuracy_train: 0.6330	accuracy_val: 0.5217	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8425	loss_val: 0.8621	loss_test: 1.2203	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 95	curr_val_accuracy: 0.6180	curr_test_accuracy: 0.6082
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 96		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 97 | KL Drift: 0.005600
+[client 0]	loss_train: 1.3525	loss_val: 1.1458	loss_test: 1.0693	accuracy_train: 0.1149	accuracy_val: 0.0909	accuracy_test: 0.1471
+[client 1]	loss_train: 0.1082	loss_val: 0.0799	loss_test: 0.1085	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7412	loss_val: 0.6533	loss_test: 0.9680	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7194	loss_val: 0.9193	loss_test: 1.5203	accuracy_train: 0.6383	accuracy_val: 0.5652	accuracy_test: 0.4800
+[client 4]	loss_train: 0.8734	loss_val: 0.9350	loss_test: 1.2457	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 96	curr_val_accuracy: 0.6099	curr_test_accuracy: 0.6082
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/cta/users/anajafi/.local/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 97		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 98 | KL Drift: 0.018517
+[client 0]	loss_train: 1.2765	loss_val: 1.0552	loss_test: 0.9870	accuracy_train: 0.1456	accuracy_val: 0.1515	accuracy_test: 0.1471
+[client 1]	loss_train: 0.2085	loss_val: 0.1819	loss_test: 0.2322	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.7451	loss_val: 0.6798	loss_test: 0.9620	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7422	loss_val: 1.0167	loss_test: 1.5756	accuracy_train: 0.6277	accuracy_val: 0.5652	accuracy_test: 0.5600
+[client 4]	loss_train: 0.9178	loss_val: 0.9998	loss_test: 1.3093	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 97	curr_val_accuracy: 0.6267	curr_test_accuracy: 0.6242
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 98		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 99 | KL Drift: 0.008840
+[client 0]	loss_train: 1.4191	loss_val: 1.2001	loss_test: 1.1121	accuracy_train: 0.1111	accuracy_val: 0.0909	accuracy_test: 0.1176
+[client 1]	loss_train: 0.2257	loss_val: 0.2164	loss_test: 0.2632	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6832	loss_val: 0.6224	loss_test: 0.9014	accuracy_train: 0.6053	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.7727	loss_val: 1.0503	loss_test: 1.5602	accuracy_train: 0.6330	accuracy_val: 0.5652	accuracy_test: 0.5600
+[client 4]	loss_train: 0.8880	loss_val: 0.9601	loss_test: 1.2712	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 98	curr_val_accuracy: 0.6099	curr_test_accuracy: 0.6160
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------
+round # 99		sampled_clients: [0, 1, 2, 3, 4]
+Visualization saved to evolution_features_['DD']_clients5.png
+Visualization saved to evolution_params_['DD']_clients5.png
+Round 100 | KL Drift: 0.010622
+[client 0]	loss_train: 1.3018	loss_val: 1.1076	loss_test: 1.0383	accuracy_train: 0.1379	accuracy_val: 0.1818	accuracy_test: 0.1471
+[client 1]	loss_train: 0.1804	loss_val: 0.1721	loss_test: 0.2102	accuracy_train: 1.0000	accuracy_val: 1.0000	accuracy_test: 1.0000
+[client 2]	loss_train: 0.6603	loss_val: 0.6173	loss_test: 0.8929	accuracy_train: 0.6316	accuracy_val: 0.6000	accuracy_test: 0.5455
+[client 3]	loss_train: 0.8563	loss_val: 1.1311	loss_test: 1.5713	accuracy_train: 0.6330	accuracy_val: 0.5217	accuracy_test: 0.6000
+[client 4]	loss_train: 0.8965	loss_val: 0.9700	loss_test: 1.3105	accuracy_train: 0.4783	accuracy_val: 0.3333	accuracy_test: 0.5000
+curr_round: 99	curr_val_accuracy: 0.6265	curr_test_accuracy: 0.6322
+best_round: 91	best_val_accuracy: 0.6689	best_test_accuracy: 0.6651
+--------------------------------------------------

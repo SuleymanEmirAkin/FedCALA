@@ -1,0 +1,711 @@
+Processing...
+Downloading https://www.chrsmrrs.com/graphkerneldatasets/ENZYMES.zip
+Processing...
+Done!
+Done!
+Conducting graph-fl label skew simulation...
+num_classes: 6
+global label distribution: [100 100 100 100 100 100]
+label_counts:
+[[ 2  2 11  5  3  5]
+ [ 1  3  9  3  3 10]
+ [ 3  2  5  4  2 14]
+ [ 9  1  1  4  7  6]
+ [14  0  2  6  5  0]
+ [ 2  1  6  8  1  9]
+ [ 3  0  1  5 12  6]
+ [ 1 12  0  5 10  0]
+ [ 1  1  4  2  3 10]
+ [ 7  1 14  2  1  4]
+ [ 0 23  8  0  0  0]
+ [17  4  1  5 14  0]
+ [ 4  3  4  3  0  2]
+ [ 0 11  1  3 28  0]
+ [ 3  0  3  1  2 29]
+ [21  2  3 18  0  0]
+ [ 5  1  2  8  7  3]
+ [ 3  4  5  4  1  1]
+ [ 0 23 14  0  0  0]
+ [ 4  6  6 14  1  1]]
+Saved dataset arguments to dataset/distrib/graph_fl_label_skew_1.00_ENZYMES_client_20/description.txt.
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+GIN(
+  (convs): ModuleList(
+    (0): GINConv(nn=Sequential(
+      (0): Linear(in_features=21, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+    (1): GINConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=128, bias=True)
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=128, out_features=64, bias=True)
+    ))
+  )
+  (batch_norms): ModuleList(
+    (0-1): 2 x BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (lin1): Linear(in_features=64, out_features=64, bias=True)
+  (batch_norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (lin2): Linear(in_features=64, out_features=6, bias=True)
+)
+round # 0		sampled_clients: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[client 0]	loss_train: 1.8101	loss_val: 9.2244	loss_test: 1.8465	accuracy_train: 0.1000	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 1]	loss_train: 1.7363	loss_val: 1.6673	loss_test: 1.6896	accuracy_train: 0.2381	accuracy_val: 0.5000	accuracy_test: 0.3333
+[client 2]	loss_train: 1.8188	loss_val: 5.8272	loss_test: 1.7231	accuracy_train: 0.1364	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 3]	loss_train: 1.8647	loss_val: 2.1811	loss_test: 1.5978	accuracy_train: 0.0526	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 4]	loss_train: 1.8314	loss_val: 1.7742	loss_test: 1.7750	accuracy_train: 0.0500	accuracy_val: 0.0000	accuracy_test: 0.2000
+[client 5]	loss_train: 1.8268	loss_val: 1.6807	loss_test: 1.8861	accuracy_train: 0.2778	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 6]	loss_train: 1.6987	loss_val: 1.9849	loss_test: 1.8517	accuracy_train: 0.3684	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 7]	loss_train: 2.0770	loss_val: 1.8875	loss_test: 1.4722	accuracy_train: 0.2381	accuracy_val: 0.0000	accuracy_test: 0.4000
+[client 8]	loss_train: 1.9087	loss_val: 15.2052	loss_test: 1.9072	accuracy_train: 0.1429	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 9]	loss_train: 1.7279	loss_val: 1.6732	loss_test: 1.9802	accuracy_train: 0.1000	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 10]	loss_train: 1.8290	loss_val: 2.2587	loss_test: 1.9195	accuracy_train: 0.2500	accuracy_val: 0.3333	accuracy_test: 0.2500
+[client 11]	loss_train: 1.7790	loss_val: 1.7727	loss_test: 1.8518	accuracy_train: 0.0968	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 12]	loss_train: 1.7926	loss_val: nan	loss_test: 1.9556	accuracy_train: 0.0909	accuracy_val: nan	accuracy_test: 0.2000
+[client 13]	loss_train: 1.6465	loss_val: 1.7633	loss_test: 1.6828	accuracy_train: 0.3125	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 14]	loss_train: 1.7434	loss_val: 1.9885	loss_test: 1.9071	accuracy_train: 0.0357	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 15]	loss_train: 1.7471	loss_val: 1.7038	loss_test: 1.7064	accuracy_train: 0.0606	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 16]	loss_train: 1.8504	loss_val: 1.8567	loss_test: 1.8447	accuracy_train: 0.1667	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 17]	loss_train: 1.8591	loss_val: nan	loss_test: 1.7526	accuracy_train: 0.1667	accuracy_val: nan	accuracy_test: 0.1667
+[client 18]	loss_train: 1.7124	loss_val: 1.7246	loss_test: 1.6775	accuracy_train: 0.2759	accuracy_val: 0.3333	accuracy_test: 0.0000
+[client 19]	loss_train: 1.8383	loss_val: 1.9935	loss_test: 1.8302	accuracy_train: 0.2727	accuracy_val: 0.3333	accuracy_test: 0.1429
+curr_round: 0	curr_val_accuracy: nan	curr_test_accuracy: 0.1368
+best_round: 0	best_val_accuracy: 0.0000	best_test_accuracy: 0.0000
+--------------------------------------------------
+round # 1		sampled_clients: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[client 0]	loss_train: 1.7574	loss_val: 1.3835	loss_test: 1.7805	accuracy_train: 0.4000	accuracy_val: 1.0000	accuracy_test: 0.2857
+[client 1]	loss_train: 1.7635	loss_val: 1.7491	loss_test: 1.7921	accuracy_train: 0.3333	accuracy_val: 0.5000	accuracy_test: 0.1667
+[client 2]	loss_train: 1.7717	loss_val: 1.7830	loss_test: 1.7904	accuracy_train: 0.1818	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 3]	loss_train: 1.7912	loss_val: 1.7912	loss_test: 1.7915	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.1667
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+[client 4]	loss_train: 1.7843	loss_val: 1.7788	loss_test: 1.7818	accuracy_train: 0.0500	accuracy_val: 0.0000	accuracy_test: 0.2000
+[client 5]	loss_train: 1.7477	loss_val: 1.7352	loss_test: 1.7949	accuracy_train: 0.2222	accuracy_val: 0.3333	accuracy_test: 0.1667
+[client 6]	loss_train: 1.7875	loss_val: 1.8007	loss_test: 1.7854	accuracy_train: 0.2105	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 7]	loss_train: 1.7888	loss_val: 1.7887	loss_test: 1.7987	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 8]	loss_train: 1.7651	loss_val: 1.2919	loss_test: 1.7893	accuracy_train: 0.2143	accuracy_val: 1.0000	accuracy_test: 0.1667
+[client 9]	loss_train: 1.7396	loss_val: 1.7500	loss_test: 1.7757	accuracy_train: 0.5500	accuracy_val: 0.5000	accuracy_test: 0.2857
+[client 10]	loss_train: 1.7785	loss_val: 1.7749	loss_test: 1.7800	accuracy_train: 0.2500	accuracy_val: 0.3333	accuracy_test: 0.2500
+[client 11]	loss_train: 1.8089	loss_val: 1.8387	loss_test: 1.7963	accuracy_train: 0.1290	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 12]	loss_train: 1.7796	loss_val: nan	loss_test: 1.7915	accuracy_train: 0.2727	accuracy_val: nan	accuracy_test: 0.2000
+[client 13]	loss_train: 1.7542	loss_val: 1.7470	loss_test: 1.7636	accuracy_train: 0.6562	accuracy_val: 0.5000	accuracy_test: 0.4286
+[client 14]	loss_train: 1.8024	loss_val: 1.8059	loss_test: 1.7934	accuracy_train: 0.0714	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 15]	loss_train: 1.8011	loss_val: 1.8049	loss_test: 1.8029	accuracy_train: 0.0606	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 16]	loss_train: 1.7957	loss_val: 1.7930	loss_test: 1.7911	accuracy_train: 0.0556	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 17]	loss_train: 1.7755	loss_val: nan	loss_test: 1.7939	accuracy_train: 0.3333	accuracy_val: nan	accuracy_test: 0.1667
+[client 18]	loss_train: 1.7700	loss_val: 1.7783	loss_test: 1.7712	accuracy_train: 0.2414	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 19]	loss_train: 1.7864	loss_val: 1.7748	loss_test: 1.7924	accuracy_train: 0.1818	accuracy_val: 0.3333	accuracy_test: 0.1429
+curr_round: 1	curr_val_accuracy: nan	curr_test_accuracy: 0.1780
+best_round: 0	best_val_accuracy: 0.0000	best_test_accuracy: 0.0000
+--------------------------------------------------
+round # 2		sampled_clients: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[client 0]	loss_train: 1.7526	loss_val: 1.4893	loss_test: 1.7781	accuracy_train: 0.4000	accuracy_val: 1.0000	accuracy_test: 0.2857
+[client 1]	loss_train: 1.7659	loss_val: 1.7486	loss_test: 1.7939	accuracy_train: 0.3333	accuracy_val: 0.5000	accuracy_test: 0.1667
+[client 2]	loss_train: 1.7731	loss_val: 1.8090	loss_test: 1.7890	accuracy_train: 0.1818	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 3]	loss_train: 1.8022	loss_val: 1.7997	loss_test: 1.7926	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 4]	loss_train: 1.7917	loss_val: 1.7800	loss_test: 1.7903	accuracy_train: 0.1000	accuracy_val: 0.5000	accuracy_test: 0.0000
+[client 5]	loss_train: 1.7546	loss_val: 1.7403	loss_test: 1.7953	accuracy_train: 0.2222	accuracy_val: 0.3333	accuracy_test: 0.1667
+[client 6]	loss_train: 1.7866	loss_val: 1.8035	loss_test: 1.7853	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 7]	loss_train: 1.7971	loss_val: 1.8059	loss_test: 1.8063	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 8]	loss_train: 1.7594	loss_val: 1.1459	loss_test: 1.7890	accuracy_train: 0.2143	accuracy_val: 1.0000	accuracy_test: 0.1667
+[client 9]	loss_train: 1.7360	loss_val: 1.7576	loss_test: 1.7727	accuracy_train: 0.5500	accuracy_val: 0.5000	accuracy_test: 0.2857
+[client 10]	loss_train: 1.7883	loss_val: 1.7827	loss_test: 1.7919	accuracy_train: 0.2500	accuracy_val: 0.3333	accuracy_test: 0.2500
+[client 11]	loss_train: 1.8188	loss_val: 1.8426	loss_test: 1.7987	accuracy_train: 0.0645	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 12]	loss_train: 1.7810	loss_val: nan	loss_test: 1.7919	accuracy_train: 0.2727	accuracy_val: nan	accuracy_test: 0.2000
+[client 13]	loss_train: 1.7736	loss_val: 1.7622	loss_test: 1.7708	accuracy_train: 0.0000	accuracy_val: 0.2500	accuracy_test: 0.1429
+[client 14]	loss_train: 1.7769	loss_val: 1.7721	loss_test: 1.7819	accuracy_train: 0.0714	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 15]	loss_train: 1.8013	loss_val: 1.8080	loss_test: 1.7990	accuracy_train: 0.0606	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 16]	loss_train: 1.7966	loss_val: 1.7909	loss_test: 1.7914	accuracy_train: 0.0556	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 17]	loss_train: 1.7647	loss_val: nan	loss_test: 1.7958	accuracy_train: 0.3333	accuracy_val: nan	accuracy_test: 0.1667
+[client 18]	loss_train: 1.7575	loss_val: 1.7777	loss_test: 1.7611	accuracy_train: 0.3793	accuracy_val: 0.3333	accuracy_test: 0.4000
+[client 19]	loss_train: 1.7812	loss_val: 1.7681	loss_test: 1.7941	accuracy_train: 0.1818	accuracy_val: 0.3333	accuracy_test: 0.1429
+curr_round: 2	curr_val_accuracy: nan	curr_test_accuracy: 0.1732
+best_round: 0	best_val_accuracy: 0.0000	best_test_accuracy: 0.0000
+--------------------------------------------------
+round # 3		sampled_clients: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[client 0]	loss_train: 1.7434	loss_val: 1.5668	loss_test: 1.7717	accuracy_train: 0.4500	accuracy_val: 0.0000	accuracy_test: 0.2857
+[client 1]	loss_train: 1.7627	loss_val: 1.7383	loss_test: 1.7912	accuracy_train: 0.3333	accuracy_val: 0.5000	accuracy_test: 0.1667
+[client 2]	loss_train: 1.7727	loss_val: 1.5372	loss_test: 1.7836	accuracy_train: 0.1818	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 3]	loss_train: 1.8004	loss_val: 1.8081	loss_test: 1.7796	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 4]	loss_train: 1.7905	loss_val: 1.7864	loss_test: 1.8001	accuracy_train: 0.1500	accuracy_val: 0.5000	accuracy_test: 0.2000
+[client 5]	loss_train: 1.7485	loss_val: 1.7481	loss_test: 1.7917	accuracy_train: 0.2778	accuracy_val: 0.3333	accuracy_test: 0.1667
+[client 6]	loss_train: 1.7807	loss_val: 1.7985	loss_test: 1.7926	accuracy_train: 0.0526	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 7]	loss_train: 1.7989	loss_val: 1.8143	loss_test: 1.8044	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 8]	loss_train: 1.7511	loss_val: 0.9044	loss_test: 1.7877	accuracy_train: 0.2143	accuracy_val: 1.0000	accuracy_test: 0.1667
+[client 9]	loss_train: 1.7214	loss_val: 1.7569	loss_test: 1.7703	accuracy_train: 0.6000	accuracy_val: 0.5000	accuracy_test: 0.2857
+[client 10]	loss_train: 1.7873	loss_val: 1.7853	loss_test: 1.7920	accuracy_train: 0.2500	accuracy_val: 0.3333	accuracy_test: 0.2500
+[client 11]	loss_train: 1.8163	loss_val: 1.8348	loss_test: 1.7955	accuracy_train: 0.0000	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 12]	loss_train: 1.7791	loss_val: nan	loss_test: 1.7895	accuracy_train: 0.2727	accuracy_val: nan	accuracy_test: 0.2000
+[client 13]	loss_train: 1.7780	loss_val: 1.7536	loss_test: 1.7756	accuracy_train: 0.0312	accuracy_val: 0.2500	accuracy_test: 0.1429
+[client 14]	loss_train: 1.7696	loss_val: 1.7704	loss_test: 1.7784	accuracy_train: 0.0714	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 15]	loss_train: 1.7981	loss_val: 1.8041	loss_test: 1.7881	accuracy_train: 0.0606	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 16]	loss_train: 1.7909	loss_val: 1.7730	loss_test: 1.7838	accuracy_train: 0.1111	accuracy_val: 0.0000	accuracy_test: 0.3333
+[client 17]	loss_train: 1.7486	loss_val: nan	loss_test: 1.7952	accuracy_train: 0.3333	accuracy_val: nan	accuracy_test: 0.1667
+[client 18]	loss_train: 1.7560	loss_val: 1.7890	loss_test: 1.7609	accuracy_train: 0.3793	accuracy_val: 0.3333	accuracy_test: 0.4000
+[client 19]	loss_train: 1.7630	loss_val: 1.7944	loss_test: 1.7906	accuracy_train: 0.2273	accuracy_val: 0.3333	accuracy_test: 0.1429
+curr_round: 3	curr_val_accuracy: nan	curr_test_accuracy: 0.1895
+best_round: 0	best_val_accuracy: 0.0000	best_test_accuracy: 0.0000
+--------------------------------------------------
+round # 4		sampled_clients: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/lib/_function_base_impl.py:552: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/cta/users/anajafi/.local/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+[client 0]	loss_train: 1.7266	loss_val: 1.8622	loss_test: 1.7628	accuracy_train: 0.6000	accuracy_val: 0.0000	accuracy_test: 0.4286
+[client 1]	loss_train: 1.7555	loss_val: 1.7363	loss_test: 1.7868	accuracy_train: 0.3810	accuracy_val: 0.5000	accuracy_test: 0.1667
+[client 2]	loss_train: 1.7724	loss_val: 1.2340	loss_test: 1.7704	accuracy_train: 0.2727	accuracy_val: 1.0000	accuracy_test: 0.2857
+[client 3]	loss_train: 1.7733	loss_val: 1.8138	loss_test: 1.7411	accuracy_train: 0.1053	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 4]	loss_train: 1.7685	loss_val: 1.7637	loss_test: 1.8143	accuracy_train: 0.4000	accuracy_val: 0.5000	accuracy_test: 0.4000
+[client 5]	loss_train: 1.7165	loss_val: 1.7551	loss_test: 1.7793	accuracy_train: 0.4444	accuracy_val: 0.3333	accuracy_test: 0.1667
+[client 6]	loss_train: 1.7650	loss_val: 1.7999	loss_test: 1.7982	accuracy_train: 0.1579	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 7]	loss_train: 1.7802	loss_val: 1.8188	loss_test: 1.7783	accuracy_train: 0.0476	accuracy_val: 0.0000	accuracy_test: 0.0000
+[client 8]	loss_train: 1.7427	loss_val: 0.7277	loss_test: 1.7812	accuracy_train: 0.3571	accuracy_val: 1.0000	accuracy_test: 0.1667
+[client 9]	loss_train: 1.7104	loss_val: 1.7533	loss_test: 1.7716	accuracy_train: 0.8500	accuracy_val: 0.5000	accuracy_test: 0.2857
+[client 10]	loss_train: 1.7812	loss_val: 1.7808	loss_test: 1.7857	accuracy_train: 0.2917	accuracy_val: 0.3333	accuracy_test: 0.2500
+[client 11]	loss_train: 1.8015	loss_val: 1.8295	loss_test: 1.7854	accuracy_train: 0.0645	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 12]	loss_train: 1.7658	loss_val: nan	loss_test: 1.7836	accuracy_train: 0.3636	accuracy_val: nan	accuracy_test: 0.4000
+[client 13]	loss_train: 1.7715	loss_val: 1.7443	loss_test: 1.7818	accuracy_train: 0.2188	accuracy_val: 0.7500	accuracy_test: 0.2857
+[client 14]	loss_train: 1.7771	loss_val: 1.7760	loss_test: 1.7754	accuracy_train: 0.0714	accuracy_val: 0.0000	accuracy_test: 0.2857
+[client 15]	loss_train: 1.7794	loss_val: 1.7940	loss_test: 1.7699	accuracy_train: 0.1515	accuracy_val: 0.0000	accuracy_test: 0.4286
+[client 16]	loss_train: 1.7714	loss_val: 1.7508	loss_test: 1.7700	accuracy_train: 0.2778	accuracy_val: 0.5000	accuracy_test: 0.3333
+[client 17]	loss_train: 1.7171	loss_val: nan	loss_test: 1.7823	accuracy_train: 0.5833	accuracy_val: nan	accuracy_test: 0.1667
+[client 18]	loss_train: 1.7684	loss_val: 1.8036	loss_test: 1.7762	accuracy_train: 0.3103	accuracy_val: 0.3333	accuracy_test: 0.4000
+[client 19]	loss_train: 1.7272	loss_val: 1.8405	loss_test: 1.7826	accuracy_train: 0.5455	accuracy_val: 0.0000	accuracy_test: 0.1429
+curr_round: 4	curr_val_accuracy: nan	curr_test_accuracy: 0.2578
+best_round: 0	best_val_accuracy: 0.0000	best_test_accuracy: 0.0000
+--------------------------------------------------
+round # 5		sampled_clients: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[client 0]	loss_train: 1.7035	loss_val: 2.2645	loss_test: 1.7517	accuracy_train: 0.7000	accuracy_val: 0.0000	accuracy_test: 0.4286
+[client 1]	loss_train: 1.7294	loss_val: 1.7427	loss_test: 1.7822	accuracy_train: 0.3333	accuracy_val: 0.5000	accuracy_test: 0.1667
+[client 2]	loss_train: 1.7535	loss_val: 1.5953	loss_test: 1.7579	accuracy_train: 0.3636	accuracy_val: 0.0000	accuracy_test: 0.2857
+[client 3]	loss_train: 1.7294	loss_val: 1.8192	loss_test: 1.6679	accuracy_train: 0.3684	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 4]	loss_train: 1.7381	loss_val: 1.7294	loss_test: 1.8281	accuracy_train: 0.3500	accuracy_val: 0.5000	accuracy_test: 0.2000
+[client 5]	loss_train: 1.6752	loss_val: 1.7598	loss_test: 1.7704	accuracy_train: 0.5556	accuracy_val: 0.3333	accuracy_test: 0.3333
+[client 6]	loss_train: 1.7444	loss_val: 1.7713	loss_test: 1.7957	accuracy_train: 0.2105	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 7]	loss_train: 1.7503	loss_val: 1.8430	loss_test: 1.7497	accuracy_train: 0.2857	accuracy_val: 0.0000	accuracy_test: 0.6000
+[client 8]	loss_train: 1.7254	loss_val: 0.4046	loss_test: 1.7697	accuracy_train: 0.4286	accuracy_val: 1.0000	accuracy_test: 0.1667
+[client 9]	loss_train: 1.7040	loss_val: 1.7430	loss_test: 1.7764	accuracy_train: 0.5500	accuracy_val: 0.5000	accuracy_test: 0.2857
+[client 10]	loss_train: 1.7649	loss_val: 1.7528	loss_test: 1.7715	accuracy_train: 0.4167	accuracy_val: 0.3333	accuracy_test: 0.2500
+[client 11]	loss_train: 1.7785	loss_val: 1.8189	loss_test: 1.7871	accuracy_train: 0.0968	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 12]	loss_train: 1.7355	loss_val: nan	loss_test: 1.7738	accuracy_train: 0.3636	accuracy_val: nan	accuracy_test: 0.4000
+[client 13]	loss_train: 1.7589	loss_val: 1.7298	loss_test: 1.7961	accuracy_train: 0.3750	accuracy_val: 0.2500	accuracy_test: 0.2857
+[client 14]	loss_train: 1.7836	loss_val: 1.8217	loss_test: 1.7486	accuracy_train: 0.1429	accuracy_val: 0.0000	accuracy_test: 0.2857
+[client 15]	loss_train: 1.7472	loss_val: 1.8055	loss_test: 1.7429	accuracy_train: 0.3636	accuracy_val: 0.2500	accuracy_test: 0.4286
+[client 16]	loss_train: 1.7512	loss_val: 1.7284	loss_test: 1.7684	accuracy_train: 0.2778	accuracy_val: 0.5000	accuracy_test: 0.3333
+[client 17]	loss_train: 1.6907	loss_val: nan	loss_test: 1.7695	accuracy_train: 0.6667	accuracy_val: nan	accuracy_test: 0.1667
+[client 18]	loss_train: 1.7660	loss_val: 1.8020	loss_test: 1.8028	accuracy_train: 0.3793	accuracy_val: 0.3333	accuracy_test: 0.2000
+[client 19]	loss_train: 1.6858	loss_val: 1.9127	loss_test: 1.7744	accuracy_train: 0.5909	accuracy_val: 0.0000	accuracy_test: 0.2857
+curr_round: 5	curr_val_accuracy: nan	curr_test_accuracy: 0.2796
+best_round: 0	best_val_accuracy: 0.0000	best_test_accuracy: 0.0000
+--------------------------------------------------
+round # 6		sampled_clients: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[client 0]	loss_train: 1.6847	loss_val: 2.4433	loss_test: 1.7497	accuracy_train: 0.6000	accuracy_val: 0.0000	accuracy_test: 0.5714
+[client 1]	loss_train: 1.7053	loss_val: 1.7714	loss_test: 1.7810	accuracy_train: 0.4762	accuracy_val: 0.5000	accuracy_test: 0.1667
+[client 2]	loss_train: 1.7416	loss_val: 1.6414	loss_test: 1.7302	accuracy_train: 0.3182	accuracy_val: 0.0000	accuracy_test: 0.2857
+[client 3]	loss_train: 1.7019	loss_val: 1.8124	loss_test: 1.6224	accuracy_train: 0.3684	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 4]	loss_train: 1.6959	loss_val: 1.6989	loss_test: 1.8224	accuracy_train: 0.4500	accuracy_val: 0.5000	accuracy_test: 0.2000
+[client 5]	loss_train: 1.6487	loss_val: 1.7786	loss_test: 1.7511	accuracy_train: 0.6667	accuracy_val: 0.3333	accuracy_test: 0.3333
+[client 6]	loss_train: 1.7239	loss_val: 1.7516	loss_test: 1.7999	accuracy_train: 0.3158	accuracy_val: 0.0000	accuracy_test: 0.1667
+[client 7]	loss_train: 1.7204	loss_val: 1.8774	loss_test: 1.6967	accuracy_train: 0.2857	accuracy_val: 0.0000	accuracy_test: 0.6000
+[client 8]	loss_train: 1.7036	loss_val: 0.1176	loss_test: 1.7762	accuracy_train: 0.5714	accuracy_val: 1.0000	accuracy_test: 0.1667
+[client 9]	loss_train: 1.6892	loss_val: 1.7001	loss_test: 1.7794	accuracy_train: 0.6000	accuracy_val: 0.5000	accuracy_test: 0.1429
+[client 10]	loss_train: 1.7402	loss_val: 1.7094	loss_test: 1.7331	accuracy_train: 0.3333	accuracy_val: 0.3333	accuracy_test: 0.2500
+[client 11]	loss_train: 1.7500	loss_val: 1.8026	loss_test: 1.7746	accuracy_train: 0.1290	accuracy_val: 0.0000	accuracy_test: 0.2857
+[client 12]	loss_train: 1.6982	loss_val: nan	loss_test: 1.7790	accuracy_train: 0.3636	accuracy_val: nan	accuracy_test: 0.4000
+[client 13]	loss_train: 1.7496	loss_val: 1.7267	loss_test: 1.7662	accuracy_train: 0.3750	accuracy_val: 0.2500	accuracy_test: 0.4286
+[client 14]	loss_train: 1.7745	loss_val: 1.8191	loss_test: 1.7400	accuracy_train: 0.1429	accuracy_val: 0.0000	accuracy_test: 0.1429
+[client 15]	loss_train: 1.7103	loss_val: 1.8202	loss_test: 1.6912	accuracy_train: 0.3636	accuracy_val: 0.0000	accuracy_test: 0.2857
+[client 16]	loss_train: 1.7283	loss_val: 1.7162	loss_test: 1.7817	accuracy_train: 0.3333	accuracy_val: 0.0000	accuracy_test: 0.3333
+[client 17]	loss_train: 1.6673	loss_val: nan	loss_test: 1.7545	accuracy_train: 0.5000	accuracy_val: nan	accuracy_test: 0.1667

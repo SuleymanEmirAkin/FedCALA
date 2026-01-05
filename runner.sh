@@ -5,9 +5,9 @@ source "$CONDA_PATH/etc/profile.d/conda.sh"
 conda activate openfgl
 
 # Define variables
-dataset_name="COLLAB"
+dataset_name="ENZYMES"
 model_name="fedcala"
-num_clients=10
+num_clients=5
 num_rounds=100
 use_cuda=1
 results_dir="experiments/${model_name}_${dataset_name}_nc_${num_clients}_results"
